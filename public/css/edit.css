@@ -1,0 +1,57 @@
+@import url('header.css');
+@import url('all.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway";
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.editar h4 {
+  margin-top: 5%;
+}
+
+
+/* HOME */
+
+.editarCuerpo{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.fotoEditar img{
+  border-radius: 20%;
+  width: 50px;
+}
+
+.fotoEditar {
+  display: flex;
+}
+
+
+@media (min-width: 769px){
+
+
+
+
+@media (min-width: 1140px){
+
+
+}

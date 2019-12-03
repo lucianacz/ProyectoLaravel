@@ -1,0 +1,50 @@
+@import url('estilos.css');
+
+.form-row {
+  margin: auto;
+  display: flex;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #00A79D;
+  border-radius: 10px;
+  border: 0px solid lightgrey;
+  margin: 0px;
+}
+
+.error {
+}
+
+.error p{
+  color: RED;
+  }
+
+
+.btn:hover {
+  background-color: grey;
+}
+
+.btn:checked {
+  background-color: grey;
+}
+
+.explora img {
+  width: 100%;
+}
+
+
+@media (min-width: 770px){
+
+
+}
+
+
+@media (min-width: 1140px){
+
+  /* PAGINA EN CONSTRUCCION MOCKUP Explora*/
+
+
+}

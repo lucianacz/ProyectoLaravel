@@ -1,0 +1,256 @@
+/* MENU */
+
+header {
+  background-color: white;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 10;
+  padding: 30px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0px;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.posicionIcono {
+    float: right;
+    position: fixed;
+    overflow: hidden;
+    right: 40px;
+}
+
+.topnav .icono {
+
+  overflow: hidden;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  right: 0px;
+}
+
+.imagen img{
+  float: left;
+  position: fixed;
+  width: 150px;
+  display: inline;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 0px;
+    float: left;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    transition: 0.3s
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    text-decoration: none;
+
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+.slider-container {
+  position: relative;
+  z-index: -1;
+  height: 100%;
+}
+
+main {
+  overflow: hidden;
+  margin-top: 70px;
+  float: block;
+}
+
+.carousel {
+  z-index: -2;
+}
+
+footer .row {
+  padding: 30px;
+}
+
+.menu-hamburguesa i {
+  color: black;
+  font-size: 30px;
+}
+
+.usuario {
+  display: none;
+}
+
+.menu-derecha ul li a{
+color: black;
+}
+
+.usuario ul li a{
+color: black;
+color: grey;
+
+}
+
+#mostrar-menu{
+  display: none;
+}
+
+#mostrar-menu:checked ~ .menu-hamburguesa label i{
+  float: right;
+}
+
+#mostrar-menu:checked ~ .menu-derecha {
+  display: block;
+  background-color: white;
+  margin-top: 0%;
+  padding: 10px;
+  text-align: right;
+
+}
+
+#mostrar-menu:checked ~ .usuario {
+  display: block;
+  background-color: white;
+  font-size: 13px;
+  padding: 10px;
+  text-align: right;
+}
+
+
+#mostrar-menu:checked ~ .usuario ul li{
+  display: inline-block;
+
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 50px;
+
+}
+
+.pie h5{
+  color: grey;
+}
+
+.pie {
+  font-size: 0.9em;
+}
+
+.pie a{
+  text-decoration: none;
+  color: black;
+  font-weight:600;
+}
+
+.email {
+  width: 100%;
+}
+
+.email input{
+  padding-left: 15px;
+  border: 1px solid lightgrey;
+   border-radius: 10px;
+   width: 100%;
+}
+
+.col-12 {
+  padding: 0px;
+}
+
+.boton {
+  background-color: #00A79D;
+  border-radius: 10px;
+  border: 0px solid lightgrey;
+  margin: 0px;
+}
+
+
+.boton:hover {
+  background-color: grey;
+}
+
+.boton:checked {
+  background-color: grey;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+a svg{
+  transition:all .5s ease;
+
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+
+#ico{
+  display: none;
+}
+
+.menu{
+  background: #000;
+  display: none;
+  padding: 5px;
+  width: 320px;
+  @include border-radius(5px);
+
+  #transition: all 0.5s ease;
+
+  a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background: #444;
+
+    &:nth-child(1){
+      margin-top: 0;
+      @include border-radius(3px 3px 0 0 );
+    }
+    &:nth-child(5){
+      margin-bottom: 0;
+      @include border-radius(0 0 3px 3px);
+    }
+
+    &:hover{
+      background: #555;
+    }
+  }
+}

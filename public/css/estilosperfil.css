@@ -1,0 +1,38 @@
+@import url('estilos.css');
+
+.form-row {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+
+.datos {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.datos img {
+  width: 50%;
+}
+
+@media (min-width: 770px){
+
+  .datos img {
+    width: 40%;
+  }
+
+}
+
+
+@media (min-width: 1140px){
+
+  /* PAGINA EN CONSTRUCCION MOCKUP Explora*/
+
+
+}

@@ -1,0 +1,59 @@
+@import url('estilos.css');
+
+.qSomos {
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  text-align: center;
+}
+
+.frase {
+  margin-top: 30px;
+  background-color: #00A79D;
+  padding: 30px;
+  text-align: center;
+  color: white;
+
+}
+
+h2{
+  font-size: 1.7em;
+}
+
+h3 {
+font-size: 1.2em;
+margin: auto;
+font-weight: lighter;
+}
+
+@media (min-width: 770px){
+
+  h2{
+    font-size: 1.9em;
+  }
+
+  h3 {
+  font-size: 1.4em;
+  }
+
+
+
+}
+
+
+@media (min-width: 1140px){
+
+  h2{
+    font-size: 2em;
+  }
+
+  h3 {
+  font-size: 1.7em;
+  }
+
+}
