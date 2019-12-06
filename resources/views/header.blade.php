@@ -1,24 +1,25 @@
 <header>
       <div class="imagen">
-        <a href="index"><img src="img/logohome-01.png" alt="Cultura Sariri"></a>
+        <a href="/"><img src="/img/logohome-01.png" alt="Cultura Sariri"></a>
       </div>
 
       <div id="sideNavigation" class="sidenav">
         <ul>
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
           <li><a href="/"> Home </a></li>
-          <li><a href="quienessomos"> Quienes Somos </a></li>
-          <li><a href="gente"> Gente y Culturas </a></li>
-          <li><a href="explora"> Explora </a></li>
-          <li><a href="contacto"> Contacto </a></li>
-          <li><a href="newNote"> Nueva Nota </a></li>
-          <li><a href="edit"> Editar </a></li>
+          <li><a href="/quienessomos"> Quienes Somos </a></li>
+          <li><a href="/gente"> Gente y Culturas </a></li>
+          <li><a href="/explora"> Explora </a></li>
+          <li><a href="/contacto"> Contacto </a></li>
+
 
           @guest
-          <li><a href="login"> Login </a></li>
-          <li><a href="register"> Registrarse </a></li>
+          <li><a href="/login"> Login </a></li>
+          <li><a href="/register"> Registrarse </a></li>
           @else
           <li><a href="perfil"> Mi Perfil </a></li>
+          <li><a href="/newNote"> Nueva Nota </a></li>
+          <li><a href="/edit"> Editar </a></li>
           <li><a href="{{ route('logout') }}"
              onclick="event.preventDefault();
                            document.getElementById('logout-form').submit();">

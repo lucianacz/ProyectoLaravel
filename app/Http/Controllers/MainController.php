@@ -24,6 +24,7 @@ class MainController extends Controller
   }
 
 
+
   public function edit (){
     $notas = Nota::orderby('titulo')->get();
     $usuarios = Usuario::orderby('nombre')->get();
@@ -72,7 +73,16 @@ class MainController extends Controller
 
 
   public function perfil() {
-      return view('perfil');
+    $notas = Nota::orderby('Pais')->get();
+    $usuario = \Auth::user();
+      //dd($usuarios->notas);
+    return view ('perfil', compact('usuario'));
+  }
+
+  public function list() {
+    $notas = Nota::orderby('titulo')->get();
+    $usuarios = Usuario::orderby('nombre')->get();
+    return view ('edit', compact('notas','usuarios'));
   }
 
 }

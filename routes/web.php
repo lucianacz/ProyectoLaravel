@@ -20,10 +20,11 @@ Route::get('/gente','MainController@gente');
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
 Route::get('/contacto', 'MainController@contacto');
-Route::get('/perfil', 'MainController@perfil');
+Route::get('/perfil', 'MainController@perfil')->middleware('auth');
 Route::get('/', 'MainController@index');
 Route::get('/newNote', 'MainController@newNote');
 Route::get('/edit', 'MainController@edit');
+Route::get('/edit', 'MainController@list');
 
 Route::get('/nota/{id}','MainController@viewnota');
 

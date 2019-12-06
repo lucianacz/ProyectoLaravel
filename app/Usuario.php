@@ -12,8 +12,6 @@ class Usuario extends Model
     public $id = 'id';
     public $timestamps = false;
 
-    public function notas()
-    {
-        return $this->hasMany(Nota::class, 'idUsuario');
-    }
+
+
 }

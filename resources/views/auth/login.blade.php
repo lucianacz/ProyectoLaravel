@@ -8,7 +8,7 @@
 
 
 
-    <section class="culturas row">
+    <section class="culturas">
       <div class="col-lg-6 col-md-8 col-10">
         <h4 style="color:grey;">INICIA SESION</h4>
         <h5> ¡No te pierdas ninguna novedad!</h5>

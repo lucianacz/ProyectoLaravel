@@ -38,7 +38,7 @@
   <section class="explora row">
 
     <div class="plantilla col-lg-9 col-md-8 col-12">
-    <a href="#"><img src="img/plantilla2.jpg" alt="Camellos"></a>
+    <a href="newNote"><img src="img/plantilla2.jpg" alt="Camellos"></a>
 
 
 
@@ -70,7 +70,7 @@
                     <ul class="uk-nav uk-dropdown-nav">
                       @foreach ($notas as $nota)
                       @if ($nota->id > 4)
-                        <li class="uk-active"><a href="#">{{$nota->region}}</a></li>
+                        <li class="uk-active" style="text-transform: uppercase;"><a href="{{url('nota/'.$nota->id)}}">{{$nota->region}}</a></li>
                       @endif
                       @endforeach
                         <li class="uk-active"><a href="gente">TODAS</a></li>
@@ -89,7 +89,7 @@
 
             <div class="cuerpo col-lg-6 col-md-3 col-10">
             <p>{{$nota->parrafo1}}</p>
-            <a href="#">VER MÁS</a>
+            <a href="{{url('nota/'.$nota->id)}}">VER MÁS</a>
             </div>
           </li>
           @endforeach

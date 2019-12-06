@@ -31,16 +31,14 @@
     <p style="color:red;">  <?= $error['subtitle'] ?? ''?></p>
   </div>
 
-  <div class="col-6">
-    <label for="location">Ubicacion</label>
-    <input type="text" class="form-control" placeholder="" name="location">
-      <p style="color:red; margin-top:5px;">  <?= $error['location'] ?? ''?></p>
+  <div class="col-lg-6 col-md-12">
+    <label for="pais" class="form-label">{{ __('Pais') }}</label>
+    <select class="custom-select" id="paises" name="pais"></select>
   </div>
 
-  <div class="col-6">
-    <label for="location">Provincia</label>
-    <input type="text" class="form-control" placeholder="" name="location">
-      <p style="color:red; margin-top:5px;">  <?= $error['location'] ?? ''?></p>
+  <div class="col-lg-6 col-md-12">
+    <label for="region" class="form-label">{{ __('Region') }}</label>
+    <select class="custom-select" id="regiones" name="region"></select>
   </div>
 
 
@@ -91,5 +89,61 @@
 
 </section>
 </main>
+
+
+<script type="text/javascript">
+function getPaises(){
+  fetch('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/countries%2Bstates%2Bcities.json')
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      for(let i = 0; i < data.length; i++){
+        let paises = document.querySelector("#paises")
+        let option = document.createElement("option")
+        option.text = data[i].name
+        option.value = data[i].name
+        paises.appendChild(option)
+      }
+    })
+}
+
+document.querySelector('#paises').onchange = (function(){
+  let selector = document.querySelector('#paises')
+  let pais = selector.value
+
+  fetch('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/countries%2Bstates%2Bcities.json')
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      for(let i = 0; i < data.length; i++){
+        if(data[i].name == pais ){
+          let regionesJson = data[i].states
+          regiones.innerHTML = ''
+          for(var j in regionesJson){
+            console.log(j)
+            let regiones = document.querySelector("#regiones")
+            let option = document.createElement("option")
+            option.text = j
+            option.value = j
+            regiones.appendChild(option)
+
+          }
+        }
+      }
+    })
+})
+
+
+
+
+
+
+getPaises()
+
+</script>
+
+
 
 @endsection
