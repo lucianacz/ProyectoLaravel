@@ -57,21 +57,17 @@
       <div class="menuculturas uk-margin-medium-top">
       <ul class="uk-flex-center" uk-tab uk-switcher>
 
+
             @foreach ($notas as $nota)
-              @if ($nota->id < 4)
-              <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->region}}</a>
-              </li>
-              @endif
-              @endforeach
+                <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->region}}</a></li>
+            @endforeach
 
             <li>
                 <a href="#">Más <span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
                 <div uk-dropdown="mode: click">
                     <ul class="uk-nav uk-dropdown-nav">
-                      @foreach ($notas as $nota)
-                      @if ($nota->id > 4)
+                      @foreach ($cuatroSegundas as $nota)
                         <li class="uk-active" style="text-transform: uppercase;"><a href="{{url('nota/'.$nota->id)}}">{{$nota->region}}</a></li>
-                      @endif
                       @endforeach
                         <li class="uk-active"><a href="gente">TODAS</a></li>
                     </ul>
@@ -84,7 +80,7 @@
           @foreach ($notas as $nota)
           <li>
             <div class="col-lg-6 col-md-3 col-12 foto">
-            <img src="img/{{$nota->foto}}"  alt="FotoPais">
+            <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
             </div>
 
             <div class="cuerpo col-lg-6 col-md-3 col-10">

@@ -1,0 +1,53 @@
+@import url('estilos.css');
+
+.form-row {
+  margin: auto;
+  display: flex;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 30px;
+}
+
+h6 a:hover {
+  text-decoration: none;
+}
+
+
+.btn:hover {
+  background-color: grey;
+}
+
+.iframe {
+  border-radius: 10%;
+}
+
+.fotoNota img {
+  width: 60%;
+  MARGIN: 5%;
+}
+
+.destacado p {
+  color: white;
+  background-color: #00A79D;
+  font-size: 22px;
+  padding: 2%;
+  text-align: left;
+}
+
+.destacado {
+  display: flex;
+  margin: auto;
+}
+
+@media (min-width: 770px){
+
+
+}
+
+
+@media (min-width: 1140px){
+
+  /* PAGINA EN CONSTRUCCION MOCKUP Explora*/
+
+
+}

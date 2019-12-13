@@ -80,11 +80,6 @@ class RegisterController extends Controller
           'password' => Hash::make($data['password']),
       ]);
 
-      $imagen="";
-      if (isset ($data['avatar'])){
-        $imagen=$data['avatar']->store['public'];
-        $imagen=basename($imagen);
-      }
-
+      
     }
 }

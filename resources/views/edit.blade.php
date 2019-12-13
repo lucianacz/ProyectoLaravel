@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/estilosgente.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <?php
 
@@ -52,7 +53,6 @@
 
 
   <script type="text/javascript">
-
   function dameListado (){
 
 
@@ -84,9 +84,20 @@
             divNuevo.innerHTML = `
 
           <div class="fotoNota">
-          <a href="http://localhost:8000/edit/nota/${nota.id}"> <img src="/img/${nota.foto}" alt="${nota.epigrafe}"></a>
-          <a href="http://localhost:8000/edit/nota/${nota.id}"><i class="fas fa-edit"></i></a>
-          <a href="http://localhost:8000/edit/nota/${nota.id}"><i class="fas fa-trash-alt"></i></a>
+          <a href="http://localhost:8000/edit/nota/${nota.id}"> <img src="/storage/${nota.foto}" alt="${nota.epigrafe}"></a>
+          <a onclick="event.preventDefault();document.querySelector('#editForm').submit();"><i class="fas fa-edit"></i></a>
+          <a onclick="event.preventDefault();confirmDelete();"><i class="fas fa-trash-alt"></i></a>
+
+
+
+
+          <form id="editForm" action="{{ url('http://localhost:8000/edit/nota/${nota.id}') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+
+          <form id="deleteForm" action="{{ url('http://localhost:8000/delete/nota/${nota.id}') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
           </div>
 
           <div class="fotoNota">
@@ -121,6 +132,26 @@
 window.addEventListener('load', function (){
    dameListado()
 });
+function confirmDelete(event){
+  swal({
+  title: "Estas seguro?",
+  text: "Una vez borrada no podrás recuperarla!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("La nota fue borrada exitosamente", {
+      icon: "success",
+    });
+    document.querySelector('#deleteForm').submit();
+  } else {
+    swal("La nota sigue online :)");
+    event.preventDefault();
+  }
+});
+}
   </script>
 
 </main>

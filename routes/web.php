@@ -15,18 +15,24 @@ Route::get('/perfil', 'UserController@index');
 
 
 Route::get('/explora','MainController@explora');
-Route::get('/nota', 'MainController@nota');
+Route::get('/nota/{id}', 'MainController@viewNota');
 Route::get('/gente','MainController@gente');
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
 Route::get('/contacto', 'MainController@contacto');
 Route::get('/perfil', 'MainController@perfil')->middleware('auth');
 Route::get('/', 'MainController@index');
-Route::get('/newNote', 'MainController@newNote');
-Route::get('/edit', 'MainController@edit');
+
+
+Route::get('/edit/nota/{id}', 'MainController@editNota');
 Route::get('/edit', 'MainController@list');
 
-Route::get('/nota/{id}','MainController@viewnota');
+Route::get('/newNote', 'MainController@newNote');
+Route::post('/newNote', 'MainController@recordNote');
+
+Route::post('/edit/nota/{id}', 'MainController@editNota');
+Route::post('/edit/nota/{id}', 'MainController@recordNote');
+Route::post('/delete/nota/{id}', 'MainController@delete')->middleware('auth');
 
 //Crear una ruta a /miPrimeraRuta, y que al ingresar, devuelva “Creé mi primer ruta en Laravel”.
 

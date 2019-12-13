@@ -23,10 +23,9 @@
       <div class="align-items-center casilleros">
 
       <div class="form-row align-items-center col-lg-8 col-md-8">
-          <label for="email" class="col-md-4 col-form-label">{{ __('E-Mail') }}</label>
-
+          <label for="email" class="col-md-4 col-form-label texto">{{ __('E-Mail') }}</label>
           <div class="col-md-10">
-            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" required autocomplete="email" autofocus>
                   @error('email')
                       <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>

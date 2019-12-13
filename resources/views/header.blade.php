@@ -12,12 +12,11 @@
           <li><a href="/explora"> Explora </a></li>
           <li><a href="/contacto"> Contacto </a></li>
 
-
           @guest
           <li><a href="/login"> Login </a></li>
           <li><a href="/register"> Registrarse </a></li>
           @else
-          <li><a href="perfil"> Mi Perfil </a></li>
+          <li><a href="/perfil"> Mi Perfil </a></li>
           <li><a href="/newNote"> Nueva Nota </a></li>
           <li><a href="/edit"> Editar </a></li>
           <li><a href="{{ route('logout') }}"

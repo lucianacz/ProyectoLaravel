@@ -14,69 +14,122 @@
   <section class="culturas">
     <div class="col-lg-6 col-md-6 col-10">
       <h4 style="color:grey;">NUEVA NOTA</h4>
-      <h5> Si cargas la nota bien evitas errores de programacion</h5>
+      <h5> Gracias por sumar contenido a la red ☺</h5>
 
 
-  <form action="gente" method="post" target="" enctype="multipart/form-data">
+  <form method="post" target="" enctype="multipart/form-data">
+  @csrf
   <div class="form-row">
   <div class="col-12">
-    <label for="title">Titulo</label>
-    <input type="text" class="form-control" placeholder="" name="title">
-      <p style="color:red; margin-top:5px;">  <?= $error['title'] ?? ''?></p>
+    <label for="title">Titulo: ¿En qué lugar específico?* </label>
+    <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}">
+
+    @error('title')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
   <div class="col-12">
-    <label for="subtitle">Subtitulo</label>
-    <input type="text" class="form-control" placeholder="" name="subtitle">
-    <p style="color:red;">  <?= $error['subtitle'] ?? ''?></p>
+    <label for="subtitulo">Subtitulo: ¿Qué fue lo que pasó?*</label>
+    <input id="subtitulo" type="text" class="form-control @error('subtitulo') is-invalid @enderror" name="subtitulo" value="{{ old('subtitulo') }}">
+
+    @error('subtitulo')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
   <div class="col-lg-6 col-md-12">
-    <label for="pais" class="form-label">{{ __('Pais') }}</label>
-    <select class="custom-select" id="paises" name="pais"></select>
+    <label for="pais" class="form-label @error('pais') is-invalid @enderror">{{ __('Pais') }}*</label>
+    <select class="custom-select" id="paises" name="pais">{{ old('pais') }}</select>
+    @error('pais')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
   <div class="col-lg-6 col-md-12">
-    <label for="region" class="form-label">{{ __('Region') }}</label>
-    <select class="custom-select" id="regiones" name="region"></select>
+    <label for="region" class="form-label @error('region') is-invalid @enderror">{{ __('Region') }}*</label>
+    <select class="custom-select" id="regiones" name="region">{{ old('region') }}</select>
+    @error('region')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
 
   <div class="col-12">
-    <label for="paragraph">Primer Parrafo</label>
-    <textarea type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="paragraph"></textarea>
-    <p style="color:red;">  <?= $error['paragraph'] ?? ''?></p>
+    <label for="parrafo">Primer Parrafo*</label>
+    <textarea type="text" maxlength="5000" rows="8" class="form-control @error('parrafo1') is-invalid @enderror" placeholder="" name="parrafo1">{{ old('parrafo1') }}</textarea>
+
+    @error('parrafo1')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
   </div>
 
   <div class="col-12">
-    <label for="destacado">Destacado</label>
-    <input type="text" class="form-control" placeholder="" name="destacado">
-    <p style="color:red;">  <?= $error['destacado'] ?? ''?></p>
+    <label for="destacado">Destacado*</label>
+    <input type="text" class="form-control @error('destacado') is-invalid @enderror" placeholder="" name="destacado" value="{{ old('destacado') }}">
+
+    @error('destacado')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
   <div class="col-12">
-    <label for="paragraph">Segundo Parrafo</label>
-    <textarea type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="paragraph"></textarea>
-    <p style="color:red;">  <?= $error['paragraph'] ?? ''?></p>
+    <label for="parrafo">Segundo Parrafo*</label>
+    <textarea type="text" maxlength="5000" rows="8" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
+    @error('parrafo2')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror  </div>
+
+  <div class="col-12">
+    <label for="video">Link de Youtube</label>
+    <input type="text" class="form-control" placeholder="" name="video" value="{{ old('video') }}">
   </div>
 
   <div class="col-12">
-    <label for="destacado">Link de Youtube</label>
-    <input type="text" class="form-control" placeholder="" name="youtube">
-    <p style="color:red;">  <?= $error['youtube'] ?? ''?></p>
+    <label for="epigrafe">Epigrafe*</label>
+    <input type="text" class="form-control @error('epigrafe') is-invalid @enderror" placeholder="" name="epigrafe" value="{{ old('epigrafe') }}">
+
+    @error('epigrafe')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
 
   <div class="col-6">
-      <label for="visit">Fecha de Visita</label>
-  <input type="month" name="year" class="form-control" min="1939-01-01" max="2017-12-31">
-      <p style="color:red; margin-top:5px;">  <?= $error['visit'] ?? ''?></p>
+      <label for="fecha">Fecha de Visita</label>
+      <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{ old('fecha') }}">
+      @error('fecha')
+          <span class="invalid-feedback" role="alert">
+              <strong>{{ $message }}</strong>
+          </span>
+      @enderror
   </div>
 
-
   <div class="col-6">
-    <label for="visit">Imagen</label>
-    <input id="files" style="display: null;" type="file">
+    <label for="foto">Imagen</label>
+    <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" style="display: null;" type="file">
+    @error('foto')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
 
 
