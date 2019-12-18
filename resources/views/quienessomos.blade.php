@@ -28,7 +28,7 @@
       <div class="col-lg-8 col-md-10 col-10">
         <h4 style="color:grey; margin-top:50px;">¿QUIENES SOMOS?</h4>
 
-          <p class="text"> Hola, somos Julian y Jas! </p>
+          <p class="text"> ¡Hola! </p>
 
           <p> Hace un año decidimos salir a viajar por el mundo y en los meses de nuestra aventura recorrimos muchos países de Asia, algunos de África y otros de Europa. Y ya habíamos tenido la posibilidad de viajar previamente por algunos lugares de América Latina. </p>
 
@@ -58,43 +58,39 @@
 
 
   <section>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m carrusel">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
-            <img src="img/slider/slider1.jpg" alt="">
+            <img src="img/slider/s1.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider2.jpg" alt="">
+            <img src="img/slider/s2.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider3.jpg" alt="">
+            <img src="img/slider/s3.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider4.jpg" alt="">
+            <img src="img/slider/s4.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider5.jpg" alt="">
+            <img src="img/slider/s5.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider6.jpg" alt="">
+            <img src="img/slider/s6.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider7.jpg" alt="">
+            <img src="img/slider/s7.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
         <li>
-            <img src="img/slider/slider8.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/slider9.jpg" alt="">
+            <img src="img/slider/s8.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
         </li>
     </ul>

@@ -21,17 +21,24 @@ Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
 Route::get('/contacto', 'MainController@contacto');
 Route::get('/perfil', 'MainController@perfil')->middleware('auth');
+Route::get('/edit/perfil/{id}', 'MainController@editPerfil')->middleware('auth');
+Route::post('/edit/perfil/{id}', 'MainController@updatePerfil')->middleware('auth');
+
 Route::get('/', 'MainController@index');
 
 
-Route::get('/edit/nota/{id}', 'MainController@editNota');
 Route::get('/edit', 'MainController@list');
 
-Route::get('/newNote', 'MainController@newNote');
+Route::get('/newNote', 'MainController@newNote')->middleware('auth');
 Route::post('/newNote', 'MainController@recordNote');
 
-Route::post('/edit/nota/{id}', 'MainController@editNota');
-Route::post('/edit/nota/{id}', 'MainController@recordNote');
+Route::get('/newPhoto', 'MainController@newPhoto')->middleware('auth');
+Route::post('/newPhoto', 'MainController@recordPhoto');
+Route::post('/delete/photo/{id}', 'MainController@deletePhoto')->middleware('auth');
+
+
+Route::get('/edit/nota/{id}', 'MainController@editNota');
+Route::post('/edit/nota/{id}', 'MainController@update')->middleware('auth');
 Route::post('/delete/nota/{id}', 'MainController@delete')->middleware('auth');
 
 //Crear una ruta a /miPrimeraRuta, y que al ingresar, devuelva “Creé mi primer ruta en Laravel”.

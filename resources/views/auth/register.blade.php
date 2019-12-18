@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/estilosformulario.css">
+<link rel="stylesheet" href="css/estiloscarga.css">
 
 
 
@@ -12,14 +12,13 @@
       <h4 style="color:grey;">REGISTRATE</h4>
       <h5> ¡Vení, sumate!</h5>
 
-    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data" class="align-items-center">
+    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
       @csrf
 
 
-          <div class="align-items-center">
-              <label for="name" class="col-form-label">{{ __('Nombre') }}</label>
-
-                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}">
+        <div class="form-row align-items-center col-12">
+        <label for="name" class="col-md-12 col-form-label"> Nombre </label>
+        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}">
 
                   @error('name')
                       <span class="invalid-feedback" role="alert">
@@ -29,9 +28,8 @@
           </div>
 
 
-          <div class="align-items-center">
-              <label for="name" class="col-form-label">{{ __('Apellido') }}</label>
-
+              <div class="form-row align-items-center col-12">
+                <label for="name"  class="col-md-12 col-form-label">Apellido </label>
                   <input id="apellido" type="text" class="form-control @error('apellido') is-invalid @enderror" name="apellido" value="{{ old('apellido') }}">
 
                   @error('apellido')
@@ -41,8 +39,8 @@
                   @enderror
           </div>
 
-          <div class="align-items-center">
-              <label for="email" class="col-form-label">{{ __('E-Mail') }}</label>
+            <div class="form-row align-items-center col-12">
+              <label for="email"  class="col-md-12 col-form-label">{{ __('E-Mail') }}</label>
 
                   <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" >
 
@@ -53,8 +51,8 @@
                   @enderror
           </div>
 
-          <div class="align-items-center">
-              <label for="password" class="col-form-label">{{ __('Contraseña') }}</label>
+            <div class="form-row align-items-center col-12">
+              <label for="password"  class="col-md-12 col-form-label">{{ __('Contraseña') }}</label>
               <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password"  >
 
                   @error('password')
@@ -64,17 +62,22 @@
                   @enderror
           </div>
 
+        <div class="form-row align-items-center col-12">
         <label for="password-confirm" class="col-md-10 col-form-label">{{ __('Confirma contraseña') }}</label>
         <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
+        </div>
 
-
+        <div class="form-row align-items-center col-12">
         <label for="pais" class="col-md-10 col-form-label">{{ __('Pais') }}</label>
         <select class="custom-select" id="paises" name="pais"></select>
+        </div>
 
-
-        <button type="submit" class="btn boton btn-primary">
+        <div class="form-row align-items-center col-12">
+        <button type="submit" class="btn boton btn-primary col-12">
             {{ __('Register') }}
         </button>
+        </div>
+
 
     </form>
   </div>

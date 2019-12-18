@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/estiloscarga.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 @extends('layout')
@@ -13,12 +14,13 @@
       <h5> Siempre se puede mejorar :)</h5>
 
 
-  <form action="/gente" method="post" target="" enctype="multipart/form-data">
-  <div class="form-row">
+<form method="post" target="" enctype="multipart/form-data" id="editForm">
+  @csrf
+    <div class="form-row">
   <div class="col-12">
-    <label for="title">Titulo</label>
-    <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{$nota->titulo}}">
-          @error('title')
+    <label for="titulo">Titulo</label>
+    <input id="titulo" type="text" class="form-control @error('title') is-invalid @enderror" name="titulo" value="{{$nota->titulo}}">
+          @error('titulo')
               <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
               </span>
@@ -26,9 +28,9 @@
   </div>
 
   <div class="col-12">
-    <label for="subtitle">Subtitulo</label>
-    <input id="subtitle" type="text" class="form-control @error('subtitle') is-invalid @enderror" name="subtitle" value="{{$nota->subtitulo}}">
-          @error('subtitle')
+    <label for="subtitulo">Subtitulo</label>
+    <input id="subtitulo" type="text" class="form-control @error('subtitulo') is-invalid @enderror" name="subtitulo" value="{{$nota->subtitulo}}">
+          @error('subtitulo')
               <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
               </span>
@@ -36,9 +38,9 @@
     </div>
 
   <div class="col-12">
-    <label for="paragraph">Primer Parrafo</label>
-    <textarea id="paragraph" type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="paragraph">{{$nota->parrafo1}}</textarea>
-    @error('paragraph')
+    <label for="parrafo1">Primer Parrafo</label>
+    <textarea id="parrafo1" type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="parrafo1">{{$nota->parrafo1}}</textarea>
+    @error('parrafo1')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
@@ -56,21 +58,15 @@
   </div>
 
   <div class="col-12">
-    <label for="paragraph">Segundo Parrafo</label>
-    <textarea type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="paragraph">{{$nota->parrafo2}}</textarea>
-    @error('paragraph')
+    <label for="parrafo2">Segundo Parrafo</label>
+    <textarea type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="parrafo2">{{$nota->parrafo2}}</textarea>
+    @error('parrafo2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
     @enderror
   </div>
 
-
-
-  <div class="col-12">
-    <label for="video">Link de Youtube</label>
-    <input type="text" class="form-control" placeholder="" name="video" value="{{$nota->video}}">
-  </div>
 
   <div class="col-12">
     <label for="epigrafe">Epigrafe*</label>
@@ -83,10 +79,9 @@
     @enderror
   </div>
 
-
   <div class="col-12">
       <label for="fecha">Fecha de Visita: {{$nota->fecha->format('m-Y')}}</label>
-      <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="">
+      <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{$nota->fecha->format('Y-m')}}">
       @error('fecha')
           <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
@@ -108,7 +103,7 @@
   </div>
 
   <div class="col-12">
-  <button class="btn col-12" type="submit">Editar nota</button>
+  <button class="btn col-12" onclick="event.preventDefault();confirmUpdate();">Editar nota</button>
   </div>
 
   </form>
@@ -160,7 +155,30 @@ document.querySelector('#paises').onchange = (function(){
         }
       }
     })
-})
+});
 
+
+
+function confirmUpdate(event){
+  swal({
+  title: "Estas seguro?",
+  text: "Una vez editada no podrás volver atrás!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willUpdate) => {
+  if (willUpdate) {
+    swal("La nota fue editada exitosamente", {
+      icon: "success",
+    });
+    document.querySelector('#editForm').submit();
+  } else {
+    swal("La nota sigue igual :)");
+    event.preventDefault();
+  }
+});
+}
+</script>
 
 @endsection

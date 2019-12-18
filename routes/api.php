@@ -19,4 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/edit','Api\NoteController@all');
+Route::get('/edit/{id}','Api\NoteController@all');

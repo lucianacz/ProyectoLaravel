@@ -1,11 +1,10 @@
-<?php session_start(); ?>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 @extends('layout')
 
 @section('main')
 
-<link rel="stylesheet" href="css/estilosformulario.css">
-
+<link rel="stylesheet" href="css/estilosgente.css">
 
 <main>
 
@@ -13,37 +12,105 @@
 
 
   <section class="explora">
-    <div class="col-lg-6 col-md-8 col-10">
-      <h4 style="color:grey;">EXPLORA</h4>
+    <div class="col-lg-10 col-md-8 col-10">
+      <h4 style="color:grey;">GALERIA DE FOTOS</h4>
       <h5> SUBI TU FOTO</h5>
+      <a href="/newPhoto" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
-      <div class="row">
-      <div id="carouselExampleIndicators" class="carousel slide col-12" data-ride="carousel">
-      <div class="carousel-inner w-100">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/slider1.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item ">
-          <img class="d-block w-100" src="img/slider2.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/slider3.jpg" alt="Third slide">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; min-height: 300; max-height: 400">
+        <BR>
+
+        <ul class="uk-slideshow-items">
+      @foreach ($fotos as $foto)
+
+            <li>
+                 <img src="/storage/{{$foto->nombre}}" alt="" uk-cover>
+                 <div class="uk-position-center uk-position-small uk-text-center">
+                     <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">{{$foto->pais}}, {{$foto->region}}</h2>
+                 </div>
+             </li>
+        @endforeach
+    </ul>
+
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+
+</div>
+
+<div class="row col-12" style="display:flex; justify-content:center; margin: 0 auto;">
+    @foreach ($fotos as $foto)
+    <article class="col-lg-3 col-md-4 col-11" style="padding:10px;">
+      <div class="uk-inline" uk-lightbox="animation: fade">
+
+
+
+        <div class="uk-inline" style="">
+
+              <div>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <a class="uk-inline" href="/storage/{{$foto->nombre}}" data-caption="{{$foto->pais}}, {{$foto->region}}">
+                          <img src="/storage/{{$foto->nombre}}" alt="">
+                      </div>
+
+                      <div class="uk-card-body">
+
+                          <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->usuario->name}}, {{$foto->usuario->pais}}</p>
+                            <?php if ($foto->usuario->id === $logeado->id || $logeado->adm == 1) :  ?>
+                              <form id="deletePhoto{{$foto->photo_id}}" action="{{ url('http://localhost:8000/delete/photo/')}}{{$foto->photo_id}} " method="POST" >
+                                  @csrf
+                                  <button type="submit" onclick="event.preventDefault();confirmDelete(event,this,{{$foto->photo_id}});"><i class="fas fa-trash-alt"></i></button>
+                              </form>
+                            <?php endif; ?>
+
+                      </div>
+                  </div>
+              </div>
+
+
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    </div>
+    </article>
+    @endforeach
+</div>
+
+
+
+
+
 
 
 
   </section>
+<script>
+
+
+function confirmDelete(event,tag,idFoto){
+  swal({
+  title: "Estas seguro?",
+  text: "Una vez borrada no podrás recuperarla!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("La foto fue borrada exitosamente", {
+      icon: "success",
+    });
+
+    document.querySelector('#deletePhoto'+idFoto).submit();
+  } else {
+    swal("La foto sigue online :)");
+    event.preventDefault();
+  }
+});
+}
+</script>
+
+
 </main>
 
 @endsection

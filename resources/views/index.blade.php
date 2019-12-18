@@ -65,12 +65,14 @@
             <li>
                 <a href="#">Más <span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
                 <div uk-dropdown="mode: click">
+
                     <ul class="uk-nav uk-dropdown-nav">
                       @foreach ($cuatroSegundas as $nota)
                         <li class="uk-active" style="text-transform: uppercase;"><a href="{{url('nota/'.$nota->id)}}">{{$nota->region}}</a></li>
                       @endforeach
                         <li class="uk-active"><a href="gente">TODAS</a></li>
                     </ul>
+
 
                 </div>
             </li>
@@ -84,7 +86,7 @@
             </div>
 
             <div class="cuerpo col-lg-6 col-md-3 col-10">
-            <p>{{$nota->parrafo1}}</p>
+            <p> {{$nota->parrafo1}} </p>
             <a href="{{url('nota/'.$nota->id)}}">VER MÁS</a>
             </div>
           </li>

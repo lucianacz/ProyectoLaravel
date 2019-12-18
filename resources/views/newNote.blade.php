@@ -22,8 +22,8 @@
   <div class="form-row">
   <div class="col-12">
     <label for="title">Titulo: ¿En qué lugar específico?* </label>
-    <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}">
-
+    <input id="title" type="text"  onkeyup="validateTitle(this.value)"  id="textbox" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}">
+    <span id=title style="color:#00A79D;"></span>
     @error('title')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -44,7 +44,9 @@
 
   <div class="col-lg-6 col-md-12">
     <label for="pais" class="form-label @error('pais') is-invalid @enderror">{{ __('Pais') }}*</label>
-    <select class="custom-select" id="paises" name="pais">{{ old('pais') }}</select>
+    <select class="custom-select" id="paises" name="pais">
+        <option value="{{ old('Pais') }}" selected> {{ old('Pais') }}</option>
+    </select>
     @error('pais')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -54,7 +56,9 @@
 
   <div class="col-lg-6 col-md-12">
     <label for="region" class="form-label @error('region') is-invalid @enderror">{{ __('Region') }}*</label>
-    <select class="custom-select" id="regiones" name="region">{{ old('region') }}</select>
+    <select class="custom-select" id="regiones" name="region">
+      <option value="{{ old('region') }}" selected>{{ old('region') }}</option>
+      </select>
     @error('region')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -65,7 +69,8 @@
 
   <div class="col-12">
     <label for="parrafo">Primer Parrafo*</label>
-    <textarea type="text" maxlength="5000" rows="8" class="form-control @error('parrafo1') is-invalid @enderror" placeholder="" name="parrafo1">{{ old('parrafo1') }}</textarea>
+    <textarea type="text" id="textbox" maxlength="550" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo1') is-invalid @enderror" placeholder="" name="parrafo1">{{ old('parrafo1') }}</textarea>
+    <span id=charcount style="color:#00A79D;"></span>
 
     @error('parrafo1')
         <span class="invalid-feedback" role="alert">
@@ -88,7 +93,8 @@
 
   <div class="col-12">
     <label for="parrafo">Segundo Parrafo*</label>
-    <textarea type="text" maxlength="5000" rows="8" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
+    <textarea type="text" maxlength="550" rows="8" id="textbox2" onkeyup="charcountupdate2(this.value)" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
+    <span id=charcount2 style="color:#00A79D;"></span>
     @error('parrafo2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -131,6 +137,7 @@
         </span>
     @enderror
   </div>
+
 
 
   <div class="col-12">
@@ -189,11 +196,23 @@ document.querySelector('#paises').onchange = (function(){
 })
 
 
-
-
-
-
 getPaises()
+
+function validateTitle(str){
+  var lng = 40 - str.length;
+  document.getElementById("title").innerHTML = lng + ' de 40 caracteres';
+  }
+
+
+function charcountupdate(str) {
+	var lng = 500 - str.length;
+	document.getElementById("charcount").innerHTML = lng + ' de 500 caracteres';
+}
+
+function charcountupdate2(str) {
+	var lng = 500 - str.length;
+	document.getElementById("charcount2").innerHTML = lng + ' de 500 caracteres';
+}
 
 </script>
 
