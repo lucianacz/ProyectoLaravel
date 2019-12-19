@@ -59,7 +59,7 @@
 
 
             @foreach ($notas as $nota)
-                <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->region}}</a></li>
+                <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->titulo}}</a></li>
             @endforeach
 
             <li>

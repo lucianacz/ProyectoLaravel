@@ -4,7 +4,6 @@
 
 @section('main')
 
-<link rel="stylesheet" href="css/estilosgente.css">
 
 <main>
 

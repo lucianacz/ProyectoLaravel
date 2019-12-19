@@ -17,7 +17,7 @@ class Photo extends Model
    * @var array
    */
   protected $fillable = [
-      'photo_id', 'user_id', 'nombre', 'region', 'pais', 'titulo'
+      'photo_id', 'user_id', 'nombre', 'region', 'pais',
   ];
 
 

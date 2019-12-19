@@ -6,7 +6,7 @@
 
 @section('main')
 
-<link rel="stylesheet" href="css/estilosquienes.css">
+<link rel="stylesheet" href="/css/estilosquienes.css">
 
 
 <main>

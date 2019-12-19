@@ -45,7 +45,7 @@
   <div class="col-lg-6 col-md-12">
     <label for="pais" class="form-label @error('pais') is-invalid @enderror">{{ __('Pais') }}*</label>
     <select class="custom-select" id="paises" name="pais">
-        <option value="{{ old('Pais') }}" selected> {{ old('Pais') }}</option>
+        <option value="{{ old('pais') }}" selected> {{ old('pais') }}</option>
     </select>
     @error('pais')
         <span class="invalid-feedback" role="alert">

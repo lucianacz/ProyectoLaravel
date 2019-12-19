@@ -57,6 +57,14 @@
         </button>
         </div>
 
+        <div class="">
+          <a href="/google/login"><img style="width:40%;" src="/img/google.png" alt=""></a>
+        </br>
+          <a href="/facebook/login"><img style="width:40%;" src="/img/facebook.png" alt=""></a>
+        </div>
+
+
+
     <div class="form-row align-items-center col-lg-8 col-md-8">
       @if (Route::has('password.request'))
           <a class="btn-link" style="text-decoration:none;" href="{{ route('password.request') }}">
@@ -77,10 +85,6 @@
       </div>
     </section>
     </main>
-
-
-
-
 
 
 

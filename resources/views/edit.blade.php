@@ -46,6 +46,24 @@
         //lleva invertido lo que lleva un foreach en php
         //deberia de haber capturado el div donde meter los dato
         var divGeneral = document.querySelector('.row')
+
+        if (datos.length == 0){
+      //crear el div nuevo
+        var divNuevo = document.createElement('div');
+        //agregar al div que contiene el bootstrap
+        divNuevo.setAttribute('class', 'nota col-lg-3 col-md-4 col-11')
+        divNuevo.innerHTML = `
+          <div class="fotoNota">
+          <h4> No hay notas por editar</h4>
+          <h5> Tambien podes:</h5>
+          <a href="http://localhost:8000/newNote"> Crea una nueva nota </a>
+          </br>
+          <a href="http://localhost:8000/gente"> Mira las notas </a>
+          </div>
+        `;
+        divGeneral.append(divNuevo);
+        }
+
         for(nota of datos){
 
           //crear el div nuevo

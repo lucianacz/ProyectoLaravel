@@ -21,22 +21,33 @@ h6 a:hover {
   border-radius: 10%;
 }
 
-.fotoNota img {
-  width: 60%;
-  MARGIN: 5%;
+#fotoNota img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
-.destacado p {
+#destacado p {
   color: white;
   background-color: #00A79D;
   font-size: 22px;
   padding: 2%;
+  width: 100%;
   text-align: left;
 }
 
-.destacado {
+#destacado {
+  width: 100%;
   display: flex;
   margin: auto;
+}
+
+#cuerpoNotaPrincipal {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (min-width: 770px){

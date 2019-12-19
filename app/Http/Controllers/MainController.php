@@ -39,8 +39,8 @@ class MainController extends Controller
 
   public function viewNota($id){
     $nota = Nota::find($id);
-    $ant = Nota::where('id', '<', $id)->first();
-    $sig = Nota::where('id', '>', $id)->first();
+    $ant = Nota::orderby('id','desc')->where('id', '<', $id)->first();
+    $sig = Nota::orderby('id','asc')->where('id', '>', $id)->first();
     return view('nota',compact('nota', 'sig', 'ant'));
   }
 
@@ -292,14 +292,12 @@ public function recordNote(Request $r){
    public function recordPhoto(Request $r){
 
        $message=[
-           "title.required"=> 'El :attribute no puede estar vacio',
            "pais.required" => 'El :attribute no puede estar vacio',
            "region.required" => 'La :attribute no puede estar vacia',
            "nombre.required" =>'La foto no puede estar vacia',
            "nombre.mimes" =>'La foto tiene que ser jpg o png',
        ];
         $this->validate($r, [
-           'title' => ['required', 'string', 'max:255'],
            'pais' => ['required'],
            'region' => ['required'],
            'nombre' => ['required', 'mimes:jpeg,png'],
@@ -310,7 +308,6 @@ public function recordNote(Request $r){
 
 
       Photo::create([
-       'titulo' => $r['title'],
        'pais' => $r['pais'],
        'region' => $r['region'],
        'user_id' => \Auth::user()->id,

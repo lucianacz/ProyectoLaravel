@@ -46,3 +46,10 @@ Route::post('/delete/nota/{id}', 'MainController@delete')->middleware('auth');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/google/login', 'Auth\LoginController@redirectToGoogle');
+Route::get('/google/redireccion', 'Auth\LoginController@handleGoogleCallback');
+
+Route::get('/facebook/login', 'Auth\LoginController@redirectToFacebook');
+Route::get('/facebook/redireccion', 'Auth\LoginController@handleFacebookCallback');

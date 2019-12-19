@@ -11,7 +11,6 @@
           <li><a href="/gente"> Gente y Culturas </a></li>
           <li><a href="/explora"> Explora: fotos </a></li>
           <li><a href="/contacto"> Contacto </a></li>
-
           @guest
           <li><a href="/login"> Login </a></li>
           <li><a href="/register"> Registrarse </a></li>
