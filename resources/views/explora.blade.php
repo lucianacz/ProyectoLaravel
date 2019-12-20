@@ -20,15 +20,28 @@
         <BR>
 
         <ul class="uk-slideshow-items">
-      @foreach ($fotos as $foto)
 
             <li>
-                 <img src="/storage/{{$foto->nombre}}" alt="" uk-cover>
+                 <img src="/img/portada.jpg" alt="" uk-cover>
                  <div class="uk-position-center uk-position-small uk-text-center">
-                     <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">{{$foto->pais}}, {{$foto->region}}</h2>
+                     <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Bakhtapur, Nepal</h2>
                  </div>
              </li>
-        @endforeach
+
+             <li>
+                  <img src="/img/portada1.jpg" alt="" uk-cover>
+                  <div class="uk-position-center uk-position-small uk-text-center">
+                      <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Bagan, Myanmar</h2>
+                  </div>
+              </li>
+
+
+              <li>
+                   <img src="/img/portada2.jpg" alt="" uk-cover>
+                   <div class="uk-position-center uk-position-small uk-text-center">
+                       <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Okhinawa, Japon</h2>
+                   </div>
+               </li>
     </ul>
 
 
@@ -55,14 +68,21 @@
                       </div>
 
                       <div class="uk-card-body">
+                        <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->usuario->name}}, {{$foto->usuario->pais}}</p>
 
-                          <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->usuario->name}}, {{$foto->usuario->pais}}</p>
-                            <?php if ($foto->usuario->id === $logeado->id || $logeado->adm == 1) :  ?>
+                          @guest
+
+                          @else
+                            <?php if ($foto->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
                               <form id="deletePhoto{{$foto->photo_id}}" action="{{ url('http://localhost:8000/delete/photo/')}}{{$foto->photo_id}} " method="POST" >
                                   @csrf
-                                  <button type="submit" onclick="event.preventDefault();confirmDelete(event,this,{{$foto->photo_id}});"><i class="fas fa-trash-alt"></i></button>
+                                  <button style="border:0;" type="submit" onclick="event.preventDefault();confirmDelete(event,this,{{$foto->photo_id}});"><i class="fas fa-trash-alt"></i></button>
                               </form>
                             <?php endif; ?>
+                            @endguest
+
+
+
 
                       </div>
                   </div>

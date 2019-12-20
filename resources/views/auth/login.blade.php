@@ -43,9 +43,9 @@
     </div>
 
 
-        <div class="form-row align-items-center col-lg-8 col-md-8">
-            <input  type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-            <label class="form-check-label col-md-4" for="remember">
+        <div class="form-row align-items-center col-lg-8 col-md-8 check">
+            <input  style="display:inline;" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+            <label style="display:inline;" class="form-check-label col-md-6" for="remember">
                 {{ __('Recuerdame') }}
             </label>
         </div>
@@ -57,11 +57,17 @@
         </button>
         </div>
 
-        <div class="">
-          <a href="/google/login"><img style="width:40%;" src="/img/google.png" alt=""></a>
-        </br>
-          <a href="/facebook/login"><img style="width:40%;" src="/img/facebook.png" alt=""></a>
+
+        <div class="form-row align-items-center col-lg-8 col-md-8">
+        <button class="loginBtn loginBtn--facebook" action="{{ url('http://localhost:8000/facebook/login/')}}">
+        Login con Facebook
+        </button>
+
+        <button class="loginBtn loginBtn--google" action="{{ url('http://localhost:8000/google/login/')}}">
+        Login con Google
+        </button>
         </div>
+
 
 
 

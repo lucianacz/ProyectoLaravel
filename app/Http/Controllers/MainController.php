@@ -8,15 +8,15 @@ use App\Nota;
 use App\Http\Controllers\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Usuario;
-use App\User;
 use App\Photo;
+use App\User;
 
 class MainController extends Controller
 {
 
   public function index (){
     $notas = Nota::orderby('id')->take(4)->get();
-    $cuatroSegundas = Nota::orderby('id')->take(2)->offset(4)->get();
+    $cuatroSegundas = Nota::orderby('id')->take(1)->offset(4)->get();
     $usuarios = Usuario::find(1);
       //dd($usuarios->notas);
     return view ('index', compact('notas', 'cuatroSegundas', 'usuarios'));
@@ -196,7 +196,7 @@ public function recordNote(Request $r){
         'region' => ['required'],
         'parrafo1' => ['required', 'string', 'max:500'],
         'parrafo2' => ['required', 'string', 'max:500'],
-        'destacado' => ['required', 'string', 'min:60', 'max:100'],
+        'destacado' => ['required', 'string', 'min:30', 'max:100'],
         'epigrafe' => ['required', 'string', 'max:100'],
         'foto' => ['required', 'mimes:jpeg,png'],
         'fecha' => ['required'],

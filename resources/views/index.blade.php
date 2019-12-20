@@ -29,7 +29,7 @@
       <div class="col-lg-4 col-md-6 col-10" id="identidad">
         <h4 style="color:grey;">¿QUE ES SARIRI?</h4>
         <p>Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos. Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de generación en generación.</p>
-          <a href="#">VER MÁS</a>
+          <a href="/quienessomos">VER MÁS</a>
 
       </div>
     </section>
@@ -52,31 +52,19 @@
 
   <section id = "culturas" class="culturas">
     <div class="col-lg-8 col-md-8 col-10">
-      <h4 style="color:grey;">GENTE Y CULTURAS</h4>
+      <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
+
 
       <div class="menuculturas uk-margin-medium-top">
+
       <ul class="uk-flex-center" uk-tab uk-switcher>
 
-
-            @foreach ($notas as $nota)
-                <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->titulo}}</a></li>
-            @endforeach
-
-            <li>
-                <a href="#">Más <span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
-                <div uk-dropdown="mode: click">
-
-                    <ul class="uk-nav uk-dropdown-nav">
-                      @foreach ($cuatroSegundas as $nota)
-                        <li class="uk-active" style="text-transform: uppercase;"><a href="{{url('nota/'.$nota->id)}}">{{$nota->region}}</a></li>
-                      @endforeach
-                        <li class="uk-active"><a href="gente">TODAS</a></li>
-                    </ul>
-
-
-                </div>
-            </li>
+        @foreach ($notas as $nota)
+        <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->titulo}}</a></li>
+        @endforeach
         </ul>
+
+
         <ul class="uk-switcher">
 
           @foreach ($notas as $nota)
@@ -85,9 +73,9 @@
             <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
             </div>
 
-            <div class="cuerpo col-lg-6 col-md-3 col-10">
-            <p> {{$nota->parrafo1}} </p>
-            <a href="{{url('nota/'.$nota->id)}}">VER MÁS</a>
+            <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
+            <p style="margin:5px;"> {{$nota->parrafo1}} </p>
+            <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
           </li>
           @endforeach
