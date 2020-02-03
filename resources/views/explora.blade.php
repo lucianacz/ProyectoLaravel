@@ -74,7 +74,7 @@
 
                           @else
                             <?php if ($foto->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
-                              <form id="deletePhoto{{$foto->photo_id}}" action="{{ url('http://localhost:8000/delete/photo/')}}{{$foto->photo_id}} " method="POST" >
+                              <form id="deletePhoto{{$foto->photo_id}}" action="{{ url('http://culturasariri.com.ar/delete/photo/')}}{{$foto->photo_id}} " method="POST" >
                                   @csrf
                                   <button style="border:0;" type="submit" onclick="event.preventDefault();confirmDelete(event,this,{{$foto->photo_id}});"><i class="fas fa-trash-alt"></i></button>
                               </form>

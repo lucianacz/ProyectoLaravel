@@ -28,7 +28,7 @@
       <div class="col-lg-8 col-md-10 col-10">
         <h4 style="color:grey; margin-top:50px;">¿QUIENES SOMOS?</h4>
 
-          <p class="text"> ¡Hola! </p>
+          <p class="text"> ¡Hola! Somos Julian y Luciana. </p>
 
           <p> Hace un año decidimos salir a viajar por el mundo y en los meses de nuestra aventura recorrimos muchos países de Asia, algunos de África y otros de Europa. Y ya habíamos tenido la posibilidad de viajar previamente por algunos lugares de América Latina. </p>
 

@@ -1,5 +1,5 @@
 <?php
-$objetivo = '../storage/app/public';
+    $objetivo = '../storage/app/public';
 
      $enlace = 'storage';
 

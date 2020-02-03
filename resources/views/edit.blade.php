@@ -56,9 +56,9 @@
           <div class="fotoNota">
           <h4> No hay notas por editar</h4>
           <h5> Tambien podes:</h5>
-          <a href="http://localhost:8000/newNote"> Crea una nueva nota </a>
+          <a href="http://culturasariri.com.ar/newNote"> Crea una nueva nota </a>
           </br>
-          <a href="http://localhost:8000/gente"> Mira las notas </a>
+          <a href="http://culturasariri.com.ar/gente"> Mira las notas </a>
           </div>
         `;
         divGeneral.append(divNuevo);
@@ -76,17 +76,17 @@
             divNuevo.innerHTML = `
 
           <div class="fotoNota">
-          <a href="http://localhost:8000/edit/nota/${nota.id}"> <img src="/storage/${nota.foto}" alt="${nota.epigrafe}"></a>
-          <a href="http://localhost:8000/edit/nota/${nota.id}"><i class="fas fa-edit"></i></a>
+          <a href="http://culturasariri.com.ar/edit/nota/${nota.id}"> <img src="/storage/${nota.foto}" alt="${nota.epigrafe}"></a>
+          <a href="http://culturasariri.com.ar/edit/nota/${nota.id}"><i class="fas fa-edit"></i></a>
           <a onclick="event.preventDefault();confirmDelete(event,this,${nota.id});"><i class="fas fa-trash-alt"></i></a>
 
-          <form id="deleteForm${nota.id}" action="{{ url('http://localhost:8000/delete/nota/${nota.id}') }}" method="POST" style="display: none;">
+          <form id="deleteForm${nota.id}" action="{{ url('http://culturasariri.com.ar/delete/nota/${nota.id}') }}" method="POST" style="display: none;">
               @csrf
           </form>
           </div>
 
           <div class="fotoNota">
-            <a href="http://localhost:8000/edit/nota/${nota.id}" style="text-transform: uppercase;"><p style="text-align:center;">
+            <a href="http://culturasariri.com.ar/edit/nota/${nota.id}" style="text-transform: uppercase;"><p style="text-align:center;">
               ${nota.titulo}
               <br>
               ${nota.pais}, ${nota.region}</p></a>
