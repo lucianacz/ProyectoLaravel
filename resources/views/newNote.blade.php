@@ -31,7 +31,7 @@
     @enderror
   </div>
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
     <label for="subtitulo">Subtitulo: ¿Qué fue lo que pasó?*</label>
     <input id="subtitulo" type="text" class="form-control @error('subtitulo') is-invalid @enderror" name="subtitulo" value="{{ old('subtitulo') }}">
 
@@ -42,7 +42,7 @@
     @enderror
   </div>
 
-  <div class="col-lg-6 col-md-12">
+  <div class="col-lg-6 col-md-12" style="padding-top:5px;">
     <label for="pais" class="form-label @error('pais') is-invalid @enderror">{{ __('Pais') }}*</label>
     <select class="custom-select" id="paises" name="pais">
         <option value="{{ old('pais') }}" selected> {{ old('pais') }}</option>
@@ -54,7 +54,7 @@
     @enderror
   </div>
 
-  <div class="col-lg-6 col-md-12">
+  <div class="col-lg-6 col-md-12" style="padding-top:5px;">
     <label for="region" class="form-label @error('region') is-invalid @enderror">{{ __('Region') }}*</label>
     <select class="custom-select" id="regiones" name="region">
       <option value="{{ old('region') }}" selected>{{ old('region') }}</option>
@@ -67,7 +67,7 @@
   </div>
 
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
     <label for="parrafo">Primer Parrafo*</label>
     <textarea type="text" id="textbox" maxlength="550" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo1') is-invalid @enderror" placeholder="" name="parrafo1">{{ old('parrafo1') }}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
@@ -80,7 +80,7 @@
 
   </div>
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
     <label for="destacado">Destacado*</label>
     <input type="text" class="form-control @error('destacado') is-invalid @enderror" placeholder="" name="destacado" value="{{ old('destacado') }}">
 
@@ -91,7 +91,7 @@
     @enderror
   </div>
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
     <label for="parrafo">Segundo Parrafo*</label>
     <textarea type="text" maxlength="550" rows="8" id="textbox2" onkeyup="charcountupdate2(this.value)" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
     <span id=charcount2 style="color:#00A79D;"></span>
@@ -101,12 +101,12 @@
         </span>
     @enderror  </div>
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
     <label for="video">Link de Youtube</label>
     <input type="text" class="form-control" placeholder="" name="video" value="{{ old('video') }}">
   </div>
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
     <label for="epigrafe">Epigrafe*</label>
     <input type="text" class="form-control @error('epigrafe') is-invalid @enderror" placeholder="" name="epigrafe" value="{{ old('epigrafe') }}">
 
@@ -118,7 +118,7 @@
   </div>
 
 
-  <div class="col-6">
+  <div class="col-6" style="padding-top:5px;">
       <label for="fecha">Fecha de Visita</label>
       <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{ old('fecha') }}">
       @error('fecha')
@@ -128,7 +128,7 @@
       @enderror
   </div>
 
-  <div class="col-6">
+  <div class="col-6" style="padding-top:5px;">
     <label for="foto">Imagen</label>
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" style="display: null;" type="file">
     @error('foto')
@@ -140,7 +140,7 @@
 
 
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
   <button class="btn col-12" type="submit">Subir nota</button>
   </div>
 

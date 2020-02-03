@@ -19,10 +19,10 @@
 
   <form method="post" target="" enctype="multipart/form-data">
   @csrf
-  <div class="form-row">
+  <div class="form-row" style="display:flex; justify-content:center;">
 
 
-  <div class="col-lg-6 col-md-12">
+  <div class="col-lg-7 col-md-12" style="padding-top:5px;">
     <label for="pais" class="form-label @error('pais') is-invalid @enderror">{{ __('Pais') }}*</label>
     <select class="custom-select" id="paises" name="pais">{{ old('pais') }}</select>
     @error('pais')
@@ -32,7 +32,7 @@
     @enderror
   </div>
 
-  <div class="col-lg-6 col-md-12">
+  <div class="col-lg-7 col-md-12" style="padding-top:5px;">
     <label for="region" class="form-label @error('region') is-invalid @enderror">{{ __('Region') }}*</label>
     <select class="custom-select" id="regiones" name="region">{{ old('region') }}</select>
     @error('region')
@@ -42,7 +42,7 @@
     @enderror
   </div>
 
-  <div class="col-lg-6 col-md-12">
+  <div class="col-lg-7 col-md-12" style="padding-top:5px;">
     <label for="nombre">Imagen</label>
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="nombre" style="display: null;" type="file">
     @error('nombre')
@@ -53,7 +53,7 @@
   </div>
 
 
-  <div class="col-12">
+  <div class="col-lg-7" style="padding-top:20px;">
   <button class="btn col-12" type="submit">Subir foto</button>
   </div>
 

@@ -27,7 +27,7 @@ Route::post('/edit/perfil/{id}', 'MainController@updatePerfil')->middleware('aut
 Route::get('/', 'MainController@index');
 
 
-Route::get('/edit', 'MainController@list');
+Route::get('/edit', 'MainController@list')->middleware('auth');;
 
 Route::get('/newNote', 'MainController@newNote')->middleware('auth');
 Route::post('/newNote', 'MainController@recordNote');

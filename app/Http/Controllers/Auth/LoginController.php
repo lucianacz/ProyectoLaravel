@@ -73,6 +73,7 @@ class LoginController extends Controller
           $user->password =  12345678;
           $user->save();
         };
+        \Auth::login($user);
 
         return redirect('/')
             ->with('status', 'Perfil modificado exitosamente!')
@@ -103,6 +104,8 @@ public function handleFacebookCallback()
       $user->password =  12345678;
       $user->save();
     };
+
+    \Auth::login($user);
 
     return redirect('/')
         ->with('status', 'Perfil modificado exitosamente!')

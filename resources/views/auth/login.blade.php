@@ -59,13 +59,13 @@
 
 
         <div class="form-row align-items-center col-lg-8 col-md-8">
-        <button class="loginBtn loginBtn--facebook" action="{{ url('http://localhost:8000/facebook/login/')}}">
+        <a class="loginBtn loginBtn--facebook" style="color:white; font-weight:400;" href='/facebook/login/'>
         Login con Facebook
-        </button>
+      </a>
 
-        <button class="loginBtn loginBtn--google" action="{{ url('http://localhost:8000/google/login/')}}">
+        <a class="loginBtn loginBtn--google" style="color:white; font-weight:400;" href="google/login">
         Login con Google
-        </button>
+      </a>
         </div>
 
 

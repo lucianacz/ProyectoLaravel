@@ -1,5 +1,8 @@
-<?php session_start();
+<?php    $objetivo = '../storage/app/public';
 
+        $enlace = 'storage';
+
+        symlink($objetivo, $enlace);
 
 
 

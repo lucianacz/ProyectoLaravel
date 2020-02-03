@@ -28,7 +28,7 @@
   </div>
 
   <div class="col-12">
-    <label for="subtitulo">Subtitulo</label>
+    <label for="subtitulo" style="padding-top:5px;">Subtitulo</label>
     <input id="subtitulo" type="text" class="form-control @error('subtitulo') is-invalid @enderror" name="subtitulo" value="{{$nota->subtitulo}}">
           @error('subtitulo')
               <span class="invalid-feedback" role="alert">
@@ -38,8 +38,10 @@
     </div>
 
   <div class="col-12">
-    <label for="parrafo1">Primer Parrafo</label>
-    <textarea id="parrafo1" type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="parrafo1">{{$nota->parrafo1}}</textarea>
+    <label for="parrafo1" style="padding-top:5px;">Primer Parrafo</label>
+    <textarea id="parrafo1" type="text" maxlength="500" rows="8"  onkeyup="charcountupdate(this.value)"  id="textbox" class="form-control" placeholder="" name="parrafo1">{{$nota->parrafo1}}</textarea>
+    <span id=charcount style="color:#00A79D;"></span>
+
     @error('parrafo1')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -48,7 +50,7 @@
   </div>
 
   <div class="col-12">
-    <label for="destacado">Destacado</label>
+    <label for="destacado" style="padding-top:5px;">Destacado</label>
     <input id="destacado" type="text" class="form-control @error('destacado') is-invalid @enderror" name="destacado" value="{{$nota->destacado}}">
           @error('destacado')
               <span class="invalid-feedback" role="alert">
@@ -58,8 +60,9 @@
   </div>
 
   <div class="col-12">
-    <label for="parrafo2">Segundo Parrafo</label>
-    <textarea type="text" maxlength="5000" rows="8" class="form-control" placeholder="" name="parrafo2">{{$nota->parrafo2}}</textarea>
+    <label for="parrafo2" style="padding-top:5px;">Segundo Parrafo</label>
+    <textarea type="text" maxlength="500" rows="8" id="textbox2" onkeyup="charcountupdate2(this.value)" class="form-control" placeholder="" name="parrafo2">{{$nota->parrafo2}}</textarea>
+    <span id=charcount2 style="color:#00A79D;"></span>
     @error('parrafo2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -69,7 +72,7 @@
 
 
   <div class="col-12">
-    <label for="epigrafe">Epigrafe*</label>
+    <label for="epigrafe" style="padding-top:5px;">Epigrafe*</label>
     <input type="text" class="form-control @error('epigrafe') is-invalid @enderror" placeholder="" name="epigrafe" value="{{$nota->epigrafe}}">
 
     @error('epigrafe')
@@ -80,7 +83,7 @@
   </div>
 
   <div class="col-12">
-      <label for="fecha">Fecha de Visita: {{$nota->fecha->format('m-Y')}}</label>
+      <label for="fecha" style="padding-top:5px;">Fecha de Visita: {{$nota->fecha->format('m-Y')}}</label>
       <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{$nota->fecha->format('Y-m')}}">
       @error('fecha')
           <span class="invalid-feedback" role="alert">
@@ -90,7 +93,7 @@
   </div>
 
   <div class="col-12">
-    <label for="foto">Imagen</label>
+    <label for="foto" style="padding-top:5px;">Imagen</label>
     <div class="">
       <img src="/storage/{{$nota->foto}}" alt="">
     </div>
@@ -102,7 +105,7 @@
     @enderror
   </div>
 
-  <div class="col-12">
+  <div class="col-12" style="padding-top:5px;">
   <button class="btn col-12" onclick="event.preventDefault();confirmUpdate();">Editar nota</button>
   </div>
 
@@ -179,6 +182,19 @@ function confirmUpdate(event){
   }
 });
 }
+
+
+
+function charcountupdate(str) {
+	var lng = 500 - str.length;
+	document.getElementById("charcount").innerHTML = lng + ' de 500 caracteres';
+}
+
+function charcountupdate2(str) {
+	var lng = 500 - str.length;
+	document.getElementById("charcount2").innerHTML = lng + ' de 500 caracteres';
+}
+
 </script>
 
 @endsection
