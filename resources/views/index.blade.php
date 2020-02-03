@@ -1,15 +1,3 @@
-<?php session_start();
-
-
-
-
- ?>
-
- <link rel="stylesheet" href="/css/estilos.css">
-
-
-
-
 @extends('layout')
 
 @section('main')
