@@ -3,6 +3,8 @@
 @section('main')
 
 <main>
+
+  
   <div class="principal">
       <div class="scroller">
         <a href="#culturas">

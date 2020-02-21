@@ -20,6 +20,12 @@
       <input class="uk-search-input" type="search" placeholder="Buscar...">
     </form>*/ ?>
 
+    <h5> SUBI TU NOTA</h5>
+    <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; min-height: 300; max-height: 400">
+      <BR>
+
     <div class="row">
 
 
