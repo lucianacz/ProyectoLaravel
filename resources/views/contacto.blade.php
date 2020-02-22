@@ -1,6 +1,3 @@
-<?php session_start(); ?>
-
-
 <link rel="stylesheet" href="css/estilosformulario.css">
 
 
@@ -18,16 +15,16 @@
       <h5> Buenos Aires, Argentina</h5>
 
 
-      <form class="needs-validation" novalidate>
+      <form action="mailto:culturasariri@gmail.com" method="GET">
 <div class="form-row">
 <div class="col-md-6 mb-3">
   <label for="validationCustom01"></label>
-  <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" value="Nombre" required>
+  <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
 </div>
 
 <div class="col-md-6 mb-3">
   <label for="validationCustom02"></label>
-  <input type="email" class="form-control" id="validationCustom02" placeholder="Email" value="Email" required>
+  <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
   <div class="valid-feedback">
     Bien!
   </div>
@@ -36,7 +33,7 @@
 
 <div class="col-md-12 mb-3">
   <label for="validationCustom03"></label>
-  <textarea type="text" class="form-control" id="validationCustom01" placeholder="Mensaje" value="Mensaje" rows="7"required>
+  <textarea type="text" class="form-control" id="validationCustom01" placeholder="Mensaje" rows="7"required>
   </textarea>
 </div>
 
