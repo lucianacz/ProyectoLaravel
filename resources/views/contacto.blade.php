@@ -16,7 +16,7 @@
 
 
       <form action="contact.php" method="post">
-<div class="form-row">
+        <div class="form-row">
 
 <div class="col-md-6 mb-3">
   <input type="text" class="form-control" name="name" placeholder="Nombre" required>

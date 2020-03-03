@@ -1,4 +1,4 @@
 <?php
-  mail('culturasariri@gmail.com', $_POST['name'], $_POST['email'], $_POST['text']);
+  mail('culturasariri@gmail.com', $_POST['name'], $_POST['email'], $_POST['mensaje']);
+  {{"Se envió con éxito"}}
 ?>
-<p>Your email has been sent.</p>
