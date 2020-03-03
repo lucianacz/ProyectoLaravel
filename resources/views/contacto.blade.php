@@ -37,23 +37,10 @@
 </div>
 
 
-<button class="btn btn-primary" onclick="event.preventDefault();confirm();" type="submit">Enviar</button>
+<button class="btn btn-primary" type="submit">Enviar</button>
 </form>
 
-<script>
 
-
-function confirm(event){
-  swal({
-  title: "Enviado con exito",
-  icon: "success",
-})
-};
-
-
-
-
-</script>
 
 
 
