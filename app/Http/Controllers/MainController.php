@@ -64,7 +64,7 @@ class MainController extends Controller
 
   public function explora() {
     $fotos = Photo::orderby('photo_id')->get();
-    $usuarios = User::orderby('name')->get();
+    $usuarios = Usuario::orderby('Nombre')->get();
     $logeado = \Auth::user();
     return view ('explora', compact('fotos', 'usuarios', 'logeado'));
   }
