@@ -17,22 +17,17 @@
 
       <form action="<?php mail('culturasariri@gmail.com', $_POST['name'],$_POST['email'], $_POST['text']);?>" method="post">
 <div class="form-row">
+
 <div class="col-md-6 mb-3">
-  <label for="validationCustom01"></label>
-  <input type="name" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+  <input type="name" class="form-control" placeholder="Nombre" required>
 </div>
 
 <div class="col-md-6 mb-3">
-  <label for="validationCustom02"></label>
   <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
-  <div class="valid-feedback">
-    Bien!
-  </div>
 </div>
 
 
 <div class="col-md-12 mb-3">
-  <label for="validationCustom03"></label>
   <textarea type="text" class="form-control" id="validationCustom01" placeholder="Mensaje" rows="7"required>
   </textarea>
 </div>
@@ -68,9 +63,6 @@ var validation = Array.prototype.filter.call(forms, function(form) {
 
 
 
-
-
-<p>Your email has been sent.</p>
 
     </div>
   </section>
