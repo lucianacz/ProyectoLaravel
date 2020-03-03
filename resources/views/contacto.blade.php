@@ -19,7 +19,7 @@
 <div class="form-row">
 
 <div class="col-md-6 mb-3">
-  <input type="name" class="form-control" placeholder="Nombre" required>
+  <input type="text" class="form-control" placeholder="Nombre" required>
 </div>
 
 <div class="col-md-6 mb-3">
