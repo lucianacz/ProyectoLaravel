@@ -56,6 +56,7 @@ class RegisterController extends Controller
               "password.confirmed" =>"Las contraseñas no coinciden",
               "password.min" =>"La :attribute debe tener al menos 8 caracteres",
               "nombreUsuario.required"=> 'El usuario no puede estar vacio',
+              "nombreUsuario.unique"=> 'Ese usuario ya existe',
 
           ];
           return Validator::make($data, [

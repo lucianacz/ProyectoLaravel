@@ -332,6 +332,7 @@ public function recordNote(Request $r){
               "name.required"=> 'El :attribute no puede estar vacio',
               "apellido.required" => 'El :attribute no puede estar vacio',
               "nombreUsuario.required" =>'El :attribute no puede estar vacio',
+              "nombreUsuario.unique" =>'Ese :attribute ya existe',
           ];
 
            $rules=[
