@@ -24,7 +24,8 @@
               {{ __('Logout') }} </a></li>
           @endguest
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-              @csrf
+            @csrf
+            <?php header('location:login'); ?>
           </form>
         </div>
 

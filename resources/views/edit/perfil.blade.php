@@ -44,11 +44,11 @@
           </div>
 
           <div class="align-items-center">
-              <label for="email" class="col-form-label">{{ __('E-Mail') }}</label>
+              <label for="nombreUsuario" class="col-form-label">{{ __('E-Mail') }}</label>
 
-                  <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{$usuario->email}}" >
+                  <input id="nombreUsuario" type="text" class="form-control @error('nombreUsuario') is-invalid @enderror" name="nombreUsuario" value="{{$usuario->nombreUsuario}}" >
 
-                  @error('email')
+                  @error('nombreUsuario')
                       <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>
                       </span>
@@ -58,7 +58,7 @@
 
         <label for="pais" class="col-md-10 col-form-label">{{ __('Pais') }}</label>
         <select class="custom-select" id="paises" name="pais" >
-          <option value="{{$usuario->pais}}" selected>{{$usuario->pais}}</option>          
+          <option value="{{$usuario->pais}}" selected>{{$usuario->pais}}</option>
         </select>
 
 
