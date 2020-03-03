@@ -68,18 +68,18 @@
                       </div>
 
                       <div class="uk-card-body">
-                        <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->usario->pais}}</p>
+                        <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->user_id}}</p>
 
                           @guest
 
                           @else
-
+                            <?php if ($foto->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
                               <form id="deletePhoto{{$foto->photo_id}}" action="{{ url('http://culturasariri.com.ar/delete/photo/')}}{{$foto->photo_id}} " method="POST" >
                                   @csrf
                                   <button style="border:0;" type="submit" onclick="event.preventDefault();confirmDelete(event,this,{{$foto->photo_id}});" class="uk-icon-button  uk-margin-small-right" uk-icon="trash">
                                   </button>
                               </form>
-
+                            <?php endif; ?>
                             @endguest
 
 
