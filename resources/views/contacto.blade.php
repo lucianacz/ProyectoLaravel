@@ -43,11 +43,23 @@
 
 function confirm(event){
   swal({
-    title: "Perfecto",
-    text: "Ya enviaste tu consulta!",
-    icon: "success",
-    button: "Aww yiss!",
-  });
+  title: "Estas seguro?",
+  text: "Una vez editada no podrás volver atrás!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willUpdate) => {
+  if (willUpdate) {
+    swal("La nota fue editada exitosamente", {
+      icon: "success",
+    });
+    document.querySelector('#editForm').submit();
+  } else {
+    swal("La nota sigue igual :)");
+    event.preventDefault();
+  }
+});
 }
 
 
