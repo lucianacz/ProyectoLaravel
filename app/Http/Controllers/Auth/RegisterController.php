@@ -55,9 +55,12 @@ class RegisterController extends Controller
               "password.required" => 'El :attribute no puede esta vacio',
               "password.confirmed" =>"Las contraseñas no coinciden",
               "password.min" =>"La :attribute debe tener al menos 8 caracteres",
+              "nombreUsuario.required"=> 'El usuario no puede estar vacio',
+
           ];
           return Validator::make($data, [
               'name' => ['required', 'string', 'max:255'],
+              'nombreUsuario' => ['required', 'string', 'max:20'],
               'apellido' => ['required', 'string', 'max:255'],
               'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
               'password' => ['required', 'string', 'min:3', 'confirmed'],
@@ -80,6 +83,6 @@ class RegisterController extends Controller
           'password' => Hash::make($data['password']),
       ]);
 
-      
+
     }
 }

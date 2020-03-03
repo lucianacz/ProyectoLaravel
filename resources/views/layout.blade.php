@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/icons/css/all.min.css">
     <link rel="stylesheet" href="/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon2.png" sizes="16x16">
 
     <title> Cultura Sariri </title>

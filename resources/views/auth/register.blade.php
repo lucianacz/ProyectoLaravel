@@ -51,6 +51,19 @@
                   @enderror
           </div>
 
+
+          <div class="form-row align-items-center col-12">
+          <label for="nombreUsuario" class="col-md-12 col-form-label"> Usuario </label>
+          <input id="nombreUsuario" type="text" class="form-control @error('nombreUsuario') is-invalid @enderror" name="nombreUsuario" value="{{ old('nombreUsuario') }}">
+
+                    @error('nombreUsuario')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+            </div>
+
+
             <div class="form-row align-items-center col-12">
               <label for="password"  class="col-md-12 col-form-label">{{ __('Contraseña') }}</label>
               <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password"  >
