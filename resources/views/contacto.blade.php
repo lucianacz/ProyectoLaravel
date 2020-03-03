@@ -37,7 +37,7 @@
 </div>
 
 
-<button class="btn btn-primary" onclick="event.preventDefault();confirm();">Enviar</button>
+<button class="btn btn-primary" onclick="event.preventDefault();confirm();" type="submit">Enviar</button>
 </form>
 
 <script>
@@ -45,24 +45,12 @@
 
 function confirm(event){
   swal({
-  title: "Estas seguro?",
-  text: "Una vez editada no podrás volver atrás!",
-  icon: "warning",
+  title: "Enviado con exito",
+  icon: "success",
   buttons: true,
   dangerMode: true,
 })
-.then((willUpdate) => {
-  if (willUpdate) {
-    swal("La nota fue editada exitosamente", {
-      icon: "success",
-    });
-    document.querySelector('#editForm').submit();
-  } else {
-    swal("La nota sigue igual :)");
-    event.preventDefault();
-  }
-});
-}
+};
 
 
 
