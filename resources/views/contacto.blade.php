@@ -47,8 +47,6 @@ function confirm(event){
   swal({
   title: "Enviado con exito",
   icon: "success",
-  buttons: true,
-  dangerMode: true,
 })
 };
 
