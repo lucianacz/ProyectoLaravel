@@ -15,20 +15,20 @@
       <h5> Buenos Aires, Argentina</h5>
 
 
-      <form action="<?php mail('culturasariri@gmail.com', $_POST['name'],$_POST['email'], $_POST['text']);?>" method="post">
+      <form action="" method="post">
 <div class="form-row">
 
 <div class="col-md-6 mb-3">
-  <input type="text" class="form-control" placeholder="Nombre" required>
+  <input type="text" class="form-control" name="name" placeholder="Nombre" required>
 </div>
 
 <div class="col-md-6 mb-3">
-  <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
+  <input type="email" class="form-control" name="email" placeholder="Email" required>
 </div>
 
 
 <div class="col-md-12 mb-3">
-  <textarea type="text" class="form-control" id="validationCustom01" placeholder="Mensaje" rows="7"required>
+  <textarea type="text" class="form-control" name="mensaje" placeholder="Mensaje" rows="7"required>
   </textarea>
 </div>
 
