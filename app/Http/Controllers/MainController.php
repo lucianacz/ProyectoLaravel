@@ -331,13 +331,13 @@ public function recordNote(Request $r){
           $message=[
               "name.required"=> 'El :attribute no puede estar vacio',
               "apellido.required" => 'El :attribute no puede estar vacio',
-              "email.required" =>'El :attribute no puede estar vacio',
+              "nombreUsuario.required" =>'El :attribute no puede estar vacio',
           ];
 
            $rules=[
               'name' => 'required', 'string', 'max:100',
               'apellido' => 'required', 'string', 'max:100',
-              'email' => 'required', 'string', 'max:300',
+              'nombreUsuario' => 'required', 'string', 'max:20',
               'pais' => 'nullable'
               //'fecha' => 'required',
           ];
@@ -350,7 +350,7 @@ public function recordNote(Request $r){
 
           $usuario->name = $request['name'];
           $usuario->apellido = $request['apellido'];
-          $usuario->email = $request['email'];
+          $usuario->nombreUsuario = $request['nombreUsuario'];
           $usuario->pais=$request['pais'];
 
 

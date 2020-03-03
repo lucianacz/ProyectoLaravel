@@ -9,8 +9,8 @@
 <main>
 <section class="culturas">
   <div class="col-lg-4 col-md-8 col-10">
-      <h4 style="color:grey;">REGISTRATE</h4>
-      <h5> ¡Vení, sumate!</h5>
+      <h4 style="color:grey;">EDITA EL PERFIL</h4>
+
 
     <form method="POST" enctype="multipart/form-data" class="align-items-center">
       @csrf
@@ -44,7 +44,7 @@
           </div>
 
           <div class="align-items-center">
-              <label for="nombreUsuario" class="col-form-label">{{ __('E-Mail') }}</label>
+              <label for="nombreUsuario" class="col-form-label">{{ __('nombreUsuario') }}</label>
 
                   <input id="nombreUsuario" type="text" class="form-control @error('nombreUsuario') is-invalid @enderror" name="nombreUsuario" value="{{$usuario->nombreUsuario}}" >
 
@@ -63,7 +63,7 @@
 
 
 
-        <button type="submit" class="btn boton btn-primary">
+        <button type="submit" class="btn boton btn-primary col-12">
             {{ __('Editar') }}
         </button>
 
