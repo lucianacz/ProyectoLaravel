@@ -15,11 +15,11 @@
       <h5> Buenos Aires, Argentina</h5>
 
 
-      <form action="mailto:culturasariri@gmail.com" method="GET">
+      <form action="<?php mail('culturasariri@gmail.com', $_POST['name'],$_POST['email'], $_POST['text']);?>" method="post">
 <div class="form-row">
 <div class="col-md-6 mb-3">
   <label for="validationCustom01"></label>
-  <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+  <input type="name" class="form-control" id="validationCustom01" placeholder="Nombre" required>
 </div>
 
 <div class="col-md-6 mb-3">
@@ -62,8 +62,15 @@ var validation = Array.prototype.filter.call(forms, function(form) {
 });
 }, false);
 })();
+
+
 </script>
 
+
+
+
+
+<p>Your email has been sent.</p>
 
     </div>
   </section>
