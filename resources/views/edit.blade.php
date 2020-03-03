@@ -36,7 +36,7 @@
 
     //Traigo las NOTAS
 
-    fetch('http://localhost:8000/api/edit/{{Auth::user()->id}}')
+    fetch('http://culturasariri.com.ar/api/edit/{{Auth::user()->id}}')
       .then(function(respuesta)
       {
           return respuesta.json();

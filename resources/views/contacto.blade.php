@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="css/estilosformulario.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 
 @extends('layout')
