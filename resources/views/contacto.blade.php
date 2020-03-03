@@ -37,7 +37,7 @@
 </div>
 
 
-<button class="btn btn-primary boton col-12" type="submit">Enviar</button>
+<button class="btn btn-primary boton col-8" type="submit">Enviar</button>
 </form>
 
 

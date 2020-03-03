@@ -77,8 +77,8 @@
 
           <div class="fotoNota">
           <a href="http://culturasariri.com.ar/edit/nota/${nota.id}"> <img src="/storage/${nota.foto}" alt="${nota.epigrafe}"></a>
-          <a href="http://culturasariri.com.ar/edit/nota/${nota.id}"><i class="fas fa-edit"></i></a>
-          <a onclick="event.preventDefault();confirmDelete(event,this,${nota.id});"><i class="fas fa-trash-alt"></i></a>
+          <a href="http://culturasariri.com.ar/edit/nota/${nota.id}" class="uk-icon-button  uk-margin-small-right" uk-icon="pencil">></a>
+          <a onclick="event.preventDefault();confirmDelete(event,this,${nota.id});" class="uk-icon-button  uk-margin-small-right" uk-icon="trash">></a>
 
           <form id="deleteForm${nota.id}" action="{{ url('http://culturasariri.com.ar/delete/nota/${nota.id}') }}" method="POST" style="display: none;">
               @csrf
