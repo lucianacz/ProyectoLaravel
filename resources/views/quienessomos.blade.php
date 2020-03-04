@@ -57,7 +57,11 @@
 
 
   <section>
-    <div class="uk-slider-container uk-light">
+    <div uk-slider>
+
+        <div class="uk-position-relative">
+
+          <div class="uk-slider-container uk-light">
              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
             <img src="img/slider/s1.jpg" alt="">
@@ -92,6 +96,7 @@
             <div class="uk-position-center uk-panel"></div>
         </li>
     </ul>
+     </div>
 
     <div class="uk-hidden@s uk-light">
       <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -104,6 +109,8 @@
   </div>
 
 </div>
+
+ </div>
   </section>
 
 </main>
