@@ -39,7 +39,7 @@
           <br>
 
           <div>
-          <p>{{$nota->parrafo1}}</p>
+          <p>{{$nota->parrafo}}</p>
           </div>
 
 
@@ -47,7 +47,7 @@
 
         </div>
 
-        <h5 style="font-size:19px;font-weight:lighter;"> {{$nota->usuario->nombreUsuario}}, {{$nota->usuario->pais}} </h5>
+        <h5 style="font-size:19px;font-weight:lighter;"> Usuario: {{$nota->usuario->nombreUsuario}} </h5>
       </article>
 
 
