@@ -94,9 +94,9 @@
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-icon-button" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-margin-small-right uk-icon-button" href="#" uk-slidenav-previous uk-icon="arrow-right"></a>
 
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-icon-button" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <a class="uk-margin-small-right uk-icon-button" href="#" uk-slidenav-next uk-icon="arrow-left"></a>
 
 </div>
   </section>
