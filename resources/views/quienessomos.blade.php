@@ -11,7 +11,7 @@
 <main>
   <section class="qSomos">
     <div class="col-lg-8 col-md-10 col-10">
-      <h4 style="color:grey;">¿QUE SIGNIFICA SARIRI?</h4>
+      <h4 style="color:grey; margin-top:50px;">¿QUE SIGNIFICA SARIRI?</h4>
         <p>
         Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos.
         Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de
@@ -25,7 +25,7 @@
 
 
       <div class="col-lg-8 col-md-10 col-10">
-        <h4 style="color:grey; margin-top:50px;">¿QUIENES SOMOS?</h4>
+        <h4 style="color:grey;">¿QUIENES SOMOS?</h4>
 
           <p class="text"> ¡Hola! Somos Julian y Luciana. </p>
 
@@ -94,8 +94,9 @@
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-icon-button" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-icon-button" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
 </div>
   </section>
