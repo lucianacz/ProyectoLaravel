@@ -306,14 +306,14 @@ public function recordNote(Request $r){
           $message=[
               "name.required"=> 'El :attribute no puede estar vacio',
               "apellido.required" => 'El :attribute no puede estar vacio',
-              "nombreUsuario.required" =>'El :attribute no puede estar vacio',
-              "nombreUsuario.unique" =>'Ese :attribute ya existe',
+              "nombreUsuario.required"=> 'El usuario no puede estar vacio',
+              "nombreUsuario.unique"=> 'Ese usuario ya existe',
           ];
 
            $rules=[
               'name' => 'required', 'string', 'max:100',
               'apellido' => 'required', 'string', 'max:100',
-              'nombreUsuario' => 'required', 'string', 'max:20','unique',
+              'nombreUsuario' => ['required', 'string', 'max:20', 'unique:users'],
               'pais' => 'nullable'
               //'fecha' => 'required',
           ];
