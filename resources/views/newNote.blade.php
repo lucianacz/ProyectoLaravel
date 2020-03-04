@@ -47,7 +47,7 @@
 
   <div class="col-12">
     <label for="titulo">Titulo: ¿En qué lugar específico?* </label>
-    <input id="titulo" type="text"  onkeyup="validateTitle(this.value)"  id="textbox" class="form-control @error('titulo') is-invalid @enderror" name="titulo" value="{{ old('title') }}">
+    <input id="titulo" type="text"  onkeyup="validateTitle(this.value)"  id="textbox" class="form-control @error('titulo') is-invalid @enderror" name="titulo" value="{{ old('titulo') }}">
     <span id=titulo style="color:#00A79D;"></span>
     @error('titulo')
         <span class="invalid-feedback" role="alert">

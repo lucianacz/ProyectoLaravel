@@ -19,7 +19,7 @@
     <div class="form-row">
   <div class="col-12">
     <label for="titulo">Titulo</label>
-    <input id="titulo" type="text" class="form-control @error('title') is-invalid @enderror" name="titulo" value="{{$nota->titulo}}">
+    <input id="titulo" type="text" class="form-control @error('titulo') is-invalid @enderror" name="titulo" value="{{$nota->titulo}}">
           @error('titulo')
               <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>

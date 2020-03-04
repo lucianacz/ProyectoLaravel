@@ -188,13 +188,73 @@ public function recordNote(Request $r){
         'subtitulo' => ['required', 'string', 'max:40'],
         'pais' => ['required'],
         'region' => ['required'],
-        'parrafo' => ['required', 'string', 'max:500'],
+        'parrafo' => ['required', 'string', 'max:5000'],
         'foto' => ['required', 'mimes:jpeg,png'],
         'fecha' => ['required'],
     ],$message);
 
-    $imagen=$r->file('foto')->store('public');
-    $imagen=basename($imagen);
+
+      $imagen=$r->file('foto');
+      //FOTO GIRADA
+      $exif = exif_read_data($imagen);
+      $ort = $exif['Orientation'];
+
+      $image = WideImage::load($imagen);
+
+      // GD doesn't support EXIF, so all information is removed.
+      $image->exifOrient($ort)->saveToFile($imagen);
+
+      $edit=$image->store('public');
+      $edit=basename($edit);
+
+      class WideImage_Operation_ExifOrient
+      {
+        /**
+         * Rotates and mirrors and image properly based on current orientation value
+         *
+         * @param WideImage_Image $img
+         * @param int $orientation
+         * @return WideImage_Image
+         */
+        function execute($img, $orientation)
+        {
+          switch ($orientation) {
+            case 2:
+              return $img->mirror();
+              break;
+
+            case 3:
+              return $img->rotate(180);
+              break;
+
+            case 4:
+              return $img->rotate(180)->mirror();
+              break;
+
+            case 5:
+              return $img->rotate(90)->mirror();
+              break;
+
+            case 6:
+              return $img->rotate(90);
+              break;
+
+            case 7:
+              return $img->rotate(-90)->mirror();
+              break;
+
+            case 8:
+              return $img->rotate(-90);
+              break;
+
+            default: return $img->copy();
+          }
+        }
+
+    //FIN FOTO GIRADA
+
+    //$imagen=$r->file('foto')->store('public');
+    //$imagen=basename($imagen);
 
    Nota::create([
     'titulo' => $r['titulo'],
@@ -212,6 +272,7 @@ public function recordNote(Request $r){
     ->with('operation', 'success');
 
   }
+
 
 
 
