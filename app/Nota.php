@@ -21,8 +21,8 @@ class Nota extends Model
      * @var array
      */
     protected $fillable = [
-        'titulo', 'subtitulo', 'foto', 'epigrafe','pais', 'region', 'parrafo1',
-         'parrafo2', 'destacado', 'video', 'fecha', 'user_id'
+        'titulo', 'subtitulo', 'foto', 'pais', 'region', 'parrafo',
+       'fecha', 'user_id'
     ];
 
 

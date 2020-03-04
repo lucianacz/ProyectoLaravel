@@ -94,9 +94,9 @@
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-button" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; border-radius:10px; opacity:0.84;"></a>
+    <a class="uk-position-center-left uk-position-small uk-button" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
 
-    <a class="uk-position-center-right uk-position-small uk-button" href="#" uk-slidenav-next uk-slider-item="next" style="background-color:white; border-radius:10px; opacity:0.4;"></a>
+    <a class="uk-position-center-right uk-position-small uk-button" href="#" uk-slidenav-next uk-slider-item="next" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
 
 </div>
   </section>

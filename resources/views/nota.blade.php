@@ -36,6 +36,7 @@
         <div id="cuerpoNotaPrincipal">
 
           <p>{{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}}</p>
+          <br>
 
           <div>
           <p>{{$nota->parrafo1}}</p>

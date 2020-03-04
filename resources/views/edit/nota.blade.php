@@ -38,11 +38,11 @@
     </div>
 
   <div class="col-12">
-    <label for="parrafo1" style="padding-top:5px;">Parrafo</label>
-    <textarea id="parrafo1" type="text" maxlength="500" rows="8"  onkeyup="charcountupdate(this.value)"  id="textbox" class="form-control" placeholder="" name="parrafo1">{{$nota->parrafo1}}</textarea>
+    <label for="parrafo" style="padding-top:5px;">Parrafo</label>
+    <textarea id="parrafo" type="text" maxlength="500" rows="8"  onkeyup="charcountupdate(this.value)"  id="textbox" class="form-control" placeholder="" name="parrafo">{{$nota->parrafo}}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
 
-    @error('parrafo1')
+    @error('parrafo')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>

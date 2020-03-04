@@ -177,14 +177,8 @@ public function recordNote(Request $r){
         "subtitulo.max" => 'El :attribute supera la cantidad de caracteres',
         "pais.required" => 'El :attribute no puede estar vacio',
         "region.required" => 'La :attribute no puede estar vacia',
-        "parrafo1.required" =>'El parrafo no puede estar vacio',
-        "parrafo1.max" =>'El parrafo supera la cantidad de caracteres',
-        "parrafo2.required" =>'El parrafo no puede estar vacio',
-        "parrafo2.max" =>'El parrafo supera la cantidad de caracteres',
-        "destacado.required" =>'El :attribute no puede estar vacio',
-        "destacado.min" =>'El :attribute no supera la cantidad de caracteres',
-        "destacado.max" =>'El :attribute supera la cantidad de caracteres',
-        "epigrafe.required" =>'El :attribute no puede estar vacio',
+        "parrafo.required" =>'El parrafo no puede estar vacio',
+        "parrafo.max" =>'El parrafo supera la cantidad de caracteres',
         "fecha.required" =>'La :attribute no puede estar vacia',
         "foto.required" =>'La :attribute no puede estar vacia',
         "foto.mimes" =>'La :attribute tiene que ser jpg o png',
@@ -194,10 +188,7 @@ public function recordNote(Request $r){
         'subtitulo' => ['required', 'string', 'max:40'],
         'pais' => ['required'],
         'region' => ['required'],
-        'parrafo1' => ['required', 'string', 'max:500'],
-        'parrafo2' => ['required', 'string', 'max:500'],
-        'destacado' => ['required', 'string', 'min:30', 'max:100'],
-        'epigrafe' => ['required', 'string', 'max:100'],
+        'parrafo' => ['required', 'string', 'max:500'],
         'foto' => ['required', 'mimes:jpeg,png'],
         'fecha' => ['required'],
     ],$message);
@@ -210,11 +201,7 @@ public function recordNote(Request $r){
     'subtitulo' => $r['subtitulo'],
     'pais' => $r['pais'],
     'region' => $r['region'],
-    'destacado' => $r['destacado'],
-    'epigrafe'=>$r['epigrafe'],
-    'parrafo1'=>$r['parrafo1'],
-    'parrafo2'=>$r['parrafo2'],
-    'video'=>$r['video'],
+    'parrafo'=>$r['parrafo'],
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
@@ -234,13 +221,8 @@ public function recordNote(Request $r){
        $message=[
            "titulo.required"=> 'El :attribute no puede estar vacio',
            "subtitulo.required" => 'El :attribute no puede estar vacio',
-           "parrafo1.required" =>'El parrafo no puede estar vacio',
-           "parrafo1.max" =>'El parrafo supera la cantidad de caracteres',
-           "parrafo2.required" =>'El parrafo no puede estar vacio',
-           "parrafo2.max" =>'El parrafo supera la cantidad de caracteres',
-           "destacado.required" =>'El :attribute no puede estar vacio',
-           "epigrafe.required" =>'El :attribute no pwuede estar vacio',
-           "destacado.max" =>'El :attribute supera la cantidad de caracteres',
+           "parrafo.required" =>'El parrafo no puede estar vacio',
+           "parrafo.max" =>'El parrafo supera la cantidad de caracteres',
            "fecha.required" =>'La :attribute no puede estar vacia',
            "foto.required" =>'La :attribute no puede estar vacia',
            "foto.image" =>'La :attribute tiene que ser jpg o png',
@@ -249,10 +231,7 @@ public function recordNote(Request $r){
         $rules=[
            'titulo' => 'required', 'string', 'max:30',
            'subtitulo' => 'required', 'string', 'max:50',
-           'parrafo1' => 'required', 'string', 'max:500',
-           'parrafo2' => 'required', 'string', 'max:500',
-           'destacado' => 'required', 'string', 'max:100',
-           'epigrafe' => 'required', 'string', 'max:100',
+           'parrafo' => 'required', 'string', 'max:5000',
            'foto' => 'nullable', 'image',
            //'fecha' => 'required',
        ];
@@ -265,11 +244,7 @@ public function recordNote(Request $r){
 
        $nota->titulo = $request['titulo'];
        $nota->subtitulo = $request['subtitulo'];
-       $nota->destacado = $request['destacado'];
-       $nota->epigrafe=$request['epigrafe'];
-       $nota->parrafo1=$request['parrafo1'];
-       $nota->parrafo2=$request['parrafo2'];
-       $nota->video=$request['video'];
+       $nota->parrafo=$request['parrafo'];
        $nota->fecha=$request['fecha']. '-01';
 
        $imagen = $nota->foto;
