@@ -102,7 +102,7 @@ public function handleFacebookCallback()
       $user->name= $userFacebook->name;
       $user->apellido= '';
       $user->pais= 'Argentina';
-      $user->nombreUsuario=$userGoogle->email;
+      $user->nombreUsuario=$userFacebook->email;
       $user->password =  12345678;
       $user->save();
     };

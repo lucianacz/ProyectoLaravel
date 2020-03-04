@@ -50,7 +50,7 @@ return [
     'facebook' => [
     'client_id' => '734076347092155',
     'client_secret' => '743a68bc08c09cde434aa7f1c5771190',
-    'redirect' => 'http://culturasariri.com.ar/facebook/redireccion',
+    'redirect' => 'https://culturasariri.com.ar/facebook/redireccion',
     ],
 
 
