@@ -65,9 +65,9 @@
             <?php
             $str = $nota->$parrafo;
             $cant = strlen($str); // ?>
-            <?php for ($i=0; $i < 50; $i++) { ?>
+            <?php for ($i=0; $i < 50; $i++) : ?>
               <p> {{$cant}} </p>
-            <? } ?>
+            <? endfor; ?>
             <p style="margin:5px;"> {{$nota->usuario->nombreUsuario}} </p>
             <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
