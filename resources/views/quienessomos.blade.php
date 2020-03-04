@@ -57,12 +57,9 @@
 
 
   <section>
-    <div uk-slider>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-        <div class="uk-position-relative">
-
-          <div class="uk-slider-container uk-light">
-             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
             <img src="img/slider/s1.jpg" alt="">
             <div class="uk-position-center uk-panel"></div>
@@ -96,21 +93,12 @@
             <div class="uk-position-center uk-panel"></div>
         </li>
     </ul>
-     </div>
 
-    <div class="uk-hidden@s uk-light">
-      <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-      <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-  </div>
+    <a class="uk-position-center-left uk-position-small uk-button" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; color;white"></a>
 
-  <div class="uk-visible@s">
-      <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-      <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-  </div>
+    <a class="uk-position-center-right uk-position-small uk-button" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
 </div>
-
- </div>
   </section>
 
 </main>
