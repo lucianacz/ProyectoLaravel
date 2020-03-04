@@ -38,7 +38,7 @@
     </div>
 
   <div class="col-12">
-    <label for="parrafo1" style="padding-top:5px;">Primer Parrafo</label>
+    <label for="parrafo1" style="padding-top:5px;">Parrafo</label>
     <textarea id="parrafo1" type="text" maxlength="500" rows="8"  onkeyup="charcountupdate(this.value)"  id="textbox" class="form-control" placeholder="" name="parrafo1">{{$nota->parrafo1}}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
 
@@ -49,38 +49,6 @@
     @enderror
   </div>
 
-  <div class="col-12">
-    <label for="destacado" style="padding-top:5px;">Destacado</label>
-    <input id="destacado" type="text" class="form-control @error('destacado') is-invalid @enderror" name="destacado" value="{{$nota->destacado}}">
-          @error('destacado')
-              <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-              </span>
-          @enderror
-  </div>
-
-  <div class="col-12">
-    <label for="parrafo2" style="padding-top:5px;">Segundo Parrafo</label>
-    <textarea type="text" maxlength="500" rows="8" id="textbox2" onkeyup="charcountupdate2(this.value)" class="form-control" placeholder="" name="parrafo2">{{$nota->parrafo2}}</textarea>
-    <span id=charcount2 style="color:#00A79D;"></span>
-    @error('parrafo2')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-    @enderror
-  </div>
-
-
-  <div class="col-12">
-    <label for="epigrafe" style="padding-top:5px;">Epigrafe*</label>
-    <input type="text" class="form-control @error('epigrafe') is-invalid @enderror" placeholder="" name="epigrafe" value="{{$nota->epigrafe}}">
-
-    @error('epigrafe')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-    @enderror
-  </div>
 
   <div class="col-12">
       <label for="fecha" style="padding-top:5px;">Fecha de Visita: {{$nota->fecha->format('m-Y')}}</label>

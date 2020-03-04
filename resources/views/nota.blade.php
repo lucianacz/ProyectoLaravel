@@ -21,14 +21,14 @@
         </div>
 
       </br>
-        <h4 style="color:grey;">{{$nota->region}}, {{$nota->pais}}</h4>
+        <h4 style="color:grey;">{{$nota->titulo}}, {{$nota->pais}}</h4>
 
 
 
     <div class="row">
 
       <article class="nota col-12 principal2">
-        <h6 style="font-size:19px;font-weight:lighter;"> {{$nota->titulo}} </h6>
+        <h6 style="font-size:19px;font-weight:lighter;"> {{$nota->subtitulo}} </h6>
         <div id="fotoNota">
         <img src="/storage/{{$nota->foto}}"  alt="Foto">
         </div>
@@ -41,27 +41,12 @@
           <p>{{$nota->parrafo1}}</p>
           </div>
 
-          <div id="destacado">
-          <p>{{$nota->destacado}}</p>
-          </div>
-
-          <div>
-          <p> {{$nota->parrafo2}}</p>
-          </div>
 
 
-
-        <?php if ($nota->video != null && $nota->video == "youtube.com") :  ?>
-
-          <div class="video col-12">
-            <iframe width="560" height="315" src="{{$nota->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-        <?php endif; ?>
 
         </div>
 
-        <h5 style="font-size:19px;font-weight:lighter;"> {{$nota->usuario->name}} {{$nota->usuario->apellido}}, {{$nota->usuario->pais}} </h5>
+        <h5 style="font-size:19px;font-weight:lighter;"> {{$nota->usuario->nombreUsuario}}, {{$nota->usuario->pais}} </h5>
       </article>
 
 
