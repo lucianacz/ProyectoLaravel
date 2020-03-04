@@ -204,7 +204,7 @@ public function recordNote(Request $r){
       // GD doesn't support EXIF, so all information is removed.
       $image->exifOrient($ort)->saveToFile($imagen);
 
-      $edit=$image->store('public');
+      $edit=$imagen->store('public');
       $edit=basename($edit);
 
       class WideImage_Operation_ExifOrient
