@@ -313,7 +313,7 @@ public function recordNote(Request $r){
            $rules=[
               'name' => 'required', 'string', 'max:100',
               'apellido' => 'required', 'string', 'max:100',
-              'nombreUsuario' => ['required', 'string', 'max:20', 'unique:users'],
+              'nombreUsuario' => ['required|unique', 'string', 'max:20'],
               'pais' => 'nullable'
               //'fecha' => 'required',
           ];
