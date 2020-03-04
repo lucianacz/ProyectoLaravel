@@ -4,12 +4,10 @@
 
 <main>
 
-  
+
   <div class="principal">
       <div class="scroller">
-        <a href="#culturas">
-        <i class="fas fa-arrow-circle-down"></i>
-        </a>
+        <a href="#culturas" class="uk-icon-button  uk-margin-small-right" uk-icon="arrow-down"></a>
       </div>
   </div>
 
