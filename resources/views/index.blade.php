@@ -62,9 +62,13 @@
             </div>
 
             <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-            <p style="margin:5px;"> {{$nota->titulo}} </p>
-            <p style="margin:5px;"> {{$nota->subtitulo}} </p>
-            p style="margin:5px;"> {{$nota->usuario->nombreUsuario}} </p>
+            <?php
+            $str = $nota->$parrafo;
+            $cant = strlen($str); // ?>
+            <?php for ($i=0; $i < 50; $i++) { ?>
+              <p> {{$cant}} </p>
+            <? } ?>
+            <p style="margin:5px;"> {{$nota->usuario->nombreUsuario}} </p>
             <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
           </li>
