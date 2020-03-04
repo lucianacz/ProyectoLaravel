@@ -171,8 +171,8 @@ class MainController extends Controller
 public function recordNote(Request $r){
 
     $message=[
-        "title.required"=> 'El :attribute no puede estar vacio',
-        "title.max"=> 'El :attribute supera la cantidad de caracteres',
+        "titulo.required"=> 'El :attribute no puede estar vacio',
+        "titulo.max"=> 'El :attribute supera la cantidad de caracteres',
         "subtitulo.required" => 'El :attribute no puede estar vacio',
         "subtitulo.max" => 'El :attribute supera la cantidad de caracteres',
         "pais.required" => 'El :attribute no puede estar vacio',
@@ -184,7 +184,7 @@ public function recordNote(Request $r){
         "foto.mimes" =>'La :attribute tiene que ser jpg o png',
     ];
      $this->validate($r, [
-        'title' => ['required', 'string', 'max:40'],
+        'titulo' => ['required', 'string', 'max:40'],
         'subtitulo' => ['required', 'string', 'max:40'],
         'pais' => ['required'],
         'region' => ['required'],
@@ -197,7 +197,7 @@ public function recordNote(Request $r){
     $imagen=basename($imagen);
 
    Nota::create([
-    'titulo' => $r['title'],
+    'titulo' => $r['titulo'],
     'subtitulo' => $r['subtitulo'],
     'pais' => $r['pais'],
     'region' => $r['region'],

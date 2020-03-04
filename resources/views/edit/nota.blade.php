@@ -155,12 +155,7 @@ function confirmUpdate(event){
 
 function charcountupdate(str) {
 	var lng = 500 - str.length;
-	document.getElementById("charcount").innerHTML = lng + ' de 500 caracteres';
-}
-
-function charcountupdate2(str) {
-	var lng = 500 - str.length;
-	document.getElementById("charcount2").innerHTML = lng + ' de 500 caracteres';
+	document.getElementById("charcount").innerHTML = lng + ' de 5000 caracteres';
 }
 
 </script>

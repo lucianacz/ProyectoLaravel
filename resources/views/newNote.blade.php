@@ -46,10 +46,10 @@
   </div>
 
   <div class="col-12">
-    <label for="title">Titulo: ¿En qué lugar específico?* </label>
-    <input id="title" type="text"  onkeyup="validateTitle(this.value)"  id="textbox" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}">
-    <span id=title style="color:#00A79D;"></span>
-    @error('title')
+    <label for="titulo">Titulo: ¿En qué lugar específico?* </label>
+    <input id="titulo" type="text"  onkeyup="validateTitle(this.value)"  id="textbox" class="form-control @error('titulo') is-invalid @enderror" name="titulo" value="{{ old('title') }}">
+    <span id=titulo style="color:#00A79D;"></span>
+    @error('titulo')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
@@ -170,13 +170,9 @@ function validateTitle(str){
 
 function charcountupdate(str) {
 	var lng = 500 - str.length;
-	document.getElementById("charcount").innerHTML = lng + ' de 500 caracteres';
+	document.getElementById("charcount").innerHTML = lng + ' de 5000 caracteres';
 }
 
-function charcountupdate2(str) {
-	var lng = 500 - str.length;
-	document.getElementById("charcount2").innerHTML = lng + ' de 500 caracteres';
-}
 
 </script>
 
