@@ -15,7 +15,6 @@
           <li><a href="/register"> Registrarse </a></li>
           @else
           <li><a href="/perfil"> Mi Perfil </a></li>
-          <li><a href="/newNote"> Nueva nota </a></li>
           <li><a href="/edit"> Mis notas </a></li>
           <li><a href="{{ route('logout') }}"
              onclick="event.preventDefault();

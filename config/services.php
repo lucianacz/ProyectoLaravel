@@ -43,14 +43,14 @@ return [
     'google' => [
     'client_id' => '842266895911-g6pfioqu668rme7q38rukd7f2so3hasr.apps.googleusercontent.com',
     'client_secret' => 'Wgp8GypqlO73NrDTe1K32oS1',
-    'redirect' => 'http://localhost:8000/google/redireccion',
+    'redirect' => 'http://culturasariri.com.ar/google/redireccion',
     ],
 
 
     'facebook' => [
     'client_id' => '734076347092155',
     'client_secret' => '743a68bc08c09cde434aa7f1c5771190',
-    'redirect' => 'http://localhost:8000/facebook/redireccion',
+    'redirect' => 'http://culturasariri.com.ar/facebook/redireccion',
     ],
 
 
