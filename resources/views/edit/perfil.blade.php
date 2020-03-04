@@ -44,9 +44,9 @@
           </div>
 
           <div class="align-items-center">
-              <label for="nombreUsuario" class="col-form-label">{{ __('nombreUsuario') }}</label>
+              <label for="nombreUsuario" class="col-form-label">{{$usuario->nombreUsuario}}</label>
 
-                  <input id="nombreUsuario" type="text" class="form-control @error('nombreUsuario') is-invalid @enderror" name="nombreUsuario" value="{{$usuario->nombreUsuario}}" >
+                  <input id="nombreUsuario" type="text" class="form-control @error('nombreUsuario') is-invalid @enderror" name="nombreUsuario">
 
                   @error('nombreUsuario')
                       <span class="invalid-feedback" role="alert">
