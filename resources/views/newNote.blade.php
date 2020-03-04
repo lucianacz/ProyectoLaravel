@@ -70,7 +70,7 @@
 
   <div class="col-12" style="padding-top:5px;">
     <label for="parrafo">Texto</label>
-    <textarea type="text" id="textbox" maxlength="550" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo1') is-invalid @enderror" placeholder="" name="parrafo1">{{ old('parrafo1') }}</textarea>
+    <textarea type="text" id="textbox" maxlength="5000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo') is-invalid @enderror" placeholder="" name="parrafo">{{ old('parrafo') }}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
 
     @error('parrafo1')
@@ -169,7 +169,7 @@ function validateTitle(str){
 
 
 function charcountupdate(str) {
-	var lng = 500 - str.length;
+	var lng = 5000 - str.length;
 	document.getElementById("charcount").innerHTML = lng + ' de 5000 caracteres';
 }
 
