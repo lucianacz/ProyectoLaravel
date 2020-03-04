@@ -64,7 +64,7 @@
             <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
             <p style="margin:5px;"> {{$nota->titulo}} </p>
             <p style="margin:5px;"> {{$nota->subtitulo}} </p>
-            p style="margin:5px;"> {{$nota->user->nombreUsuario}} </p>
+            p style="margin:5px;"> {{$nota->usuario->nombreUsuario}} </p>
             <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
           </li>
