@@ -48,7 +48,7 @@
       <ul class="uk-flex-center" uk-tab uk-switcher>
 
         @foreach ($notas as $nota)
-        <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->titulo}}</a></li>
+        <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->pais}}</a></li>
         @endforeach
         </ul>
 
@@ -62,7 +62,9 @@
             </div>
 
             <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-            <p style="margin:5px;"> {{$nota->parrafo1}} </p>
+            <p style="margin:5px;"> {{$nota->titulo}} </p>
+            <p style="margin:5px;"> {{$nota->subtitulo}} </p>
+            p style="margin:5px;"> {{$nota->user->nombreUsuario}} </p>
             <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
           </li>
