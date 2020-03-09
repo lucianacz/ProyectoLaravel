@@ -93,7 +93,7 @@
   </div>
 
   <div class="col-12" style="padding-top:5px;">
-    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen 1</label>
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen</label>
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" type="file">
     @error('foto')
         <span class="invalid-feedback" role="alert">
@@ -102,18 +102,6 @@
     @enderror
   </div>
 
-
-
-  <div class="col-12" style="padding-top:5px;">
-    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen 2</label>
-    <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" type="file">
-
-    @error('foto2')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-    @enderror
-  </div>
 
 
 

@@ -182,7 +182,7 @@ public function recordNote(Request $r){
         "fecha.required" =>'La :attribute no puede estar vacia',
         "foto.required" =>'La :attribute no puede estar vacia',
         "foto.mimes" =>'La :attribute tiene que ser jpg o png',
-        "foto2.mimes" =>'La :attribute tiene que ser jpg o png',
+        //"foto2.mimes" =>'La :attribute tiene que ser jpg o png',
     ];
      $this->validate($r, [
         'titulo' => ['required', 'string', 'max:40'],
@@ -191,7 +191,7 @@ public function recordNote(Request $r){
         'region' => ['required'],
         'parrafo' => ['required', 'string', 'max:5000'],
         'foto' => ['required', 'mimes:jpeg,png'],
-        'foto2' => ['mimes:jpeg,png'],
+        //'foto2' => ['mimes:jpeg,png'],
         'fecha' => ['required'],
     ],$message);
 
@@ -201,8 +201,8 @@ public function recordNote(Request $r){
     $imagen=$r->file('foto')->store('public');
     $imagen=basename($imagen);
 
-    $imagen2=$r->file('foto2')->store('public');
-    $imagen2=basename($imagen2);
+    //$imagen2=$r->file('foto2')->store('public');
+    //$imagen2=basename($imagen2);
 
    Nota::create([
     'titulo' => $r['titulo'],
@@ -213,7 +213,7 @@ public function recordNote(Request $r){
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
-    'foto2' => $imagen2,
+    //'foto2' => $imagen2,
     ]);
 
     return redirect('/gente')
