@@ -65,7 +65,7 @@ class MainController extends Controller
       return view('edit/email',compact('usuario'));
     }
 
-    public function editUsuario($id){
+    public function editNombreUsuario($id){
        $usuario = User::find($id);
        return view('edit/usuario',compact('usuario'));
      }
