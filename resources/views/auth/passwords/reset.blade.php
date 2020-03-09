@@ -1,6 +1,8 @@
-@extends('layouts.app')
+@extends('layout')
 
-@section('content')
+@section('main')
+
+<link rel="stylesheet" href="css/estiloscarga.css">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -8,8 +10,7 @@
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
-                    <?php //<form method="POST" action="{{ route('password.update') }}"> ?>
-                      <form method="POST" action="{{ url('/reset_password_without_token') }}">
+                  <form method="POST" action="{{ route('password.update') }}"> 
                         @csrf
 
 

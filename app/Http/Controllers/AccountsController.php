@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class AccountsController extends Controller
 {
 
-  public function validatePasswordRequest($email, $token)
+/*  public function validatePasswordRequest($email, $token)
    {
      //You can add validation login here
       $user = DB::table('users')->where('email', '=', $request->email)
@@ -51,7 +51,7 @@ class AccountsController extends Controller
       }
 
 
-      
+
 
       public function resetPassword(Request $request)
   {

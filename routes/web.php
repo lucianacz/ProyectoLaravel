@@ -48,8 +48,6 @@ Route::get('/edit/nota/{id}', 'MainController@editNota');
 Route::post('/edit/nota/{id}', 'MainController@update')->middleware('auth');
 Route::post('/delete/nota/{id}', 'MainController@delete')->middleware('auth');
 
-Route::post('reset_password_without_token', 'AccountsController@validatePasswordRequest');
-Route::post('reset_password_with_token', 'AccountsController@resetPassword');
 
 //Crear una ruta a /miPrimeraRuta, y que al ingresar, devuelva “Creé mi primer ruta en Laravel”.
 
