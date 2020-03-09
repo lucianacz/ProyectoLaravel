@@ -52,12 +52,13 @@
 
 
 
-        <button type="submit" class="btn boton btn-primary col-12">
+        <button type="submit" class="btn boton btn-primary col-8" style="padding-top:5px;">
             {{ __('Editar') }}
         </button>
 
         <div class="">
           <a href="http://culturasariri.com.ar/edit/email/{{$usuario->id}}" style="padding-top:5px;"> EDITA TU EMAIL</a>
+          <br>
           <a href="http://culturasariri.com.ar/edit/usuario/{{$usuario->id}}" style="padding-top:5px;"> EDITA TU USUARIO</a>
         </div>
 
