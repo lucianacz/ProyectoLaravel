@@ -50,9 +50,9 @@
           <option value="{{$usuario->pais}}" selected>{{$usuario->pais}}</option>
         </select>
 
+        <br>
 
-
-        <button type="submit" class="btn boton btn-primary col-8" style="padding-top:5px;">
+        <button type="submit" class="btn boton btn-primary col-8" style="padding-top:10px;">
             {{ __('Editar') }}
         </button>
 

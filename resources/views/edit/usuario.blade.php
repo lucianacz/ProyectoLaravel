@@ -28,9 +28,15 @@
                   @enderror
           </div>
 
-        <button type="submit" class="btn boton btn-primary col-12">
+        <button type="submit" class="btn boton btn-primary col-8" style="padding-top:10px;">
             {{ __('Editar') }}
         </button>
+
+        <div class="">
+          <a href="http://culturasariri.com.ar/perfil/{{$usuario->id}}" style="padding-top:5px;"> VER PERFIL</a>
+          <br>
+          <a href="http://culturasariri.com.ar/edit/perfil/{{$usuario->id}}" style="padding-top:5px;"> EDITA TU PERFIL</a>
+        </div>
 
     </form>
   </div>
