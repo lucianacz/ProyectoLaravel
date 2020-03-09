@@ -57,12 +57,14 @@
 
           @foreach ($notas as $nota)
           <li>
-            <div class="col-12 foto">
+            <div class="col-lg-6 col-md-3 col-12 foto">
             <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
             </div>
 
-            <div class="cuerpo col-lg-6">
-            <p style="margin:5px;"> {{$nota->usuario->nombreUsuario}} </p>
+            <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
+            <p style="margin:5px;"> Pais: {{$nota->pais}} - Lugar: {{$nota->titulo}}</p>
+            <p style="margin:5px;"> {{$nota->subtitulo}} </p>
+            <p style="margin:5px;"> Usuario: {{$nota->usuario->nombreUsuario}} </p>
             <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
           </li>
