@@ -95,12 +95,11 @@
   <div class="col-12" style="padding-top:5px;">
     <label for="foto">Imagen 1</label>
 
-    <label for="file-input">
-        <a class="uk-icon-button  uk-margin-small-right" uk-icon="camera"></a>
-    </label>
+    <label for="file-input"></label>
 
+    <span class="uk-icon-button  uk-margin-small-right" uk-icon="camera">
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" style="display: null;" type="file">
-
+    </span>
     @error('foto')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -110,9 +109,9 @@
 
   <div class="col-12" style="padding-top:5px;">
     <label for="foto2">Imagen 2</label>
-    <a class="uk-icon-button  uk-margin-small-right" uk-icon="camera">
+    <span class="uk-icon-button  uk-margin-small-right" uk-icon="camera">
     <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" style="display: null;" type="file">
-    </a>
+    </span>
     @error('foto2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
