@@ -212,8 +212,8 @@ public function recordNote(Request $r){
     'parrafo'=>$r['parrafo'],
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
-    'foto' => $edit,
-    'foto2' => $edit,
+    'foto' => $imagen,
+    'foto2' => $imagen2,
     ]);
 
     return redirect('/gente')
