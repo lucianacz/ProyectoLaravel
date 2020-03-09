@@ -97,7 +97,7 @@
 
     <label for="file-input"></label>
 
-    <span class="uk-icon  uk-margin-small-right" uk-icon="camera">
+    <span class="uk-icon" uk-icon="camera">
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" style="visibility: hidden;" type="file">
     </span>
     @error('foto')
@@ -109,7 +109,7 @@
 
   <div class="col-12" style="padding-top:5px;">
     <label for="foto2">Imagen 2</label>
-    <span class="uk-icon-button  uk-margin-small-right" uk-icon="camera">
+    <span class="uk-icon" uk-icon="camera">
     <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" style="visibility: hidden;" type="file">
     </span>
     @error('foto2')
