@@ -23,7 +23,11 @@ Route::get('/contacto', 'MainController@contacto');
 Route::get('/perfil', 'MainController@perfil')->middleware('auth');
 Route::get('/edit/perfil/{id}', 'MainController@editPerfil')->middleware('auth');
 Route::post('/edit/perfil/{id}', 'MainController@updatePerfil')->middleware('auth');
+
+Route::get('/edit/perfil/{id}', 'MainController@editNombreUsuario')->middleware('auth');
 Route::post('/edit/usuario/{id}', 'MainController@updateNombreUsuario')->middleware('auth');
+
+Route::get('/edit/perfil/{id}', 'MainController@editNombreUsuario')->middleware('auth');
 Route::post('/edit/email/{id}', 'MainController@updateEmail')->middleware('auth');
 
 Route::get('/', 'MainController@index');
