@@ -93,13 +93,8 @@
   </div>
 
   <div class="col-12" style="padding-top:5px;">
-    <label for="foto">Imagen 1</label>
-
-    <label for="file-input"></label>
-
-    <span class="uk-icon" uk-icon="camera">
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen 1</label>
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" style="display: none;" type="file">
-    </span>
     @error('foto')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
@@ -108,26 +103,11 @@
   </div>
 
 
-  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text uk-icon" uk-icon="camera" id="inputGroupFileAddon01"></span>
-  </div>
-  <div class="custom-file">
-    <input id="files" aria-describedby="inputGroupFileAddon01" class="form-control @error('foto') is-invalid @enderror custom-file-input" name="foto" style="display: none;" type="file">
-    <label class="custom-file-label" for="inputGroupFile01">Elegir foto</label>
-  </div>
-  @error('foto')
-      <span class="invalid-feedback" role="alert">
-          <strong>{{ $message }}</strong>
-      </span>
-  @enderror
-</div>
 
   <div class="col-12" style="padding-top:5px;">
-    <label for="foto2">Imagen 2</label>
-    <span class="uk-icon" uk-icon="camera">
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen 2</label>
     <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" style="display: none;" type="file">
-    </span>
+
     @error('foto2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
