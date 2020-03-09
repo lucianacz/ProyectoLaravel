@@ -60,6 +60,16 @@ class MainController extends Controller
      return view('edit/perfil',compact('usuario'));
    }
 
+   public function editEmail($id){
+      $usuario = User::find($id);
+      return view('edit/email',compact('usuario'));
+    }
+
+    public function editUsuario($id){
+       $usuario = User::find($id);
+       return view('edit/usuario',compact('usuario'));
+     }
+
 
 
   public function explora() {
@@ -111,6 +121,7 @@ class MainController extends Controller
       //dd($usuarios->notas);
     return view ('perfil', compact('usuario'));
   }
+
 
   public function list() {
     $notas = Nota::orderby('titulo')->get();
@@ -352,6 +363,70 @@ public function recordNote(Request $r){
               ->with('operation', 'success');
       }
 
+
+
+
+      public function updateNombreUsuario(Request $request, $id)
+       {
+           //primero valido los datos
+           $message=[
+               "nombreUsuario.required"=> 'El usuario no puede estar vacio',
+               "nombreUsuario.unique"=> 'Ese usuario ya existe',
+           ];
+
+            $rules=[
+               'nombreUsuario' => ['required', 'unique:users', 'string', 'max:20'],
+               //'fecha' => 'required',
+           ];
+
+          $this->validate($request, $rules, $message);
+
+           //instacio una Nota
+           $usuario = User::find($id);
+           //asigno a los atributos de trs maneras distinta
+
+           $usuario->nombreUsuario = $request['nombreUsuario'];
+
+            //lo guardo en la BD
+            $usuario->save();
+
+
+           //redirijo
+           return redirect('/perfil')
+               ->with('status', 'Perfil modificado exitosamente!')
+               ->with('operation', 'success');
+       }
+
+       public function updateEmail(Request $request, $id)
+        {
+            //primero valido los datos
+            $message=[
+                "email.required"=> 'El usuario no puede estar vacio',
+                "email.unique"=> 'Ese usuario ya existe',
+            ];
+
+             $rules=[
+                'email' => ['required', 'unique:users', 'email'],
+                //'fecha' => 'required',
+            ];
+
+           $this->validate($request, $rules, $message);
+
+            //instacio una Nota
+            $usuario = User::find($id);
+            //asigno a los atributos de trs maneras distinta
+
+            $usuario->email = $request['email'];
+
+             //lo guardo en la BD
+             $usuario->save();
+
+
+            //redirijo
+            return redirect('/perfil')
+                ->with('status', 'Perfil modificado exitosamente!')
+                ->with('operation', 'success');
+        }
 
 
 

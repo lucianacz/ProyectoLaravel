@@ -43,17 +43,6 @@
                   @enderror
           </div>
 
-          <div class="align-items-center">
-              <label for="nombreUsuario" class="col-form-label">{{ __('Usuario') }}</label>
-
-                  <input id="nombreUsuario" type="text" class="form-control @error('nombreUsuario') is-invalid @enderror" name="nombreUsuario" value="{{$usuario->nombreUsuario}}" >
-
-                  @error('nombreUsuario')
-                      <span class="invalid-feedback" role="alert">
-                          <strong>{{ $message }}</strong>
-                      </span>
-                  @enderror
-          </div>
 
 
         <label for="pais" class="col-md-10 col-form-label">{{ __('Pais') }}</label>
@@ -66,6 +55,9 @@
         <button type="submit" class="btn boton btn-primary col-12">
             {{ __('Editar') }}
         </button>
+
+        <a href="http://culturasariri.com.ar/edit/email/{{$usuario->id}}"> EDITA TU EMAIL</a>
+        <a href="http://culturasariri.com.ar/edit/usuario/{{$usuario->id}}"> EDITA TU USUARIO</a>
 
     </form>
   </div>

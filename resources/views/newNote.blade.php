@@ -105,7 +105,7 @@
 
 
 
-  <div class="col-12" style="padding-top:5px;">
+  <div class="col-8" style="padding-top:7px;">
   <button class="btn col-12" type="submit">Subir nota</button>
   </div>
 
