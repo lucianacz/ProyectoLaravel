@@ -27,7 +27,7 @@ Route::post('/edit/perfil/{id}', 'MainController@updatePerfil')->middleware('aut
 Route::get('/edit/usuario/{id}', 'MainController@editNombreUsuario')->middleware('auth');
 Route::post('/edit/usuario/{id}', 'MainController@updateNombreUsuario')->middleware('auth');
 
-Route::get('/edit/email/{id}', 'MainController@editNombreUsuario')->middleware('auth');
+Route::get('/edit/email/{id}', 'MainController@editEmail')->middleware('auth');
 Route::post('/edit/email/{id}', 'MainController@updateEmail')->middleware('auth');
 
 Route::get('/', 'MainController@index');
