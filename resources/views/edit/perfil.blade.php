@@ -56,8 +56,11 @@
             {{ __('Editar') }}
         </button>
 
-        <a href="http://culturasariri.com.ar/edit/email/{{$usuario->id}}"> EDITA TU EMAIL</a>
-        <a href="http://culturasariri.com.ar/edit/usuario/{{$usuario->id}}"> EDITA TU USUARIO</a>
+        <div class="">
+          <a href="http://culturasariri.com.ar/edit/email/{{$usuario->id}}" style="padding-top:5px;"> EDITA TU EMAIL</a>
+          <a href="http://culturasariri.com.ar/edit/usuario/{{$usuario->id}}" style="padding-top:5px;"> EDITA TU USUARIO</a>
+        </div>
+
 
     </form>
   </div>

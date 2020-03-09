@@ -20,6 +20,7 @@ Route::get('/gente','MainController@gente');
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
 Route::get('/contacto', 'MainController@contacto');
+
 Route::get('/perfil', 'MainController@perfil')->middleware('auth');
 Route::get('/edit/perfil/{id}', 'MainController@editPerfil')->middleware('auth');
 Route::post('/edit/perfil/{id}', 'MainController@updatePerfil')->middleware('auth');
