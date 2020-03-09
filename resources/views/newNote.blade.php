@@ -107,6 +107,17 @@
     @enderror
   </div>
 
+
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text uk-icon" uk-icon="camera" id="inputGroupFileAddon01"></span>
+  </div>
+  <div class="custom-file">
+    <input id="files inputGroupFile01" aria-describedby="inputGroupFileAddon01" class="form-control @error('foto') is-invalid @enderror custom-file-input" name="foto" style="display: none;" type="file">
+    <label class="custom-file-label" for="inputGroupFile01">Elegir foto</label>
+  </div>
+</div>
+
   <div class="col-12" style="padding-top:5px;">
     <label for="foto2">Imagen 2</label>
     <span class="uk-icon" uk-icon="camera">
