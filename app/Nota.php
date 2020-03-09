@@ -22,7 +22,7 @@ class Nota extends Model
      */
     protected $fillable = [
         'titulo', 'subtitulo', 'foto', 'pais', 'region', 'parrafo',
-       'fecha', 'user_id'
+       'fecha', 'user_id', 'foto2'
     ];
 
 

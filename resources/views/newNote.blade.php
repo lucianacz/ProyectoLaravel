@@ -82,7 +82,7 @@
   </div>
 
 
-  <div class="col-6" style="padding-top:5px;">
+  <div class="col-12" style="padding-top:5px;">
       <label for="fecha">Fecha de Visita</label>
       <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{ old('fecha') }}">
       @error('fecha')
@@ -92,10 +92,21 @@
       @enderror
   </div>
 
-  <div class="col-6" style="padding-top:5px;">
-    <label for="foto">Imagen</label>
+  <div class="col-12" style="padding-top:5px;">
+    <label for="foto">Imagen 1</label>
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" style="display: null;" type="file">
+    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="camera"></a>
     @error('foto')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+  <div class="col-12" style="padding-top:5px;">
+    <label for="foto2">Imagen 2</label>
+    <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" style="display: null;" type="file" class="uk-icon-button  uk-margin-small-right" uk-icon="camera">
+    @error('foto2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
