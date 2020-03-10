@@ -14,7 +14,7 @@
                     {{ csrf_field() }}
 
 
-                        <input type="hidden" name="token" value="{{ $token }}">
+                      <?php  //<input type="hidden" name="token" value="{{ $token }}">?>  
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
