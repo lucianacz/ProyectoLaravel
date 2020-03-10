@@ -48,7 +48,7 @@ class ResetPassword extends ResetPasswordNotification
         return (new MailMessage)
                     ->subject( 'Cambia tu contraseña' )
                     ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
-                    ->action( 'Cambiar', $link )
+                    ->action(Lang::getFromJson('Reset Password'), url(config('app.url').route('password.reset', ['token' => $this->token], false)))
                     ->line( 'Gracias por estar conectado!' );
     }
 
