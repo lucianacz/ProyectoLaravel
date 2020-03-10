@@ -11,7 +11,7 @@
 
                 <div class="card-body">
                   <form method="POST" action="{{ url('/reset_password_without_token') }}">
-                      {!! csrf_field() !!}
+                    {{ csrf_field() }}
 
 
                         <input type="hidden" name="token" value="{{ $token }}">
