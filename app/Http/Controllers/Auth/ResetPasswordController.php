@@ -64,7 +64,9 @@ class ResetPasswordController extends Controller
             ];
 
              $rules=[
-                'email' => ['required', 'unique:users', 'email'],
+               'token' => 'required',
+                'email' => 'required|email',
+                'password' => 'required|confirmed|min:6'
                 //'fecha' => 'required',
             ];
 
