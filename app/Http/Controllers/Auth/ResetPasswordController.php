@@ -27,6 +27,40 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
+
+
+
+    /*   public function updatePassword(Request $request, $id)
+      {
+          //primero valido los datos
+          $message=[
+              "email.required"=> 'El usuario no puede estar vacio',
+              "email.unique"=> 'Ese usuario ya existe',
+          ];
+
+           $rules=[
+              'email' => ['required', 'unique:users', 'email'],
+              //'fecha' => 'required',
+          ];
+
+         $this->validate($request, $rules, $message);
+
+          //instacio una Nota
+          $usuario = User::find($id);
+          //asigno a los atributos de trs maneras distinta
+
+          $usuario->email = $request['email'];
+
+           //lo guardo en la BD
+           $usuario->save();
+
+
+          //redirijo
+          return redirect('/perfil')
+              ->with('status', 'Perfil modificado exitosamente!')
+              ->with('operation', 'success');
+      }
+
     $redirectTo = 'password/email';
 
     /**

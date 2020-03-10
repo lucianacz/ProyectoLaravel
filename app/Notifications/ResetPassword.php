@@ -11,18 +11,6 @@ use Illuminate\Auth\Notifications\ResetPassword as ResetPasswordNotification;
 class ResetPassword extends ResetPasswordNotification
 {
 
-  public function toMail( $notifiable ) {
-   $link = url( "/password/reset/?token=" . $this->token );
-
-   return ( new MailMessage )
-      ->view('reset.emailer')
-      ->from('info@example.com')
-      ->subject( 'Reset your password' )
-      ->line( "Hey, We've successfully changed the text " )
-      ->action( 'Reset Password', $link )
-      ->attach('reset.attachment')
-      ->line( 'Thank you!' );
-}
 
     use Queueable;
 
@@ -56,11 +44,17 @@ class ResetPassword extends ResetPasswordNotification
      */
     public function toMail($notifiable)
     {
+         $link = url( "/password/reset/?token=" . $this->token );
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->view('reset.emailer')
+                    ->subject( 'Cambia tu contraseña' )
+                    ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
+                    ->action( 'Cambiar', $link )
+                    ->attach('reset.attachment')
+                    ->line( 'Gracias por estar conectado!' );
     }
+
+
 
     /**
      * Get the array representation of the notification.
