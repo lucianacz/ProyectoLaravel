@@ -64,13 +64,7 @@ Route::get('/facebook/redireccion', 'Auth\LoginController@handleFacebookCallback
 
 
 // Password Reset Routes
-Route::get('password/reset',
-    'Auth\ResetPasswordController@showLinkRequestForm')
-    ->name('password.request');
 
-Route::post('password/email',
-    'Auth\ResetPasswordController@sendResetLinkEmail')
-    ->name('password.email');
 
 Route::get('password/reset/{token}',
     'Auth\ResetPasswordController@showResetForm')
