@@ -38,8 +38,8 @@
           <p>{{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}}</p>
           <br>
 
-          <div><p>  <pre>{{$nota->parrafo}}</pre></p>
-
+          <div>
+          <pre>{{$nota->parrafo}}</pre>
           </div>
 
 

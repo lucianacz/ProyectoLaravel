@@ -27,7 +27,16 @@ a {
 }
 
 /* HOME */
-
+pre {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway";
+}
 
 .principal {
   background-image: url("../img/cover.jpg");
