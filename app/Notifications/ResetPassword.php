@@ -44,11 +44,11 @@ class ResetPassword extends ResetPasswordNotification
      */
     public function toMail($notifiable)
     {
-         $link = url( "/password/email/?token=" . $this->token );
+         $link = url('/password/email/' . $this->token);
         return (new MailMessage)
                     ->subject( 'Cambia tu contraseña' )
                     ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
-                    ->action(Lang::getFromJson('Reset Password'), url(config('app.url').route('password.reset', ['token' => $this->token], false)))
+                    ->action( 'Cambiar', $link )
                     ->line( 'Gracias por estar conectado!' );
     }
 
