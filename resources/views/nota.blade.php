@@ -39,7 +39,7 @@
           <br>
 
           <div>
-          <p>{{$nota->parrafo}}</p>
+          <pre>{{$nota->parrafo}}</pre>
           </div>
 
 
