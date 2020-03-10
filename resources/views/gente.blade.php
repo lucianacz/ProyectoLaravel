@@ -38,11 +38,11 @@
 
 
         <div class="cuerpoNota">
-          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold;"><p> {{$nota->titulo}}
+          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold;"><p> {{$nota->subtitulo}}
             <br>
-            {{$nota->pais}}, {{$nota->region}}</p></a>
+            {{$nota->titulo}}, {{$nota->pais}}</p></a>
 
-          <p>{{$nota->usuario->name}}, {{$nota->usuario->pais}} </p>
+          <p>{{$nota->usuario->usuario}} </p>
         </div>
       </article>
       @endforeach
