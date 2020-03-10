@@ -10,7 +10,7 @@
                 <div class="card-header">{{ __('Cambiar contraseña') }}</div>
 
                 <div class="card-body">
-                  <form method="GET" action="{{ route('password.update') }}">
+                  <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
 
