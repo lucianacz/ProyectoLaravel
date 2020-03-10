@@ -28,7 +28,7 @@
     <div class="row">
 
       <article class="nota col-12 principal2">
-        <h6 style="font-size:19px;font-weight:lighter;"> {{$nota->subtitulo}} </h6>
+        <h6 style="font-size:19px;font-weight:lighter; text-transform: uppercase;"> {{$nota->subtitulo}} </h6>
         <div id="fotoNota">
         <img src="/storage/{{$nota->foto}}"  alt="Foto">
         </div>
