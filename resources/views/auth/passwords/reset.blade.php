@@ -44,4 +44,7 @@
                 </div>
 </div>
 </main>
+
+<?php route('password.reset', ['token' => $this->token], false)))
+ ?>
 @endsection

@@ -10,7 +10,7 @@
                 <div class="card-header">{{ __('Cambiar contraseña') }}</div>
 
                 <div class="card-body">
-                  <form method="POST" action="{{ url('/reset_password_without_token') }}">
+                  <form method="POST" action="{{ route('password.update') }}">
                     {{ csrf_field() }}
 
 
