@@ -47,6 +47,7 @@ class ResetPassword extends ResetPasswordNotification
          $link = url( "/password/reset/?token=" . $this->token );
         return (new MailMessage)
                     ->subject( 'Cambia tu contraseña' )
+                    ->from('Cultura Sariri')
                     ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
                     ->action( 'Cambiar', $link )
                     ->line( 'Gracias por estar conectado!' );
