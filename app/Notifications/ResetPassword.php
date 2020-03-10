@@ -47,7 +47,7 @@ class ResetPassword extends ResetPasswordNotification
         return (new MailMessage)
                     ->subject( 'Cambia tu contraseña' )
                     ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
-                    ->action( 'Cambiar', route('password.reset.token',['token' => $this->token]) )
+                    ->action( 'Cambiar', route('password/reset' . $this->token))
                     ->line( 'Gracias por estar conectado!' );
     }
 
