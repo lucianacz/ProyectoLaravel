@@ -2,11 +2,10 @@
 
 @section('main')
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+<section class="culturas">
+  <div class="col-lg-6 col-md-8 col-10">
+    <h4 style="color:grey;">OLVIDE CONTRASEÑA</h4>
+                <div>{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -41,8 +40,5 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
 </div>
 @endsection

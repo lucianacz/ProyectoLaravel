@@ -2,10 +2,11 @@
 
 @section('main')
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+<section class="culturas">
+  <div class="col-lg-6 col-md-8 col-10">
+    <h4 style="color:grey;">INICIA SESION</h4>
+    <h5> ¡No te pierdas ninguna novedad!</h5>
+
                 <div class="card-header">{{ __('Cambiar contraseña') }}</div>
 
                 <div class="card-body">
@@ -60,8 +61,5 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
 </div>
 @endsection
