@@ -12,6 +12,9 @@ h6 a:hover {
   text-decoration: none;
 }
 
+p {
+  font-size: 22px;
+}
 
 .btn:hover {
   background-color: grey;
@@ -28,20 +31,6 @@ h6 a:hover {
   margin-bottom: 5%;
 }
 
-#destacado p {
-  color: white;
-  background-color: #00A79D;
-  font-size: 22px;
-  padding: 2%;
-  width: 100%;
-  text-align: left;
-}
-
-#destacado {
-  width: 100%;
-  display: flex;
-  margin: auto;
-}
 
 #cuerpoNotaPrincipal {
 
@@ -51,7 +40,9 @@ h6 a:hover {
 }
 
 @media (min-width: 770px){
-
+  p {
+    font-size: 10px;
+  }
 
 }
 
