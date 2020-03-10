@@ -50,7 +50,7 @@ class ResetPasswordController extends Controller
 
 
 
-     public function showPasswordResetForm(Request $request, $token = null)
+     public function showPasswordResetForm(Request $request, $token)
      {
         return view('auth.passwords.email');
      }
