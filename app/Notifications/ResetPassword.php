@@ -44,7 +44,7 @@ class ResetPassword extends ResetPasswordNotification
      */
     public function toMail($notifiable)
     {
-         $link = url('/perfil');
+         $link = url('/perfil/email/' . $this->token);
         return (new MailMessage)
                     ->subject( 'Cambia tu contraseña' )
                     ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
