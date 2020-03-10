@@ -55,7 +55,7 @@ class ResetPasswordController extends Controller
         return view('auth.passwords.email');
      }
 
-  /*  public function resetPassword(Request $request, $token)
+    public function resetPassword(Request $request, $token)
    {
        //some validation
 
