@@ -2,10 +2,12 @@
 
 @section('main')
 
+<link rel="stylesheet" href="css/estiloscarga.css">
+
+<main>
 <section class="culturas">
   <div class="col-lg-6 col-md-8 col-10">
     <h4 style="color:grey;">OLVIDE CONTRASEÑA</h4>
-                <div>{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -41,4 +43,5 @@
                     </form>
                 </div>
 </div>
+</main>
 @endsection

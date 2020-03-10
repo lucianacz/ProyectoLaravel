@@ -2,15 +2,15 @@
 
 @section('main')
 
+<main>
 <section class="culturas">
   <div class="col-lg-6 col-md-8 col-10">
-    <h4 style="color:grey;">INICIA SESION</h4>
-    <h5> ¡No te pierdas ninguna novedad!</h5>
+    <h4 style="color:grey;">CAMBIAR CONTRASEÑA</h4>
 
                 <div class="card-header">{{ __('Cambiar contraseña') }}</div>
 
                 <div class="card-body">
-                  <form method="POST" action="{{ route('password.update') }}">
+                  <form method="GET" action="{{ route('password.update') }}">
                         @csrf
 
 
@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
@@ -62,4 +62,5 @@
                     </form>
                 </div>
 </div>
+</main>
 @endsection
