@@ -49,7 +49,6 @@ class ResetPassword extends ResetPasswordNotification
                     ->subject( 'Cambia tu contraseña' )
                     ->line( "Te enviamos este correo para que puedas cambiar tu contraseña." )
                     ->action( 'Cambiar', $link )
-                    ->attach('reset.attachment')
                     ->line( 'Gracias por estar conectado!' );
     }
 
