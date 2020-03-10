@@ -39,7 +39,7 @@
           <br>
 
           <div>
-          <pre>{{$nota->parrafo}}</pre>
+          <p style="white-space: pre-wrap;">{{$nota->parrafo}}</p>
           </div>
 
 
