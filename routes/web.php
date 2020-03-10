@@ -62,5 +62,5 @@ Route::get('/google/redireccion', 'Auth\LoginController@handleGoogleCallback');
 Route::get('/facebook/login', 'Auth\LoginController@redirectToFacebook');
 Route::get('/facebook/redireccion', 'Auth\LoginController@handleFacebookCallback');
 
-Route::get('email/{token}', 'ResetPasswordController@showPasswordResetForm');
-Route::post('email/{token}', 'ResetPasswordController@resetPassword');
+Route::get('reset/{token}', 'ResetPasswordController@showPasswordResetForm')->name('password.reset');
+Route::post('reset/{token}', 'ResetPasswordController@resetPassword');
