@@ -36,7 +36,7 @@ class ResetPasswordController extends Controller
 
 
 
-    $redirectTo = 'password/email';
+    //$redirectTo = 'password/reset';
 
     /**
      * Create a new controller instance.
