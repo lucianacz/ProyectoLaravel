@@ -62,9 +62,9 @@
             </div>
 
             <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-              <p style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </p>
-            <p style="margin:5px;"> En: {{$nota->titulo}}, {{$nota->pais}}</p>
-            <p style="margin:5px;"> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </p>
+            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
+            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> En: {{$nota->titulo}}, {{$nota->pais}}</a>
+            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
             <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
             </div>
           </li>

@@ -36,7 +36,7 @@ a {
   z-index: 1;
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 
 }
 
@@ -155,6 +155,10 @@ a {
   float: left;
   text-align: justify;
   font-size:0.87em;
+}
+
+.culturas .cuerpo p {
+  text-align: left;
 }
 
 .culturas a {

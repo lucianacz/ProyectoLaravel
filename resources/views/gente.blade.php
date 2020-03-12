@@ -32,14 +32,13 @@
       @foreach ($notas as $nota)
       <article class="nota col-lg-3 col-md-4 col-11">
         <div class="fotoNota">
-        <a href="{{url('nota/'.$nota->id)}}"> <img src="/storage/{{$nota->foto}}" alt="{{$nota->epigrafe}}"></a>
+        <a href="{{url('nota/'.$nota->id)}}"> <img src="/storage/{{$nota->foto}}" alt="{{$nota->pais}}"></a>
         </div>
 
 
 
         <div class="cuerpoNota">
-          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold;"><p> {{$nota->subtitulo}}
-            <br> <strong>{{$nota->pais}}</strong></p></a>
+          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></p>
 
           <p>{{$nota->usuario->usuario}} </p>
         </div>
