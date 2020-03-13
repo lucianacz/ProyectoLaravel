@@ -223,7 +223,7 @@ public function recordNote(Request $r){
     $imagen=$r->file('foto')->store('public');
     $imagen=basename($imagen);
 
-    if (is_null($imagen2)) {
+    if (is_null($r['foto2'])) {
       $imagen2 = null;
     }
     else {
@@ -231,7 +231,7 @@ public function recordNote(Request $r){
       $imagen2=basename($imagen2);
     }
 
-    if (is_null($imagen3)) {
+    if (is_null($r['foto3'])) {
       $imagen3 = null;
     }
     else {
