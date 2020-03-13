@@ -223,20 +223,20 @@ public function recordNote(Request $r){
     $imagen=$r->file('foto')->store('public');
     $imagen=basename($imagen);
 
-    if (!$imagen2) {
+    if (is_null($imagen2)) {
+      $imagen2 = null;
+    }
+    else {
       $imagen2=$r->file('foto2')->store('public');
       $imagen2=basename($imagen2);
     }
-    else {
-      $imagen2 = null;
-    }
 
-    if (!$imagen3) {
+    if (is_null($imagen3)) {
+      $imagen3 = null;
+    }
+    else {
       $imagen3=$r->file('foto3')->store('public');
       $imagen3=basename($imagen3);
-    }
-    else {
-      $imagen3 = null;
     }
 
 
