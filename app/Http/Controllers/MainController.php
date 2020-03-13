@@ -11,6 +11,7 @@ use App\Usuario;
 use App\Photo;
 use App\User;
 use Spatie\ImageOptimizer\OptimizerChainFactory;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
 use ImageOptimizer;
 
 
