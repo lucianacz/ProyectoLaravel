@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Validator;
 use App\Usuario;
 use App\Photo;
 use App\User;
-use Spatie\ImageOptimizer\OptimizerChainFactory;
 use ImageOptimizer;
 
 
@@ -230,6 +229,7 @@ public function recordNote(Request $r){
 
     $imagen = $r->file('foto');
     // Optimize updates the existing image
+    'ImageOptimizer' => Spatie\LaravelImageOptimizer\Facades\ImageOptimizer::class;
     $optimizerChain = OptimizerChainFactory::create();
     $optimizerChain->optimize($imagen);
     $imagen->store('public');
