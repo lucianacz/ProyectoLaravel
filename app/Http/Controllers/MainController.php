@@ -190,9 +190,17 @@ public function recordNote(Request $r){
         "region.required" => 'La :attribute no puede estar vacia',
         "parrafo.required" =>'El parrafo no puede estar vacio',
         "parrafo.max" =>'El parrafo supera la cantidad de caracteres',
+        "parrafo2.required" =>'El parrafo no puede estar vacio',
+        "parrafo2.max" =>'El parrafo supera la cantidad de caracteres',
+        "parrafo3.required" =>'El parrafo no puede estar vacio',
+        "parrafo3.max" =>'El parrafo supera la cantidad de caracteres',
         "fecha.required" =>'La :attribute no puede estar vacia',
         "foto.required" =>'La :attribute no puede estar vacia',
         "foto.mimes" =>'La :attribute tiene que ser jpg o png',
+        "foto2.required" =>'La :attribute no puede estar vacia',
+        "foto2.mimes" =>'La :attribute tiene que ser jpg o png',
+        "foto3.required" =>'La :attribute no puede estar vacia',
+        "foto3.mimes" =>'La :attribute tiene que ser jpg o png',
         //"foto2.mimes" =>'La :attribute tiene que ser jpg o png',
     ];
      $this->validate($r, [
@@ -200,9 +208,12 @@ public function recordNote(Request $r){
         'subtitulo' => ['required', 'string', 'max:40'],
         'pais' => ['required'],
         'region' => ['required'],
-        'parrafo' => ['required', 'string', 'max:5000'],
-        'foto' => ['required', 'mimes:jpeg,png'],
-        //'foto2' => ['mimes:jpeg,png'],
+        'parrafo' => ['required', 'string', 'max:3000'],
+        'parrafo2' => ['string', 'max:3000'],
+        'parrafo3' => ['string', 'max:3000'],
+        'foto' => ['mimes:jpeg,png'],
+        'foto2' => ['mimes:jpeg,png'],
+        'foto3' => ['mimes:jpeg,png'],
         'fecha' => ['required'],
     ],$message);
 
@@ -224,7 +235,7 @@ public function recordNote(Request $r){
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
-    //'foto2' => $imagen2,
+    'foto2' => $imagen2,
     ]);
 
     return redirect('/gente')

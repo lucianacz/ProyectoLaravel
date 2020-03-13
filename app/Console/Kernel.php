@@ -39,4 +39,13 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+
+    // app/Http/Kernel.php
+
+
+      protected $routeMiddleware = [
+        // the image will be replaced with an optimized version which should be smaller
+        //app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage),
+        'optimizeImages' => \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class,
+      ];
 }

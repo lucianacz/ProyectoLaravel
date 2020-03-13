@@ -73,3 +73,8 @@ Route::get('password/reset/{token}',
 Route::post('password/reset',
     'Auth\ResetPasswordController@reset')
     ->name('password.reset.submit');
+
+    Route::middleware('optimizeImages')->group(function () {
+        // all images will be optimized automatically
+        Route::post('upload-images', 'UploadController@index');
+    });
