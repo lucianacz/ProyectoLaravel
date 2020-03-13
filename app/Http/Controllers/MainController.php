@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Validator;
 use App\Usuario;
 use App\Photo;
 use App\User;
+use ImageOptimizer;
+
 
 class MainController extends Controller
 {
