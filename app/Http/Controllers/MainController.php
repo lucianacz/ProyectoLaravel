@@ -12,7 +12,6 @@ use App\Photo;
 use App\User;
 use Spatie\ImageOptimizer\OptimizerChainFactory;
 use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
-use ImageOptimizer;
 
 
 class MainController extends Controller
