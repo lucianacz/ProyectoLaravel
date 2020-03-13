@@ -198,7 +198,7 @@ public function recordNote(Request $r){
         "fecha.required" =>'La :attribute no puede estar vacia',
 
         "foto.required" =>'La :attribute no puede estar vacia',
-        'foto.uploaded' => 'The :attribute failed to upload.'
+        'foto.uploaded' => 'The :attribute failed to upload.',
         "foto.mimes" =>'La :attribute tiene que ser jpg o png',
         'foto.max' => 'La foto es muy grande, debe ser menor a :max kb.',
 
