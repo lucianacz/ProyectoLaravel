@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Validator;
 use App\Usuario;
 use App\Photo;
 use App\User;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
 use ImageOptimizer;
 
 
@@ -195,10 +196,19 @@ public function recordNote(Request $r){
         "parrafo2.max" =>'El parrafo supera la cantidad de caracteres',
         "parrafo3.max" =>'El parrafo supera la cantidad de caracteres',
         "fecha.required" =>'La :attribute no puede estar vacia',
+
         "foto.required" =>'La :attribute no puede estar vacia',
+        'foto.uploaded' => 'The :attribute failed to upload.'
         "foto.mimes" =>'La :attribute tiene que ser jpg o png',
+        'foto.max' => 'La foto es muy grande, debe ser menor a :max kb.',
+
         "foto2.mimes" =>'La :attribute tiene que ser jpg o png',
+        'foto2.uploaded' => 'The :attribute failed to upload.'
+        'foto2.max' => 'La foto es muy grande, debe ser menor a :max kb.',
+
         "foto3.mimes" =>'La :attribute tiene que ser jpg o png',
+        'foto3.uploaded' => 'The :attribute failed to upload.'
+        'foto3.max' => 'La foto es muy grande, debe ser menor a :max kb.',
         //"foto2.mimes" =>'La :attribute tiene que ser jpg o png',
     ];
      $this->validate($r, [
@@ -209,16 +219,20 @@ public function recordNote(Request $r){
         'parrafo' => ['required', 'string', 'max:3000'],
         'parrafo2' => ['string', 'max:3000'],
         'parrafo3' => ['string', 'max:3000'],
-        'foto' => ['mimes:jpeg,png'],
-        'foto2' => ['mimes:jpeg,png'],
-        'foto3' => ['mimes:jpeg,png'],
+        'foto' => ['mimes:jpeg,png', 'max:1024'],
+        'foto2' => ['mimes:jpeg,png', 'max:1024'],
+        'foto3' => ['mimes:jpeg,png', 'max:1024'],
         'fecha' => ['required'],
     ],$message);
 
 
 
 
-    $imagen=$r->file('foto')->optimize()->store('public');
+    $imagen = $r->file('foto');
+    // Optimize updates the existing image
+    $optimizerChain = OptimizerChainFactory::create();
+    $optimizerChain->optimize($imagen);
+    $imagen->store('public');
     $imagen=basename($imagen);
 
     if (is_null($r['foto2'])) {
