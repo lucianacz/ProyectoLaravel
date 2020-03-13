@@ -11,7 +11,7 @@ use App\Usuario;
 use App\Photo;
 use App\User;
 use Spatie\ImageOptimizer\OptimizerChainFactory;
-use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
+use ImageOptimizer;
 
 
 class MainController extends Controller
@@ -230,7 +230,7 @@ public function recordNote(Request $r){
 
     $imagen = $r->file('foto');
     $optimizerChain = OptimizerChainFactory::create();
-    $optimizerChain->setTimeout(10)->optimize($imagen, $imagenA);
+    $optimizerChain->optimize($imagen, $imagenA);
     $imagenA->store('public');
     $imagen=basename($imagenA);
 
