@@ -203,11 +203,11 @@ public function recordNote(Request $r){
         'foto.max' => 'La foto es muy grande, debe ser menor a :max kb.',
 
         "foto2.mimes" =>'La :attribute tiene que ser jpg o png',
-        'foto2.uploaded' => 'The :attribute failed to upload.'
+        'foto2.uploaded' => 'The :attribute failed to upload.',
         'foto2.max' => 'La foto es muy grande, debe ser menor a :max kb.',
 
         "foto3.mimes" =>'La :attribute tiene que ser jpg o png',
-        'foto3.uploaded' => 'The :attribute failed to upload.'
+        'foto3.uploaded' => 'The :attribute failed to upload.',
         'foto3.max' => 'La foto es muy grande, debe ser menor a :max kb.',
         //"foto2.mimes" =>'La :attribute tiene que ser jpg o png',
     ];
