@@ -223,8 +223,11 @@ public function recordNote(Request $r){
     $imagen=$r->file('foto')->store('public');
     $imagen=basename($imagen);
 
-    //$imagen2=$r->file('foto2')->store('public');
-    //$imagen2=basename($imagen2);
+    $imagen2=$r->file('foto2')->store('public');
+    $imagen2=basename($imagen2);
+
+    $imagen3=$r->file('foto3')->store('public');
+    $imagen3=basename($imagen3);
 
    Nota::create([
     'titulo' => $r['titulo'],
@@ -232,10 +235,13 @@ public function recordNote(Request $r){
     'pais' => $r['pais'],
     'region' => $r['region'],
     'parrafo'=>$r['parrafo'],
+    'parrafo2'=>$r['parrafo2'],
+    'parrafo3'=>$r['parrafo3'],
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
     'foto2' => $imagen2,
+    'foto3' => $imagen2,
     ]);
 
     return redirect('/gente')
