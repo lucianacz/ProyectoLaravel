@@ -223,11 +223,17 @@ public function recordNote(Request $r){
     $imagen=$r->file('foto')->store('public');
     $imagen=basename($imagen);
 
-    $imagen2=$r->file('foto2')->store('public');
-    $imagen2=basename($imagen2);
+    if (!$imagen2) {
+      $imagen2=$r->file('foto2')->store('public');
+      $imagen2=basename($imagen2);
+    }
 
-    $imagen3=$r->file('foto3')->store('public');
-    $imagen3=basename($imagen3);
+    if (!$imagen3) {
+      $imagen3=$r->file('foto3')->store('public');
+      $imagen3=basename($imagen3);
+    }
+
+
 
    Nota::create([
     'titulo' => $r['titulo'],
