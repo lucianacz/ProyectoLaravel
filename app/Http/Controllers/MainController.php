@@ -227,10 +227,16 @@ public function recordNote(Request $r){
       $imagen2=$r->file('foto2')->store('public');
       $imagen2=basename($imagen2);
     }
+    else {
+      $imagen2 = null;
+    }
 
     if (!$imagen3) {
       $imagen3=$r->file('foto3')->store('public');
       $imagen3=basename($imagen3);
+    }
+    else {
+      $imagen3 = null;
     }
 
 
@@ -246,19 +252,8 @@ public function recordNote(Request $r){
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
-    if (!$imagen2) {
-      'foto2' => $imagen2;
-    }
-    else {
-      'foto2' => is_null,
-    }
-
-    if (!$imagen3) {
-      'foto3' => $imagen3;
-    }
-    else {
-      'foto3' => is_null,
-    }
+    'foto2' => $imagen2,
+    'foto3' => $imagen2,
     ]);
 
     return redirect('/gente')
