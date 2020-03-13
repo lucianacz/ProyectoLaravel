@@ -229,7 +229,7 @@ public function recordNote(Request $r){
 
 
     $imagen = $r->file('foto');
-    $optimizerChain = OptimizerChainFactory::create();
+    $optimizerChain = new OptimizerChainFactory::create();
     $optimizerChain->setTimeout(10)->optimize($imagen, $imagenA);
     $imagenA->store('public');
     $imagen=basename($imagenA);
