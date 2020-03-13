@@ -246,8 +246,19 @@ public function recordNote(Request $r){
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
-    'foto2' => $imagen2,
-    'foto3' => $imagen2,
+    if (!$imagen2) {
+      'foto2' => $imagen2;
+    }
+    else {
+      'foto2' => is_null,
+    }
+
+    if (!$imagen3) {
+      'foto3' => $imagen3;
+    }
+    else {
+      'foto3' => is_null,
+    }
     ]);
 
     return redirect('/gente')
