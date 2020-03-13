@@ -4,6 +4,8 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
 
 class Kernel extends ConsoleKernel
 {

@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use ImageOptimizer;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
 
 class OptimizeImages::class
 {
