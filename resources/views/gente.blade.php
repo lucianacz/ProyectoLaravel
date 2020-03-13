@@ -38,7 +38,7 @@
 
 
         <div class="cuerpoNota">
-          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></p>
+          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold; color: black;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></p>
 
           <p>{{$nota->usuario->usuario}} </p>
         </div>

@@ -39,7 +39,7 @@
           <br>
 
           <div>
-          <p style="white-space: pre-wrap;">{{$nota->parrafo}}</p>
+          <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo}}</p>
           </div>
 
 
