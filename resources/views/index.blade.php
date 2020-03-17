@@ -25,7 +25,7 @@
 
 </section>
 
-      <div class="uk-child-width-1-2@m" uk-grid>
+      <div class="uk-child-width-1-2@m col-4" uk-grid>
         @foreach ($notas as $nota)
         <?php if ($nota->usuario->adm == 1) :  ?>
       <div>
@@ -36,6 +36,7 @@
           </div>
           <div class="uk-card-body">
             <p> {{$nota->titulo}}, {{$nota->pais}}</p>
+            <p style="text-transform: uppercase;"> {{$nota->subtitulo}}</p>
 
           </div>
       </div>
