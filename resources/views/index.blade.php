@@ -26,11 +26,12 @@
 </section>
 
 <section class="row">
-  <div class="col-6">
+  <div class="col-lg-4 col-md-6 col-10">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
   <div class="uk-child-width-1-2@m" uk-grid>
   <div>
+      <a href="{{url('nota/'.$nota->id)}}" style="display:inline">
   <div class="uk-card uk-card-default">
       <div class="uk-card-media-top">
           <img src="/storage/{{$nota->foto}}" alt="">
@@ -41,6 +42,7 @@
 
       </div>
   </div>
+</a>
 </div>
 </div>
 
