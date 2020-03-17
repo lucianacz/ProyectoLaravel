@@ -26,7 +26,6 @@
 </section>
 
 
-<div class="row col-12" style="display:flex; justify-content:center; margin: 0 auto;">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
       <div class="uk-child-width-1-2@m" uk-grid>
@@ -38,14 +37,14 @@
           </div>
           <div class="uk-card-body">
             <p> {{$nota->titulo}}, {{$nota->pais}}</p>
-          
+
           </div>
       </div>
     </a>
   </div>
-  <?php endif; ?>
-    @endforeach
 </div>
+<?php endif; ?>
+  @endforeach
 
 
 
