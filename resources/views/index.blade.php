@@ -26,28 +26,31 @@
 </section>
 
 
-<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-  <div>
-      <div class="uk-card uk-card-default uk-card-body">
-        <div class="uk-inline">
-            <img src="img/cover.jpg" alt="">
+<div class="row col-12" style="display:flex; justify-content:center; margin: 0 auto;">
+    @foreach ($notas as $nota)
+    <?php if ($nota->usuario->adm == 1) :  ?>
+    <article class="col-lg-3 col-md-4 col-11" style="padding:10px;">
+      <div class="uk-inline" uk-lightbox="animation: fade">
+        <div class="uk-inline" style="">
+              <div>
+                  <div class="uk-card uk-card-default">
+                      <div class="uk-card-media-top">
+                          <a class="uk-inline" href="/storage/{{$foto->nombre}}" data-caption="{{$foto->pais}}, {{$foto->region}}">
+                          <img src="/storage/{{$foto->nombre}}" alt="">
+                      </div>
+                      <div class="uk-card-body">
+                        <p>  En: {{$foto->subtitulo}}, {{$foto->pais}}. De: {{$foto->usuario->nombreUsuario}}</p>
+                         <?php endif; ?>
+                            @endguest
+                      </div>
+                  </div>
+              </div>
+
+
         </div>
-          <h3 class="uk-card-title">Default</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
-  </div>
-  <div>
-      <div class="uk-card uk-card-primary uk-card-body">
-          <h3 class="uk-card-title">Primary</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-  </div>
-  <div>
-      <div class="uk-card uk-card-secondary uk-card-body">
-          <h3 class="uk-card-title">Secondary</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-  </div>
+    </article>
+    @endforeach
 </div>
 
 
