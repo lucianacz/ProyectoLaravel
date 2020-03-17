@@ -30,14 +30,12 @@
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
     <article class="col-lg-3 col-md-4 col-11" style="padding:10px;">
-      <div class="uk-inline" uk-lightbox="animation: fade">
-        <div class="uk-inline" style="">
-              <div>
+      <div class="uk-inline">
                   <div class="uk-card uk-card-default">
                       <div class="uk-card-media-top">
                         <a href="{{url('nota/'.$nota->id)}}">
                           <img src="/storage/{{$nota->foto}}" alt="">
-                          </a>
+                        </a>
                       </div>
                       <div class="uk-card-body">
                         <h3>
@@ -49,7 +47,6 @@
                         <p> De: {{$nota->usuario->nombreUsuario}}</p>
                       </div>
                   </div>
-              </div>
         </div>
       </div>
     </article>
