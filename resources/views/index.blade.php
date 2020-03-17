@@ -25,10 +25,9 @@
 
 </section>
 
-  <div class="col-lg-4 col-md-4 col-4">
-    @foreach ($notas as $nota)
-    <?php if ($nota->usuario->adm == 1) :  ?>
       <div class="uk-child-width-1-2@m" uk-grid>
+        @foreach ($notas as $nota)
+        <?php if ($nota->usuario->adm == 1) :  ?>
       <div>
           <a href="{{url('nota/'.$nota->id)}}">
       <div class="uk-card uk-card-default">
@@ -42,9 +41,9 @@
       </div>
     </a>
   </div>
-</div>
 <?php endif; ?>
   @endforeach
+
 
 </div>
 
