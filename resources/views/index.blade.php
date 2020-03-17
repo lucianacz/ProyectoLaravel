@@ -24,7 +24,7 @@
 </div>
 
 </section>
-      <div class="col-4">
+      <div class="col-6">
         @foreach ($notas as $nota)
         <?php if ($nota->usuario->adm == 1) :  ?>
       <div class="uk-child-width-1-2@m" uk-grid>
