@@ -3,7 +3,7 @@
 @section('main')
 
 <main>
-<section>
+<section class="row">
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
