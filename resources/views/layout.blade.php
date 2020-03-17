@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon2.png" sizes="16x16">
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e714badfac6be0012fa5da7&product=inline-share-buttons" async="async"></script>
 
     <title> Cultura Sariri </title>
   </head>
