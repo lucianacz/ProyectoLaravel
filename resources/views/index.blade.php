@@ -25,7 +25,7 @@
 
 </section>
 
-<section id = "culturas" class="culturas">
+<section class="culturas">
     <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">NOTAS SARIRI</a></h4>
 
   <div class="col-lg-4 col-md-6 col-10" id="sariri">
