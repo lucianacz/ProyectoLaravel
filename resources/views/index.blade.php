@@ -35,10 +35,9 @@
               <div>
                   <div class="uk-card uk-card-default">
                       <div class="uk-card-media-top">
-                          <a class="uk-inline" href="{{url('nota/'.$nota->id)}}" data-caption="{{$nota->pais}}">
+                          <a href="{{url('nota/'.$nota->id)}}" data-caption="{{$nota->pais}}">
                           <img src="/storage/{{$nota->foto}}" alt="">
-                      </div>
-                      <div class="uk-card-body">
+                      
                         <p>  En: {{$nota->subtitulo}}, {{$nota->pais}}. De: {{$nota->usuario->nombreUsuario}}</p>
                       </div>
                   </div>
