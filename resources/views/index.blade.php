@@ -30,7 +30,7 @@
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
     <article class="col-lg-3 col-md-4 col-11" style="padding:10px;">
-      <div class="uk-inline">
+      <div class="uk-inline" animation="fade">
                   <div class="uk-card uk-card-default">
                       <div class="uk-card-media-top">
                         <a href="{{url('nota/'.$nota->id)}}">
@@ -38,13 +38,12 @@
                         </a>
                       </div>
                       <div class="uk-card-body">
-                        <h3>
                           <a href="{{url('nota/'.$nota->id)}}">
-                             En: {{$nota->titulo}}, {{$nota->pais}}
+                             {{$nota->titulo}}, {{$nota->pais}}
                           </a>
-                        </h3>
-                          <p> De: {{$nota->subtitulo}}</p>
-                        <p> De: {{$nota->usuario->nombreUsuario}}</p>
+                            <a href="{{url('nota/'.$nota->id)}}">
+                               {{$nota->subtitulo}}</a>
+                          <a href="{{url('nota/'.$nota->id)}}">{{$nota->usuario->nombreUsuario}}</a>
                       </div>
                   </div>
         </div>
