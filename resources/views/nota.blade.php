@@ -52,7 +52,7 @@
 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=734076347092155&autoLogAppEvents=1"></script>
-        <div class="fb-share-button" data-href="http://culturasariri.com.ar/nota//{{$nota->id}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+        <div class="fb-share-button" data-href="http://culturasariri.com.ar/nota/{{$nota->id}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
 
         <ul class="share-buttons">
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Comparte en Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"><meta property="og:image" content="culturasariri.con.ar/storage/{{$nota->foto}}"></a></li>
