@@ -3,7 +3,7 @@
 @section('main')
 
 <main>
-<section class="row">
+<section>
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
@@ -25,13 +25,13 @@
 
 </section>
 
-<section>
+<section class="row">
   <div class="col-6">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
   <div class="uk-child-width-1-2@m" uk-grid>
   <div>
-      <a href="{{url('nota/'.$nota->id)}}" style="display:inline;">
+      <a href="{{url('nota/'.$nota->id)}}" style="display:inline">
   <div class="uk-card uk-card-default">
       <div class="uk-card-media-top">
           <img src="/storage/{{$nota->foto}}" alt="">
