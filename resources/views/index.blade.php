@@ -3,29 +3,57 @@
 @section('main')
 
 <main>
-<section class="row">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/indexSlider/1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/cultura2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/cultura3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <section class="slider-menu">
+    <!--Image slider & aside of the menu buttons-->
+    <aside class="side-menu">
+      <a href="#" data-target="#myCarousel" data-slide-to="0"><img src="http://via.placeholder.com/50x50" alt="">Book</a>
+      <a href="#" data-target="#myCarousel" data-slide-to="1"><img src="http://via.placeholder.com/50x50" alt="">Portfolio</a>
+      <a href="#" data-target="#myCarousel" data-slide-to="2"><img src="http://via.placeholder.com/50x50" alt="">What to expect</a>
+      <a href="#" data-target="#myCarousel" data-slide-to="3"><img src="http://via.placeholder.com/50x50" alt="">Services</a>
+    </aside>
+
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="/img/indexSlider/2.jpg" alt="First Slide">
+          <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Aliquam sit amet gravida nibh, facilisis...</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/indexSlider/3.jpg" alt="First Slide">
+          <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna vel...</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/indexSlider/1.jpg" alt="First Slide">
+          <div class="carousel-caption">
+            <h3>Fourth slide label</h3>
+            <p>Praesent commodo cursus magna vel...</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
 </section>
 
 
@@ -115,3 +143,6 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
