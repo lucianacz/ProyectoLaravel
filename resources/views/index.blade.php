@@ -1,19 +1,14 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
 @extends('layout')
 
 @section('main')
 
 <main>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <section class="slider-menu">
-    <!--Image slider & aside of the menu buttons-->
-    <aside class="side-menu">
-      <a href="#" data-target="#myCarousel" data-slide-to="0"><img src="http://via.placeholder.com/50x50" alt="">Book</a>
-      <a href="#" data-target="#myCarousel" data-slide-to="1"><img src="http://via.placeholder.com/50x50" alt="">Portfolio</a>
-      <a href="#" data-target="#myCarousel" data-slide-to="2"><img src="http://via.placeholder.com/50x50" alt="">What to expect</a>
-      <a href="#" data-target="#myCarousel" data-slide-to="3"><img src="http://via.placeholder.com/50x50" alt="">Services</a>
-    </aside>
 
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
       <!-- Carousel indicators -->
@@ -25,25 +20,13 @@
       <!-- Carousel items -->
       <div class="carousel-inner">
         <div class="item">
-          <img src="/img/indexSlider/2.jpg" alt="First Slide">
-          <div class="carousel-caption">
-            <h3>Second slide label</h3>
-            <p>Aliquam sit amet gravida nibh, facilisis...</p>
-          </div>
+          <img src="img/indexSlider/2.jpg" alt="First Slide">
         </div>
         <div class="item">
-          <img src="/img/indexSlider/3.jpg" alt="First Slide">
-          <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna vel...</p>
-          </div>
+          <img src="img/indexSlider/3.jpg" alt="First Slide">
         </div>
         <div class="item">
-          <img src="/img/indexSlider/1.jpg" alt="First Slide">
-          <div class="carousel-caption">
-            <h3>Fourth slide label</h3>
-            <p>Praesent commodo cursus magna vel...</p>
-          </div>
+          <img src="img/indexSlider/1.jpg" alt="First Slide">
         </div>
       </div>
       <!-- Carousel nav -->
