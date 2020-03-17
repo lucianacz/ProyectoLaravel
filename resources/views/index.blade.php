@@ -40,16 +40,13 @@
                       </div>
                       <div class="uk-card-body">
                         <p>  En: {{$foto->subtitulo}}, {{$foto->pais}}. De: {{$foto->usuario->nombreUsuario}}</p>
-                         <?php endif; ?>
-                            @endguest
                       </div>
                   </div>
               </div>
-
-
         </div>
       </div>
     </article>
+  <?php endif; ?>
     @endforeach
 </div>
 
