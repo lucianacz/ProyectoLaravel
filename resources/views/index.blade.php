@@ -29,26 +29,20 @@
 <div class="row col-12" style="display:flex; justify-content:center; margin: 0 auto;">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
-    <article class="col-lg-3 col-md-4 col-11" style="padding:10px;">
-      <div class="uk-inline" animation="fade">
-                  <div class="uk-card uk-card-default">
-                      <div class="uk-card-media-top">
-                        <a href="{{url('nota/'.$nota->id)}}">
-                          <img src="/storage/{{$nota->foto}}" alt="">
-                        </a>
-                      </div>
-                      <div class="uk-card-body">
-                          <a href="{{url('nota/'.$nota->id)}}">
-                             {{$nota->titulo}}, {{$nota->pais}}
-                          </a>
-                            <a href="{{url('nota/'.$nota->id)}}">
-                               {{$nota->subtitulo}}</a>
-                          <a href="{{url('nota/'.$nota->id)}}">{{$nota->usuario->nombreUsuario}}</a>
-                      </div>
-                  </div>
-        </div>
+      <div class="uk-child-width-1-2@m" uk-grid>
+      <div>
+      <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+              <img src="images/light.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> {{$nota->titulo}}, {{$nota->pais}}</a>
+            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
+            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
+            <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
+          </div>
       </div>
-    </article>
+  </div>
   <?php endif; ?>
     @endforeach
 </div>
