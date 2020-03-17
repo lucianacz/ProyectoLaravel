@@ -90,6 +90,8 @@
     </div>
   </section>
 
+<div class="sharethis-inline-share-buttons"></div>
+
 </main>
 
 
