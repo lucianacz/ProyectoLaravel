@@ -31,17 +31,17 @@
     <?php if ($nota->usuario->adm == 1) :  ?>
       <div class="uk-child-width-1-2@m" uk-grid>
       <div>
+          <a href="{{url('nota/'.$nota->id)}}">
       <div class="uk-card uk-card-default">
           <div class="uk-card-media-top">
-              <img src="images/light.jpg" alt="">
+              <img src="/storage/{{$nota->foto}}" alt="">
           </div>
           <div class="uk-card-body">
-            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> {{$nota->titulo}}, {{$nota->pais}}</a>
-            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
-            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
-            <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
+            <p> {{$nota->titulo}}, {{$nota->pais}}</p>
+          
           </div>
       </div>
+    </a>
   </div>
   <?php endif; ?>
     @endforeach
