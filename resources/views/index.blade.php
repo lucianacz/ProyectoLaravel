@@ -35,10 +35,18 @@
               <div>
                   <div class="uk-card uk-card-default">
                       <div class="uk-card-media-top">
-                          <a href="{{url('nota/'.$nota->id)}}" data-caption="{{$nota->pais}}">
+                        <a href="{{url('nota/'.$nota->id)}}">
                           <img src="/storage/{{$nota->foto}}" alt="">
-                      
-                        <p>  En: {{$nota->subtitulo}}, {{$nota->pais}}. De: {{$nota->usuario->nombreUsuario}}</p>
+                          </a>
+                      </div>
+                      <div class="uk-card-body">
+                        <h3>
+                          <a href="{{url('nota/'.$nota->id)}}">
+                             En: {{$nota->titulo}}, {{$nota->pais}}
+                          </a>
+                        </h3>
+                          <p> De: {{$nota->subtitulo}}</p>
+                        <p> De: {{$nota->usuario->nombreUsuario}}</p>
                       </div>
                   </div>
               </div>
