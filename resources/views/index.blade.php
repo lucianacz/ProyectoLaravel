@@ -31,18 +31,19 @@
     <?php if ($nota->usuario->adm == 1) :  ?>
   <div class="uk-child-width-1-2@m" uk-grid>
   <div>
-      <a href="{{url('nota/'.$nota->id)}}" style="display:inline">
+
   <div class="uk-card uk-card-default">
+      <a href="{{url('nota/'.$nota->id)}}">
       <div class="uk-card-media-top">
           <img src="/storage/{{$nota->foto}}" alt="">
       </div>
       <div class="uk-card-body">
         <p> {{$nota->titulo}}, {{$nota->pais}}</p>
         <p style="text-transform: uppercase;"> {{$nota->subtitulo}}</p>
-
       </div>
+      </a>
   </div>
-</a>
+
 </div>
 </div>
 
