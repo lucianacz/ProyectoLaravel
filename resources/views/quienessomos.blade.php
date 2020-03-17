@@ -21,7 +21,7 @@
 
 
       <div class="col-lg-8 col-md-10 col-10">
-        <h4 style="color:grey;">¿QUIENES SOMOS?</h4>
+        <h4 style="color:grey; margin-top:30px;">¿QUIENES SOMOS?</h4>
           <p style="white-space: pre-wrap; justify-content: center;"> ¡Hola, somos Julian y Luciana!
             En 2018 decidimos salir a viajar por el mundo y en los meses de nuestra aventura recorrimos muchos países de Asia, algunos de África y otros de Europa. Ya habíamos tenido la posibilidad de viajar previamente por algunos lugares de América.
           En nuestros viajes vivimos un montón experiencias. Sin dudas las que más nos marcaron fueron las vivencias en las que pudimos generar una interacción real con las diferentes culturas. Cuando viajamos intentamos salirnos del circuito turístico y buscar la autenticidad de los lugares. De esta forma conocimos étnias, tribus y distintas sociedades. Nos entregamos a ser parte de diferentes formas de vida.
