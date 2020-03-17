@@ -25,7 +25,10 @@
 
 </section>
 
-<section class="row">
+<section id = "culturas" class="culturas">
+  <div class="col-lg-8 col-md-8 col-10">
+    <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">NOTAS SARITI</a></h4>
+
   <div class="col-lg-4 col-md-6 col-10" id="sariri">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
