@@ -18,6 +18,7 @@
           @if($sig)
           <a href="/nota/{{$sig->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="arrow-right"></a>
           @endif
+          <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
         </div>
 
       </br>
