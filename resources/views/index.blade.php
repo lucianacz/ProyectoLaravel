@@ -24,36 +24,27 @@
 </div>
 
 </section>
-
-<section>
-    <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">NOTAS SARIRI</a></h4>
-
-  <div class="col-lg-4 col-md-6 col-10" id="sariri">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
-  <div class="uk-child-width-1-2@m" uk-grid>
-  <div>
 
-  <div class="uk-card uk-card-default">
-      <a href="{{url('nota/'.$nota->id)}}">
-      <div class="uk-card-media-top">
-          <img src="/storage/{{$nota->foto}}" alt="">
-      </div>
-      <div class="uk-card-body">
-        <p> {{$nota->titulo}}, {{$nota->pais}}</p>
-        <p style="text-transform: uppercase;"> {{$nota->subtitulo}}</p>
-      </div>
-      </a>
-  </div>
+      <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+            <img src="/storage/{{$nota->foto}}" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Left</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
 
-</div>
-</div>
+    <?php endif; ?>
+    @endforeach
+<section>
 
-<?php endif; ?>
-@endforeach
 
-</div>
-</section>
 
 
 
