@@ -64,38 +64,6 @@
 
 
 
-<section>
-
-  <div class="vc_row wpb_row vc_row-fluid">
-    <div class="wpb_column vc_column_container vc_col-sm-12">
-      <div class="vc_column-inner">
-        <div class="wpb_wrapper">
-          <h3 style="font-size: 28px;color: #cdcdcd;text-align: left;font-family:Muli;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1550073812085">
-          Últimos artículos de nuestro BLOG</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="vc_row wpb_row vc_row-fluid vc_column-gap-15 vc_row-o-equal-height vc_row-flex">
-    <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
-      <div class="vc_column-inner vc_custom_1550074385293">
-        <div class="wpb_wrapper">
-          <h2 style="font-size: 24px;color: #ffffff;line-height: 1,5;text-align: left;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1550602161501">
-            <a href=#>
-              Petra, la ciudad de piedra</a>
-            </h2>
-            <h2 style="font-size: 16px;color: #ffffff;line-height: 1.5;text-align: left;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1550075442675" >Visitar Petra es adentrarse en un mundo mágico</h2><div class="vc_btn3-container vc_btn3-inline vc_custom_1550073725413">
-              <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-grey" href=# title="">LEER
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-</section>
-
-
 
   <section class="explora row">
 
