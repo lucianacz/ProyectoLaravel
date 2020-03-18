@@ -72,13 +72,6 @@ a {
   justify-content: center;
 }
 
-.sariri {
-  margin-top: 10%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
 .identidad a {
   color: black;
   font-weight: bold;
@@ -316,26 +309,6 @@ a {
 
   .culturas .texto {
     padding-top: 1px;
-  }
-
-  ul.share-buttons{
-    list-style: none;
-    padding: 0;
-  }
-
-  ul.share-buttons li{
-    display: inline;
-  }
-
-  ul.share-buttons .sr-only{
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
   }
 
 }

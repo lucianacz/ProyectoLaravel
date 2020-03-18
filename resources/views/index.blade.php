@@ -25,7 +25,42 @@
 
 
 
+<section id = "culturas" class="culturas">
+  <div class="col-lg-8 col-md-8 col-10">
+    <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
 
+
+    <div class="menuculturas uk-margin-medium-top">
+
+    <ul class="uk-flex-center" uk-tab uk-switcher>
+
+      @foreach ($notas as $nota)
+      <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->pais}}</a></li>
+      @endforeach
+      </ul>
+
+
+      <ul class="uk-switcher">
+
+        @foreach ($notas as $nota)
+        <li>
+          <div class="col-lg-6 col-md-3 col-12 foto">
+          <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
+          </div>
+
+          <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> En: {{$nota->titulo}}, {{$nota->pais}}</a>
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
+          <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
+          </div>
+        </li>
+        @endforeach
+      </ul>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -37,51 +72,6 @@
 
     <div class="plantilla col-lg-9 col-md-8 col-12">
     <a href="newNote"><img src="img/plantilla2.jpg" alt="Camellos"></a>
-
-
-
-    </div>
-
-
-
-  </section>
-
-
-
-  <section id = "culturas" class="culturas">
-    <div class="col-lg-8 col-md-8 col-10">
-      <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
-
-
-      <div class="menuculturas uk-margin-medium-top">
-
-      <ul class="uk-flex-center" uk-tab uk-switcher>
-
-        @foreach ($notas as $nota)
-        <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->pais}}</a></li>
-        @endforeach
-        </ul>
-
-
-        <ul class="uk-switcher">
-
-          @foreach ($notas as $nota)
-          <li>
-            <div class="col-lg-6 col-md-3 col-12 foto">
-            <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
-            </div>
-
-            <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
-            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> En: {{$nota->titulo}}, {{$nota->pais}}</a>
-            <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
-            <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
-            </div>
-          </li>
-          @endforeach
-        </ul>
-      </div>
-
     </div>
   </section>
 
