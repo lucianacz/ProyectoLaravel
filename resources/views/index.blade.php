@@ -24,7 +24,7 @@
 </div>
 
 
-<section href="{{url('nota/'.$nota->id)}}">
+<section class="col-lg-6 col-md-3 col-12" style="padding:30px;">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
 
