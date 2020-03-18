@@ -51,7 +51,7 @@
           <div class="cuerpo col-10">
           <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}}
           </br> En: {{$nota->titulo}}, {{$nota->pais}}</a>
-          </br> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
+          </br> Por: {{$nota->usuario->nombreUsuario}}</a>
           <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
           </div>
         </li>
