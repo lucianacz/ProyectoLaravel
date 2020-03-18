@@ -35,7 +35,7 @@
     <ul class="uk-flex-center" uk-tab uk-switcher>
 
       @foreach ($notas as $nota)
-      <li class="uk-active" style="text-transform: uppercase;color:grey;"><a href="#">{{$nota->pais}}</a></li>
+      <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->pais}}</a></li>
       @endforeach
       </ul>
 
@@ -44,14 +44,14 @@
 
         @foreach ($notas as $nota)
         <li>
-          <div class="col-6 col-lg-10 foto">
+          <div class="col-lg-6 col-md-3 col-12 foto">
           <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
           </div>
 
-          <div class="cuerpo col-6 col-lg-10">
-          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase; color:black;"> {{$nota->subtitulo}}
-          </br> En: {{$nota->titulo}}, {{$nota->pais}}
-        </br> <strong>Por: {{$nota->usuario->nombreUsuario}}</strong></a>
+          <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> En: {{$nota->titulo}}, {{$nota->pais}}</a>
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
           <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
           </div>
         </li>
