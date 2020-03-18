@@ -23,7 +23,8 @@
 
 </div>
 
-</section>
+
+<section href="{{url('nota/'.$nota->id)}}">
     @foreach ($notas as $nota)
     <?php if ($nota->usuario->adm == 1) :  ?>
 
@@ -42,7 +43,8 @@
 
     <?php endif; ?>
     @endforeach
-<section>
+</section>
+
 
 
 
