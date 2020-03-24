@@ -63,11 +63,8 @@
           <?php endif; ?>
 
 
-
-
-        <p>{{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}}</p>
-        <br>
         <h5 style="font-size:19px;font-weight:lighter;"> Usuario: {{$nota->usuario->nombreUsuario}} </h5>
+        <h5 style="font-size:15px;font-weight:lighter;"> {{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}} </h5>
 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=734076347092155&autoLogAppEvents=1"></script>
