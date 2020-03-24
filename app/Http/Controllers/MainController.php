@@ -263,7 +263,7 @@ public function recordNote(Request $r){
     'user_id' => \Auth::user()->id,
     'foto' => $imagen,
     'foto2' => $imagen2,
-    'foto3' => $imagen2,
+    'foto3' => $imagen3,
     ]);
 
     return redirect('/gente')
