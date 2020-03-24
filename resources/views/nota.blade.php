@@ -66,6 +66,11 @@
         <h5 style="font-size:19px;font-weight:lighter;"> Usuario: {{$nota->usuario->nombreUsuario}} </h5>
         <h5 style="font-size:15px;font-weight:lighter;"> {{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}} </h5>
 
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" rel="noopener">
+            <img class="YOUR_FB_CSS_STYLING_CLASS" src="img/YOUR_FB_ICON_IMAGE.png" width="22px" height="22px" alt="Share on Facebook">
+        </a>
+
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=734076347092155&autoLogAppEvents=1"></script>
         <div class="fb-share-button" data-href="http://culturasariri.com.ar/{{url('nota/'.$nota->id)}}"" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
