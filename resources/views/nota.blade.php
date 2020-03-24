@@ -4,7 +4,7 @@
 
 @section('main')
 
-  <meta property="og:url"           content="https://www.culturasariri.com.ar/nota/{{$nota->id}}" />
+  <meta property="og:url"           content="https://www.culturasariri.com.ar/nota/{{$nota->id}}.html" />
   <meta property="og:type"          content="Blog Notas" />
   <meta property="og:title"         content="Cultura Sariri" />
   <meta property="og:description"   content="Blog" />
@@ -83,7 +83,7 @@
 
         <!-- Your share button code -->
         <div class="fb-share-button"
-          data-href="https://www.culturasariri.com.ar/nota/{{$nota->id}}" 
+          data-href="https://www.culturasariri.com.ar/nota/{{$nota->id}}"
           data-layout="button_count">
         </div>
 
