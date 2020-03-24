@@ -258,7 +258,7 @@ public function recordNote(Request $r){
     'parrafo3'=>$r['parrafo3'],
     'fecha'=>$r['fecha']. '-01',
     'user_id' => \Auth::user()->id,
-    'foto' => $imagenA,
+    'foto' => $imagen,
     'foto2' => $imagen2,
     'foto3' => $imagen2,
     ]);
