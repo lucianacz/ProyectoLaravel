@@ -73,9 +73,9 @@
 
 
   <ul class="share-buttons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Comparte en Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"><meta property="og:image" content="http://culturasariri.com.ar/storage/{{$nota->foto}}"></a></li>
+  ¡Comparte!
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Comparte en Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"><meta property="og:image" content="http://culturasariri.com.ar/nota/{{$nota->id}}"></a></li>
   <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a></li>
-  <li><a href="https://plus.google.com/share?url=" target="_blank" title="Comparte on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;" class="uk-icon-button  uk-margin-small-right" uk-icon="google"></a></li>
   <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Envialo por email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;" class="uk-icon-button  uk-margin-small-right" uk-icon="mail"></a></li>
 </ul>
       </article>
