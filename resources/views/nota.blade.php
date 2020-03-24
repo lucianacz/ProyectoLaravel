@@ -71,7 +71,7 @@
 
         <li class="social__item">
         <div id="mImageBox">
-        <button id="my_image" alt=''  src="/storage/{{$nota->foto}}" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
+        <button id="my_image" alt=''  src="/storage/{{$nota->foto}}" class="social__link" onclick="fbs_click(this)">COMPARTIR FB!!</button>
         </div>
         <script>
         function fbs_click(TheImg) {
