@@ -68,6 +68,27 @@
   </div>
 
 
+    <div class="col-12" style="padding-top:5px;">
+        <label for="fecha">Fecha de Visita</label>
+        <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{ old('fecha') }}">
+        @error('fecha')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
+    </div>
+
+  <div class="col-12" style="padding-top:5px;">
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen</label>
+    <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" type="file">
+    @error('foto')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+
   <div class="col-12" style="padding-top:5px;">
     <label for="parrafo">Texto</label>
     <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo') is-invalid @enderror" placeholder="" name="parrafo">{{ old('parrafo') }}</textarea>
@@ -81,25 +102,7 @@
   </div>
 
 
-  <div class="col-12" style="padding-top:5px;">
-      <label for="fecha">Fecha de Visita</label>
-      <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{ old('fecha') }}">
-      @error('fecha')
-          <span class="invalid-feedback" role="alert">
-              <strong>{{ $message }}</strong>
-          </span>
-      @enderror
-  </div>
 
-  <div class="col-12" style="padding-top:5px;">
-    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen</label>
-    <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" type="file">
-    @error('foto')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-    @enderror
-  </div>
 
   <div class="col-12" style="padding-top:5px;">
     <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 2 (OPCIONAL)</label>
@@ -148,7 +151,7 @@
 
 
 
-  <div class="col-8" style="padding-top:7px;">
+  <div class="col-12" style="padding-top:7px;">
   <button class="btn col-12" type="submit">Subir nota</button>
   </div>
 
