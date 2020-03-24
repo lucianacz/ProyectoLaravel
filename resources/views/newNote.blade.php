@@ -34,7 +34,7 @@
   </div>
 
   <div class="col-lg-6 col-md-12" style="padding-top:5px;">
-    <label for="region" class="form-label @error('region') is-invalid @enderror">{{ __('Region') }}*</label>
+    <label for="region" class="form-label @error('region') is-invalid @enderror">{{ __('Region') }} (OPCIONAL)</label>
     <select class="custom-select" id="regiones" name="region">
       <option value="{{ old('region') }}" selected>{{ old('region') }}</option>
       </select>
@@ -46,7 +46,7 @@
   </div>
 
   <div class="col-12">
-    <label for="titulo">Titulo: ¿En qué lugar específico?* </label>
+    <label for="titulo"> ¿En qué lugar específico?* </label>
     <input id="titulo" type="text"  onkeyup="validateTitle(this.value)"  id="textbox" class="form-control @error('titulo') is-invalid @enderror" name="titulo" value="{{ old('titulo') }}">
     <span id=titulo style="color:#00A79D;"></span>
     @error('titulo')
@@ -57,7 +57,7 @@
   </div>
 
   <div class="col-12" style="padding-top:5px;">
-    <label for="subtitulo">Subtitulo: ¿Qué fue lo que pasó?*</label>
+    <label for="subtitulo">¿Qué fue lo que pasó?*</label>
     <input id="subtitulo" type="text" class="form-control @error('subtitulo') is-invalid @enderror" name="subtitulo" value="{{ old('subtitulo') }}">
 
     @error('subtitulo')
@@ -69,7 +69,7 @@
 
 
     <div class="col-12" style="padding-top:5px;">
-        <label for="fecha">Fecha de Visita</label>
+        <label for="fecha">Fecha de Visita*</label>
         <input type="month" name="fecha" class="form-control @error('fecha') is-invalid @enderror" min="1939-01-01" max="2017-12-31" value="{{ old('fecha') }}">
         @error('fecha')
             <span class="invalid-feedback" role="alert">
@@ -79,7 +79,7 @@
     </div>
 
   <div class="col-12" style="padding-top:5px;">
-    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen</label>
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen*</label>
     <input id="files" class="form-control @error('foto') is-invalid @enderror" name="foto" type="file">
     @error('foto')
         <span class="invalid-feedback" role="alert">
@@ -90,7 +90,7 @@
 
 
   <div class="col-12" style="padding-top:5px;">
-    <label for="parrafo">Texto</label>
+    <label for="parrafo">Parrafo 1 *</label>
     <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo') is-invalid @enderror" placeholder="" name="parrafo">{{ old('parrafo') }}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
 
@@ -115,7 +115,7 @@
   </div>
 
   <div class="col-12" style="padding-top:5px;">
-    <label for="parrafo2">Texto</label>
+    <label for="parrafo2">Parrafo 2 (OPCIONAL)</label>
     <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
 
@@ -137,7 +137,7 @@
   </div>
 
   <div class="col-12" style="padding-top:5px;">
-    <label for="parrafo3">Texto</label>
+    <label for="parrafo3">Parrafo 3 (OPCIONAL)</label>
     <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo3') is-invalid @enderror" placeholder="" name="parrafo3">{{ old('parrafo3') }}</textarea>
     <span id=charcount style="color:#00A79D;"></span>
 
