@@ -67,9 +67,27 @@
         <h5 style="font-size:15px;font-weight:lighter;"> {{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}} </h5>
 
 
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" rel="noopener">
-            <img class="YOUR_FB_CSS_STYLING_CLASS" src="img/YOUR_FB_ICON_IMAGE.png" width="22px" height="22px" alt="Share on Facebook">
-        </a>
+
+
+        <li class="social__item">
+        <div id="mImageBox">
+        <button id="my_image" alt=''  src="/storage/{{$nota->foto}}" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
+        </div>
+        <script>
+        function fbs_click(TheImg) {
+
+            u=TheImg.src;
+
+            t=TheImg.getAttribute('alt');
+
+            window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+
+            return false;
+
+           }
+         </script>
+         </li>
+
 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=734076347092155&autoLogAppEvents=1"></script>
