@@ -228,17 +228,14 @@ public function recordNote(Request $r){
 
 
 
-    $imagen = $r->file('foto');
-    $optimizerChain = OptimizerChainFactory::create();
-    $optimizerChain->optimize($imagen, $imagenA);
-    $imagenA->store('public');
-    $imagen=basename($imagenA);
+    $imagen = $r->file('foto')->store('public');
+    $imagen=basename($imagen);
 
     if (is_null($r['foto2'])) {
       $imagen2 = null;
     }
     else {
-      $imagen2=$r->file('foto2')->optimize()->store('public');
+      $imagen2=$r->file('foto2')->store('public');
       $imagen2=basename($imagen2);
     }
 
@@ -246,7 +243,7 @@ public function recordNote(Request $r){
       $imagen3 = null;
     }
     else {
-      $imagen3=$r->file('foto3')->optimize()->store('public');
+      $imagen3=$r->file('foto3')->store('public');
       $imagen3=basename($imagen3);
     }
 
