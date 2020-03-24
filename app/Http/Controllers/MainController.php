@@ -223,7 +223,12 @@ public function recordNote(Request $r){
     ],$message);
 
 
-
+    if (is_null($r['region'])) {
+      $region = null;
+    }
+    else {
+      $region = $r['region'];
+    }
 
     $imagen = $r->file('foto')->store('public');
     $imagen=basename($imagen);
@@ -250,7 +255,7 @@ public function recordNote(Request $r){
     'titulo' => $r['titulo'],
     'subtitulo' => $r['subtitulo'],
     'pais' => $r['pais'],
-    'region' => $r['region'],
+    'region' => $region,
     'parrafo'=>$r['parrafo'],
     'parrafo2'=>$r['parrafo2'],
     'parrafo3'=>$r['parrafo3'],
