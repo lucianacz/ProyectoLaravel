@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Validator;
 use App\Usuario;
 use App\Photo;
 use App\User;
-use Spatie\ImageOptimizer\OptimizerChainFactory;
 use ImageOptimizer;
 
 
