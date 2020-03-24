@@ -30,24 +30,22 @@
 
       <article class="nota col-12 principal2">
         <h6 style="font-size:19px;font-weight:lighter; text-transform: uppercase;"> {{$nota->subtitulo}} </h6>
-        <div id="fotoNota">
-        <img src="/storage/{{$nota->foto}}"  alt="Foto">
-        </div>
-
-        <div id="cuerpoNotaPrincipal">
-
-          <p>{{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}}</p>
-          <br>
-
-          <div>
+          <div id="fotoNota">
+          <img src="/storage/{{$nota->foto}}"  alt="Foto">
+          </div>
+          <div id="cuerpoNotaPrincipal">
           <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo}}</p>
           </div>
 
+          <?php if ($nota->foto2) :?>
+          <div id="fotoNota">
+          <img src="/storage/{{$nota->foto2}}"  alt="Foto">
+          </div>
+          <?php endif; ?>
 
 
-
-        </div>
-
+        <p>{{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}}</p>
+        <br>
         <h5 style="font-size:19px;font-weight:lighter;"> Usuario: {{$nota->usuario->nombreUsuario}} </h5>
 
         <div id="fb-root"></div>
