@@ -43,6 +43,27 @@
           </div>
           <?php endif; ?>
 
+          <?php if ($nota->parrafo2) :?>
+          <div id="cuerpoNotaPrincipal">
+          <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo2}}</p>
+          </div>
+          <?php endif; ?>
+
+
+          <?php if ($nota->foto3) :?>
+          <div id="fotoNota">
+          <img src="/storage/{{$nota->foto3}}"  alt="Foto">
+          </div>
+          <?php endif; ?>
+
+          <?php if ($nota->parrafo3) :?>
+          <div id="cuerpoNotaPrincipal">
+          <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo3}}</p>
+          </div>
+          <?php endif; ?>
+
+
+
 
         <p>{{askMonth($nota->fecha->format('m'), $nota->fecha->format('y'))}}</p>
         <br>
