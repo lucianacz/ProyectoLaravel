@@ -76,8 +76,9 @@
             divNuevo.innerHTML = `
 
           <div class="fotoNota">
-          <a href="http://culturasariri.com.ar/nota/${nota.id}" class="uk-icon-button  uk-margin-small-right" uk-icon="image"></a>
+
           <a href="http://culturasariri.com.ar/edit/nota/${nota.id}"> <img src="/storage/${nota.foto}" alt="${nota.epigrafe}"></a>
+          <a href="http://culturasariri.com.ar/nota/${nota.id}" class="uk-icon-button  uk-margin-small-right" uk-icon="image"></a>
           <a href="http://culturasariri.com.ar/edit/nota/${nota.id}" class="uk-icon-button  uk-margin-small-right" uk-icon="pencil"></a>
           <a onclick="event.preventDefault();confirmDelete(event,this,${nota.id});" class="uk-icon-button  uk-margin-small-right" uk-icon="trash"></a>
 
