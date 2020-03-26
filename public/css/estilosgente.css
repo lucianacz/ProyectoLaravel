@@ -42,8 +42,12 @@
 
 .cuerpoNota a {
   color: black;
-  float: left;
   text-align: center;
+}
+
+.muestraUsuario {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* NOTA SEPARADA */
