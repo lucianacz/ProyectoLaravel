@@ -225,6 +225,33 @@ function charcountupdate(str) {
 	document.getElementById("charcount").innerHTML = lng + ' de 5000 caracteres';
 }
 
+
+function confirmDelete(event,tag,idNota){
+  swal({
+  title: "Estas seguro?",
+  text: "Una vez borrada no podrás recuperarla!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("La nota fue borrada exitosamente", {
+      icon: "success",
+    });
+
+    document.querySelector('#deleteForm'+idNota).submit();
+  } else {
+    swal("La nota sigue online :)");
+    event.preventDefault();
+  }
+});
+}
+
+
 </script>
+
+
+
 
 @endsection

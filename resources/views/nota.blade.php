@@ -25,10 +25,10 @@
           <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
             <?php if ($nota->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
           <a href="/nota/{{$nota->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="pencil"></a>
-          <form id="deletePhoto{{$foto->photo_id}}" action="{{ url('http://culturasariri.com.ar/delete/photo/')}}{{$foto->photo_id}} " method="POST" >
+          <a onclick="event.preventDefault();confirmDelete(event,this,${nota.id});" class="uk-icon-button  uk-margin-small-right" uk-icon="trash"></a>
+
+          <form id="deleteForm${nota.id}" action="{{ url('http://culturasariri.com.ar/delete/nota/${nota.id}') }}" method="POST" style="display: none;">
               @csrf
-              <button style="border:0;" type="submit" onclick="event.preventDefault();confirmDelete(event,this,{{$foto->photo_id}});" class="uk-icon-button  uk-margin-small-right" uk-icon="trash">
-              </button>
           </form>
           <?php endif; ?>
 
