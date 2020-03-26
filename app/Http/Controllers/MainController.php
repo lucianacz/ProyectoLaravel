@@ -280,20 +280,44 @@ public function recordNote(Request $r){
        //primero valido los datos
        $message=[
            "titulo.required"=> 'El :attribute no puede estar vacio',
+           "titulo.max"=> 'El :attribute supera la cantidad de caracteres',
            "subtitulo.required" => 'El :attribute no puede estar vacio',
+           "subtitulo.max" => 'El :attribute supera la cantidad de caracteres',
+           "pais.required" => 'El :attribute no puede estar vacio',
            "parrafo.required" =>'El parrafo no puede estar vacio',
            "parrafo.max" =>'El parrafo supera la cantidad de caracteres',
+           "parrafo2.max" =>'El parrafo supera la cantidad de caracteres',
+           "parrafo3.max" =>'El parrafo supera la cantidad de caracteres',
            "fecha.required" =>'La :attribute no puede estar vacia',
+
            "foto.required" =>'La :attribute no puede estar vacia',
-           "foto.image" =>'La :attribute tiene que ser jpg o png',
+           'foto.uploaded' => 'The :attribute failed to upload.',
+           "foto.mimes" =>'La :attribute tiene que ser jpg o png',
+           'foto.max' => 'La foto es muy grande, debe ser menor a :max kb.',
+
+           "foto2.mimes" =>'La :attribute tiene que ser jpg o png',
+           'foto2.uploaded' => 'The :attribute failed to upload.',
+           'foto2.max' => 'La foto es muy grande, debe ser menor a :max kb.',
+
+           "foto3.mimes" =>'La :attribute tiene que ser jpg o png',
+           'foto3.uploaded' => 'The :attribute failed to upload.',
+           'foto3.max' => 'La foto es muy grande, debe ser menor a :max kb.',
+
+
        ];
 
         $rules=[
-           'titulo' => 'required', 'string', 'max:30',
-           'subtitulo' => 'required', 'string', 'max:50',
-           'parrafo' => 'required', 'string', 'max:5000',
-           'foto' => 'nullable', 'image',
-           //'fecha' => 'required',
+          'titulo' => ['required', 'string', 'max:40'],
+          'subtitulo' => ['required', 'string', 'max:40'],
+          'pais' => ['required'],
+          'parrafo' => ['required', 'string', 'max:3000'],
+          'parrafo2' => ['max:3000'],
+          'parrafo3' => ['max:3000'],
+          'foto' => ['mimes:jpeg,png', 'max:1024'],
+          'foto2' => ['mimes:jpeg,png', 'max:1024'],
+          'foto3' => ['mimes:jpeg,png', 'max:1024'],
+          'fecha' => ['required'],
+
        ];
 
       $this->validate($request, $rules, $message);
@@ -305,16 +329,34 @@ public function recordNote(Request $r){
        $nota->titulo = $request['titulo'];
        $nota->subtitulo = $request['subtitulo'];
        $nota->parrafo=$request['parrafo'];
+       $nota->parrafo2=$request['parrafo2'];
+       $nota->parrafo3=$request['parrafo3'];
        $nota->fecha=$request['fecha']. '-01';
 
-       $imagen = $nota->foto;
         //si mandé una imagen la guardo
-        if ($request->file('foto')) {
+        if ($request->file('foto'))
+        {
             $imagen = $request->file('foto')->store('public');
             $imagen = basename($imagen);
         }
 
+
+        if ($request->file('foto2'))
+        {
+            $imagen2 = $request->file('foto2')->store('public');
+            $imagen2 = basename($imagen2);
+        }
+
+        if ($request->file('foto3'))
+        {
+            $imagen3 = $request->file('foto3')->store('public');
+            $imagen3 = basename($imagen3);
+        }
+
+
         $nota->foto = $imagen;
+        $nota->foto2 = $imagen2;
+        $nota->foto3 = $imagen3;
 
         //lo guardo en la BD
         $nota->save();
