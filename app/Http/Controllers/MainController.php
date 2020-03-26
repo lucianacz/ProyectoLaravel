@@ -333,28 +333,14 @@ public function recordNote(Request $r){
         }
 
 
-        if (is_null($request->file('foto2'))) {
-          $imagen2 = null;
-        }
-        else {
-          $imagen2=$request->file('foto2')->store('public');
-          $imagen2=basename($imagen2);
-        }
 
-        if (is_null($request->file('foto2'))) {
-          $imagen3 = null;
-        }
-        else {
-          $imagen3=$request->file('foto3')->store('public');
-          $imagen3=basename($imagen3);
-        }
 
 
 
 
         $nota->foto = $imagen;
-        $nota->foto2 = $imagen2;
-        $nota->foto3 = $imagen3;
+        $nota->foto2 = null;
+        $nota->foto3 = null;
         $nota->titulo = $request['titulo'];
         $nota->subtitulo = $request['subtitulo'];
         $nota->parrafo=$request['parrafo'];
