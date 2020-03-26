@@ -283,7 +283,6 @@ public function recordNote(Request $r){
            "titulo.max"=> 'El :attribute supera la cantidad de caracteres',
            "subtitulo.required" => 'El :attribute no puede estar vacio',
            "subtitulo.max" => 'El :attribute supera la cantidad de caracteres',
-           "pais.required" => 'El :attribute no puede estar vacio',
            "parrafo.required" =>'El parrafo no puede estar vacio',
            "parrafo.max" =>'El parrafo supera la cantidad de caracteres',
            "parrafo2.max" =>'El parrafo supera la cantidad de caracteres',
@@ -309,7 +308,6 @@ public function recordNote(Request $r){
         $rules=[
           'titulo' => ['required', 'string', 'max:40'],
           'subtitulo' => ['required', 'string', 'max:40'],
-          'pais' => ['required'],
           'parrafo' => ['required', 'string', 'max:3000'],
           'parrafo2' => ['max:3000'],
           'parrafo3' => ['max:3000'],
