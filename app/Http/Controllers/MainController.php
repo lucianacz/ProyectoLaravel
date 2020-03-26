@@ -43,8 +43,9 @@ class MainController extends Controller
     $nota = Nota::find($id);
     $ant = Nota::orderby('id','desc')->where('id', '<', $id)->first();
     $sig = Nota::orderby('id','asc')->where('id', '>', $id)->first();
+    $usuarios = Usuario::orderby('nombre')->get();
     $logeado = \Auth::user();
-    return view('nota',compact('nota', 'sig', 'ant', 'logeado'));
+    return view('nota',compact('nota', 'sig', 'ant', 'logeado', 'usuarios'));
   }
 
  public function editNota($id){
