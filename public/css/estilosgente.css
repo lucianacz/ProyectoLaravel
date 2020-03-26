@@ -42,10 +42,8 @@
 
 .cuerpoNota a {
   color: black;
-}
-
-.cuerpoNota a {
-    float: left;
+  float: left;
+  text-align: center;
 }
 
 /* NOTA SEPARADA */
