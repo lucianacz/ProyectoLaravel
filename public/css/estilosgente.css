@@ -43,7 +43,6 @@
 .cuerpoNota a {
   color: black;
   text-align: center;
-  line-height : 12px;
 }
 
 
@@ -61,6 +60,7 @@ font-weight: bold;
 .cuerpoNotaPrincipal p {
   font-size: 17px;
   font-weight: lighter;
+  line-height : 12px;
   text-align: left;
 }
 
