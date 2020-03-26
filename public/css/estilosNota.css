@@ -14,6 +14,8 @@ h6 a:hover {
 
 #cuerpoNotaPrincipal p {
   font-size: 17px;
+  justify-content: flex-start;
+
 }
 
 .btn:hover {
@@ -35,12 +37,13 @@ h6 a:hover {
 #cuerpoNotaPrincipal {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @media (min-width: 770px){
 #cuerpoNotaPrincipal p {
     font-size: 16px;
+    justify-content: flex-start;
   }
 
 }
