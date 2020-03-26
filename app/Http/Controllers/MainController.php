@@ -326,12 +326,6 @@ public function recordNote(Request $r){
        $nota = Nota::find($id);
        //asigno a los atributos de trs maneras distinta
 
-       $nota->titulo = $request['titulo'];
-       $nota->subtitulo = $request['subtitulo'];
-       $nota->parrafo=$request['parrafo'];
-       $nota->parrafo2=$request['parrafo2'];
-       $nota->parrafo3=$request['parrafo3'];
-       $nota->fecha=$request['fecha']. '-01';
 
         //si mandé una imagen la guardo
         if ($request->file('foto'))
@@ -357,6 +351,12 @@ public function recordNote(Request $r){
         $nota->foto = $imagen;
         $nota->foto2 = $imagen2;
         $nota->foto3 = $imagen3;
+        $nota->titulo = $request['titulo'];
+        $nota->subtitulo = $request['subtitulo'];
+        $nota->parrafo=$request['parrafo'];
+        $nota->parrafo2=$request['parrafo2'];
+        $nota->parrafo3=$request['parrafo3'];
+        $nota->fecha=$request['fecha']. '-01';
 
         //lo guardo en la BD
         $nota->save();
