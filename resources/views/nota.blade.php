@@ -24,6 +24,7 @@
           <a href="/nota/{{$sig->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="arrow-right"></a>
           @endif
           <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
+
           @else
             <?php if ($nota->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
           <a href="/edit/nota/{{$nota->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="pencil"></a>
@@ -35,7 +36,7 @@
               @csrf
           </form>
           <?php endif; ?>
-
+          @endguest
 
         </div>
 
