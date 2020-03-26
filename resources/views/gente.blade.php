@@ -27,8 +27,6 @@
       <BR>
 
     <div class="row">
-
-
       @foreach ($notas as $nota)
       <article class="nota col-lg-3 col-md-4 col-11">
         <div class="fotoNota">
@@ -40,13 +38,10 @@
         <div class="cuerpoNota">
           <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; font-weight:bold; color: black;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></p>
 
-          <p>{{$nota->usuario->usuario}} </p>
+          <p>{{$nota->usuario->nombreUsuario}} </p></a>
         </div>
       </article>
       @endforeach
-
-
-
     </div>
     </div>
   </section>
