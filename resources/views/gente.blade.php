@@ -51,6 +51,51 @@
     </div>
   </section>
 
+  <section>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <li>
+            <img src="img/slider/s1.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s2.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s3.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s4.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s5.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s6.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s7.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+        <li>
+            <img src="img/slider/s8.jpg" alt="">
+            <div class="uk-position-center uk-panel"></div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-button" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
+
+    <a class="uk-position-center-right uk-position-small uk-button" href="#" uk-slidenav-next uk-slider-item="next" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
+
+</div>
+  </section>
+
 </main>
 
 @endsection
