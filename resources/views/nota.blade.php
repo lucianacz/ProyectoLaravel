@@ -23,7 +23,7 @@
           <a href="/nota/{{$sig->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="arrow-right"></a>
           @endif
           <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
-            <?php if ($nota->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
+            <?php if ($nota->usuario->id == $log->id || $log->adm == 1) :  ?>
           <a href="/nota/{{$nota->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="pencil"></a>
           <?php endif; ?>
 
