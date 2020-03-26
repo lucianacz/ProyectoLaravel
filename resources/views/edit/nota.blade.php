@@ -50,7 +50,7 @@
   </div>
 
   <div class="col-12">
-      <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 1</label>
+      <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto">Imagen 1</label>
     <div class="">
       <img src="/storage/{{$nota->foto}}" alt="">
     </div>
@@ -86,7 +86,7 @@
       <img src="/storage/{{$nota->foto2}}" alt="">
     </div>
     <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" type="file">
-    @error('foto')
+    @error('foto2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
@@ -110,7 +110,7 @@
   <div class="col-12" style="padding-top:5px;">
     <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto3">Imagen 3 (OPCIONAL)</label>
     <div class="">
-      <img src="/storage/{{$nota->foto2}}" alt="">
+      <img src="/storage/{{$nota->foto3}}" alt="">
     </div>
     <input id="files" class="form-control @error('foto3') is-invalid @enderror" name="foto3" type="file">
     @error('foto3')
