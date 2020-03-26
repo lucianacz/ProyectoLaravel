@@ -15,7 +15,7 @@
     <section class="culturas">
       <div class="col-lg-6 col-md-6 col-10">
         <div class="col-12">
-          @guest
+
           <a href="/gente" class="uk-icon-button  uk-margin-small-right" uk-icon="chevron-double-left"></a>
           @if($ant)
           <a href="/nota/{{$ant->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="arrow-left"></a>
@@ -24,7 +24,7 @@
           <a href="/nota/{{$sig->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="arrow-right"></a>
           @endif
           <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
-
+          @guest
           @else
             <?php if ($nota->usuario->id == $logeado->id || $logeado->adm == 1) :  ?>
           <a href="/edit/nota/{{$nota->id}}" class="uk-icon-button  uk-margin-small-right" uk-icon="pencil"></a>
