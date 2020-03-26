@@ -32,7 +32,7 @@
           <a onclick="event.preventDefault();confirmDelete(event,this,{{$nota->id}});" class="uk-icon-button  uk-margin-small-right" uk-icon="trash"></a>
 
 
-          <form id="deleteForm{{$nota->id}}" action="{{ url('http://culturasariri.com.ar/delete/nota/')}}{{$nota->id}}" method="POST" style="display: none;">
+          <form id="confirmDelete{{$nota->id}}" action="{{ url('http://culturasariri.com.ar/delete/nota/')}}{{$nota->id}}" method="POST" style="display: none;">
               @csrf
           </form>
           <?php endif; ?>

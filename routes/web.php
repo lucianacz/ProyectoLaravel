@@ -15,7 +15,9 @@ Route::get('/perfil', 'UserController@index');
 
 
 Route::get('/explora','MainController@explora');
+
 Route::get('/nota/{id}', 'MainController@viewNota');
+
 Route::get('/gente','MainController@gente');
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
