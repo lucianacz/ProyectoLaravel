@@ -351,7 +351,7 @@ public function recordNote(Request $r){
           $imagen2=basename($imagen2);
         }
 
-        if (is_null($request->file('foto2'))) {
+        if (is_null($request->file('foto3'))) {
           $imagen3 = null;
         }
         else {
