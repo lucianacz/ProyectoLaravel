@@ -47,7 +47,7 @@
 
 
   <section>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push" style="height:70vh;">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
 
 
       <ul class="uk-slideshow-items">
