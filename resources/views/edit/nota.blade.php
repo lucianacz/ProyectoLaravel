@@ -109,7 +109,6 @@
 
   <div class="col-12" style="padding-top:5px;">
     <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto3">Imagen 3 (OPCIONAL)</label>
-    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 2 (OPCIONAL)</label>
     <div class="">
       <img src="/storage/{{$nota->foto2}}" alt="">
     </div>
