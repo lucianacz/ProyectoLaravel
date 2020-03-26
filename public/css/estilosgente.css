@@ -33,7 +33,7 @@
 
 .cuerpoNota {
   margin: 0 auto;
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .cuerpoNota p {
@@ -43,12 +43,9 @@
 .cuerpoNota a {
   color: black;
   text-align: center;
+  line-height : 12px;
 }
 
-.muestraUsuario {
-  margin: 0px;
-  padding: 0px;
-}
 
 /* NOTA SEPARADA */
 
