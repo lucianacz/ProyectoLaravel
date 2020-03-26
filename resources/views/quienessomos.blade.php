@@ -47,15 +47,12 @@
 
 
   <section>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push" style="height:50vh;">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push" style="height:70vh;">
 
 
       <ul class="uk-slideshow-items">
           <li>
               <img src="img/qsSlider/1.jpg" alt="" uk-cover>
-          </li>
-          <li>
-              <iframe src="img/qsSlider/video.MOV" width="1920" height="1080" frameborder="0" autoplay loop muted playsinline uk-cover allowfullscreen uk-cover></iframe>
           </li>
           <li>
               <img src="img/qsSlider/2.jpg" alt="" uk-cover>
