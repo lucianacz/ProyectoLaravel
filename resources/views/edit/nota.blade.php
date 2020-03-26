@@ -37,17 +37,6 @@
           @enderror
     </div>
 
-  <div class="col-12">
-    <label for="parrafo" style="padding-top:5px;">Parrafo</label>
-    <textarea id="parrafo" type="text" maxlength="500" rows="8"  onkeyup="charcountupdate(this.value)"  id="textbox" class="form-control" placeholder="" name="parrafo">{{$nota->parrafo}}</textarea>
-    <span id=charcount style="color:#00A79D;"></span>
-
-    @error('parrafo')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-    @enderror
-  </div>
 
 
   <div class="col-12">
@@ -61,7 +50,7 @@
   </div>
 
   <div class="col-12">
-    <label for="foto" style="padding-top:5px;">Imagen</label>
+      <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 1</label>
     <div class="">
       <img src="/storage/{{$nota->foto}}" alt="">
     </div>
@@ -72,6 +61,85 @@
         </span>
     @enderror
   </div>
+
+
+
+
+  <div class="col-12" style="padding-top:5px;">
+    <label for="parrafo">Parrafo 1 *</label>
+    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo') is-invalid @enderror" placeholder="" name="parrafo">{{$nota->parrafo}}</textarea>
+    <span id=charcount style="color:#00A79D;"></span>
+
+    @error('parrafo')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+
+
+
+  <div class="col-12" style="padding-top:5px;">
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 2 (OPCIONAL)</label>
+    <div class="">
+      <img src="/storage/{{$nota->foto2}}" alt="">
+    </div>
+    <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" type="file">
+    @error('foto')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+
+
+  <div class="col-12" style="padding-top:5px;">
+    <label for="parrafo2">Parrafo 2 (OPCIONAL)</label>
+    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{$nota->parrafo2}}</textarea>
+    <span id=charcount style="color:#00A79D;"></span>
+
+    @error('parrafo2')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+  <div class="col-12" style="padding-top:5px;">
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto3">Imagen 3 (OPCIONAL)</label>
+    <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 2 (OPCIONAL)</label>
+    <div class="">
+      <img src="/storage/{{$nota->foto2}}" alt="">
+    </div>
+    <input id="files" class="form-control @error('foto3') is-invalid @enderror" name="foto3" type="file">
+    @error('foto3')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+  <div class="col-12" style="padding-top:5px;">
+    <label for="parrafo3">Parrafo 3 (OPCIONAL)</label>
+    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo3') is-invalid @enderror" placeholder="" name="parrafo3">{{$nota->parrafo3}}</textarea>
+    <span id=charcount style="color:#00A79D;"></span>
+
+    @error('parrafo3')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+
+
+
+
+
+
+
+
 
   <div class="col-12" style="padding-top:5px;">
   <button class="btn col-12" onclick="event.preventDefault();confirmUpdate();">Editar nota</button>
