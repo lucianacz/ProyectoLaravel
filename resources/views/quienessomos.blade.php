@@ -47,7 +47,7 @@
 
 
   <section>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
 
       <ul class="uk-slideshow-items">
           <li>
@@ -55,9 +55,6 @@
           </li>
           <li>
               <video src="img/qsSlider/video.MOV" autoplay loop muted playsinline uk-cover></video>
-          </li>
-          <li>
-              <iframe src="img/qsSlider/video.MOV" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
           </li>
           <li>
               <img src="img/qsSlider/2.jpg" alt="" uk-cover>
