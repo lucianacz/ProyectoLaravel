@@ -47,48 +47,40 @@
 
 
   <section>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-        <li>
-            <img src="img/slider/s1.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s2.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s3.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s4.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s5.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s6.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s7.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-        <li>
-            <img src="img/slider/s8.jpg" alt="">
-            <div class="uk-position-center uk-panel"></div>
-        </li>
-    </ul>
+      <ul class="uk-slideshow-items">
+          <li>
+              <img src="img/qsSlider/1.jpg" alt="" uk-cover>
+          </li>
+          <li>
+              <video src="img/qsSlider/video.MOV" autoplay loop muted playsinline uk-cover></video>
+          </li>
+          <li>
+              <iframe src="img/qsSlider/video.MOV" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
+          </li>
+          <li>
+              <img src="img/qsSlider/2.jpg" alt="" uk-cover>
+          </li>
+          <li>
+              <img src="img/qsSlider/3.jpg" alt="" uk-cover>
+          </li>
+          <li>
+              <img src="img/qsSlider/4.jpg" alt="" uk-cover>
+          </li>
+          <li>
+              <img src="img/qsSlider/5.jpg" alt="" uk-cover>
+          </li>
+          <li>
+              <img src="img/qsSlider/6.jpg" alt="" uk-cover>
+          </li>
 
-    <a class="uk-position-center-left uk-position-small uk-button" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
+      </ul>
 
-    <a class="uk-position-center-right uk-position-small uk-button" href="#" uk-slidenav-next uk-slider-item="next" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
-</div>
+  </div>
   </section>
 
 </main>

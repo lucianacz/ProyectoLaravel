@@ -44,7 +44,7 @@
     </div>
     </div>
   </section>
-
+  <br>
   <section>
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
