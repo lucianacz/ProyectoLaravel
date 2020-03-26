@@ -97,7 +97,8 @@ class MainController extends Controller
     $notas = Nota::orderby('Titulo')->get();
     $usuarios = Usuario::orderby('Nombre')->get();
     $logeado = \Auth::user();
-    return view ('nota', compact('notas'), compact('usuarios'));
+    //return view ('nota', compact('notas'), compact('usuarios'));
+    return view ('nota', compact('notas', 'usuarios', 'logeado'));
   }
 
   public function qs() {
