@@ -49,10 +49,10 @@
           </div>
 
           <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}}
+          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase; color: black;"> {{$nota->subtitulo}}
             <br> En: {{$nota->titulo}}, {{$nota->pais}}</a>
-            <br> <strong> @ {{$nota->usuario->nombreUsuario}}</strong> </a>
-            <br> VER MÁS</a>
+            <br> <strong> @ {{$nota->usuario->nombreUsuario}}</strong>
+            <a href="{{url('nota/'.$nota->id)}}"> VER MÁS</a>
           </div>
         </li>
         @endforeach
