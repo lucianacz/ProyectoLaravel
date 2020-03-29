@@ -35,7 +35,10 @@
 
 
 
+
+
         @foreach ($notas as $nota)
+        <div class="col-4" style="padding:10px;">
         <a href="{{url('nota/'.$nota->id)}}">
         <div class="uk-child-width-1-2@m" uk-grid>
           <div>
@@ -51,7 +54,7 @@
                 </div>
           </div>
           </a>
-
+        </div>
 
         @endforeach
 
