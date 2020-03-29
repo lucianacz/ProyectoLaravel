@@ -344,13 +344,13 @@ public function recordNote(Request $r){
         if ($request->file('foto2'))
         {
             $imagen2 = $request->file('foto2')->store('public');
-            $imagen2 = basename($imagen);
+            $imagen2 = basename($imagen2);
         }
 
         if ($request->file('foto3'))
         {
             $imagen3 = $request->file('foto3')->store('public');
-            $imagen3 = basename($imagen);
+            $imagen3 = basename($imagen3);
         }
 
 
