@@ -14,7 +14,7 @@
   <section class="culturas">
     <div class="col-lg-6 col-md-6 col-10">
       <h4 style="color:grey;">NUEVA NOTA</h4>
-      <h5> Gracias por sumar contenido a la red ☺</h5>
+      <h5> ☺</h5>
 
 
   <form method="post" target="" enctype="multipart/form-data">
