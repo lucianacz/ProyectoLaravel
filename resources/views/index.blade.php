@@ -4,9 +4,9 @@
 
 <main>
 <section>
-  <div class="uk-position-relative uk-visible-toggle uk-light" style="height:80%;" tabindex="-1" uk-slideshow>
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
-    <ul class="uk-slideshow-items">
+    <ul class="uk-slideshow-items" style="height:80%;" >
         <li>
             <img src="img/indexSlider/1.JPG" alt="" uk-cover>
         </li>
