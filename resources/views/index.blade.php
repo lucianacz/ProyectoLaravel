@@ -9,19 +9,12 @@
     <ul class="uk-slideshow-items">
         <li>
             <img src="img/indexSlider/4.jpg" alt="" uk-cover>
-            <div class="uk-position-center uk-position-small uk-text-center">
-             <h2 style="font-size:50px; font-family: "Raleway"; font-weight: bold;" uk-slideshow-parallax="x: 100,-100">BIENVENIDXS</h2>
-             <h4 uk-slideshow-parallax="x: 200,-200" style="color:white;">- EN BUSCA DE UNA NUEVA AVENTURA -</h4>
-           </div>
         </li>
         <li>
             <img src="img/indexSlider/5.jpg" alt="" uk-cover>
         </li>
         <li>
             <img src="img/indexSlider/6.jpg" alt="" uk-cover>
-            <div class="uk-position-center uk-position-small uk-text-center">
-             <h2 style="font-size:30px;" uk-slideshow-parallax="x: 100,-100"> VIAJA A ETIOPÍA</h2>
-           </div>
         </li>
     </ul>
 
