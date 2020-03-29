@@ -56,7 +56,7 @@
                         <img src="/storage/{{$nota->foto}}" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">@{{$nota->usuario->nombreUsuario}}</h3>
+                        <h3 class="uk-card-title">@ {{$nota->usuario->nombreUsuario}}</h3>
                         <p>{{$nota->subtitulo}}. En: {{$nota->titulo}}, {{$nota->pais}}
                         <br> VER MÁS</p>
                     </div>
