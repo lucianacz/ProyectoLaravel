@@ -220,7 +220,7 @@ public function recordNote(Request $r){
         'parrafo' => ['required', 'string', 'max:3000'],
         'parrafo2' => ['max:3000'],
         'parrafo3' => ['max:3000'],
-        'foto' => ['mimes:jpeg,png', 'max:1024'],
+        'foto' => ['required','mimes:jpeg,png', 'max:1024'],
         'foto2' => ['mimes:jpeg,png', 'max:1024'],
         'foto3' => ['mimes:jpeg,png', 'max:1024'],
         'fecha' => ['required'],
