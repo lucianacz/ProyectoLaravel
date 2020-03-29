@@ -29,11 +29,11 @@
   <div class="col-10">
     <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
 
-    <div style="padding:10px;">
-      <div class="uk-child-width-1-2@m" uk-grid>
+    <div >
+      <div class="uk-child-width-1-2@m col-lg-4 col-md-6 col-10" style="padding:10px;" uk-grid>
         @foreach ($notas as $nota)
         <a href="{{url('nota/'.$nota->id)}}">
-              <div class="uk-card uk-card-default col-4 col-md-5 col-sm-10">
+              <div class="uk-card uk-card-defaultv">
                   <div class="uk-card-media-top">
                       <img style="width:100%;" src="/storage/{{$nota->foto}}" alt="">
                   </div>
