@@ -30,17 +30,10 @@
     <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
 
 
-    <div class="menuculturas uk-margin-medium-top">
-
-    <ul class="uk-flex-center" uk-tab uk-switcher>
-
-      @foreach ($notas as $nota)
-      <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->pais}}</a></li>
-      @endforeach
-      </ul>
 
 
-    
+
+
 
         @foreach ($notas as $nota)
         <a href="{{url('nota/'.$nota->id)}}">
@@ -55,13 +48,13 @@
                       <p>En: {{$nota->titulo}}, {{$nota->pais}}</p>
                   </div>
               </div>
+                </div>
           </div>
           </a>
 
 
         @endforeach
-      </ul>
-    </div>
+
 
   </div>
 </section>
