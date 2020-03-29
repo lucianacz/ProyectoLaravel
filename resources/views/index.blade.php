@@ -25,16 +25,9 @@
 
 
 
-<section id = "culturas" class="culturas">
+<section id = "culturas" class="culturas row">
   <div class="col-10">
     <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
-
-
-
-
-
-
-
 
 
         @foreach ($notas as $nota)
