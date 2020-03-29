@@ -116,8 +116,8 @@
 
   <div class="col-12" style="padding-top:5px;">
     <label for="parrafo2">Parrafo 2 (OPCIONAL)</label>
-    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
-    <span id=charcount style="color:#00A79D;"></span>
+    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate2(this.value)" rows="8" class="form-control @error('parrafo2') is-invalid @enderror" placeholder="" name="parrafo2">{{ old('parrafo2') }}</textarea>
+    <span id=charcount2 style="color:#00A79D;"></span>
 
     @error('parrafo2')
         <span class="invalid-feedback" role="alert">
@@ -138,8 +138,8 @@
 
   <div class="col-12" style="padding-top:5px;">
     <label for="parrafo3">Parrafo 3 (OPCIONAL)</label>
-    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate(this.value)" rows="8" class="form-control @error('parrafo3') is-invalid @enderror" placeholder="" name="parrafo3">{{ old('parrafo3') }}</textarea>
-    <span id=charcount style="color:#00A79D;"></span>
+    <textarea type="text" id="textbox" maxlength="3000" onkeyup="charcountupdate3(this.value)" rows="8" class="form-control @error('parrafo3') is-invalid @enderror" placeholder="" name="parrafo3">{{ old('parrafo3') }}</textarea>
+    <span id=charcount3 style="color:#00A79D;"></span>
 
     @error('parrafo3')
         <span class="invalid-feedback" role="alert">
@@ -216,10 +216,19 @@ function validateTitle(str){
 
 
 function charcountupdate(str) {
-	var lng = 5000 - str.length;
-	document.getElementById("charcount").innerHTML = lng + ' de 5000 caracteres';
+	var lng = 3000 - str.length;
+	document.getElementById("charcount").innerHTML = lng + ' de 3000 caracteres';
 }
 
+function charcountupdate2(str) {
+	var lng = 3000 - str.length;
+	document.getElementById("charcount2").innerHTML = lng + ' de 3000 caracteres';
+}
+
+function charcountupdate3(str) {
+	var lng = 3000 - str.length;
+	document.getElementById("charcount3").innerHTML = lng + ' de 3000 caracteres';
+}
 
 </script>
 

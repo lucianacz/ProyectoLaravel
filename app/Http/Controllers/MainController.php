@@ -227,13 +227,6 @@ public function recordNote(Request $r){
     ],$message);
 
 
-    if (is_null($r['region'])) {
-      $region = null;
-    }
-    else {
-      $region = $r['region'];
-    }
-
     $imagen = $r->file('foto')->store('public');
     $imagen=basename($imagen);
 
@@ -253,7 +246,12 @@ public function recordNote(Request $r){
       $imagen3=basename($imagen3);
     }
 
-
+    if (is_null($r['region'])) {
+      $region = null;
+    }
+    else {
+      $region = $r['region'];
+    }
 
    Nota::create([
     'titulo' => $r['titulo'],
