@@ -79,7 +79,8 @@
 </section>
 
 
-
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-fa6e9402-d465-40e5-b252-7f4e7526f80e"></div>
 
 
 
