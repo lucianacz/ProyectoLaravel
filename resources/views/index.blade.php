@@ -4,11 +4,15 @@
 
 <main>
 <section>
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600">
 
-    <ul class="uk-slideshow-items" style="height:80%;" >
+    <ul class="uk-slideshow-items">
         <li>
             <img src="img/indexSlider/1.JPG" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+             <h2 uk-slideshow-parallax="x: 100,-100">BIENVENIDOS!</h2>
+             <p uk-slideshow-parallax="x: 200,-200">¡DJASKL!</p>
+         </div>
         </li>
         <li>
             <img src="img/indexSlider/2.JPG" alt="" uk-cover>
