@@ -43,7 +43,7 @@
 
 
 <section>
-  <div uk-slider="center: true">
+  <div uk-slider="center: true" class="col-lg-4 col-md-6 col-10">
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
