@@ -41,7 +41,7 @@
           <div>
               <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top">
-                      <img src="/storage/{{$nota->foto}}" alt="">
+                      <img style="width:100%;" src="/storage/{{$nota->foto}}" alt="">
                   </div>
                   <div class="uk-card-body">
                       <h3 class="uk-card-title">{{$nota->subtitulo}}</h3>
