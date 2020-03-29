@@ -50,16 +50,18 @@
         <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
             @foreach ($notas as $nota)
             <li>
+              <a href="{{url('nota/'.$nota->id)}}">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="/storage/{{$nota->foto}}" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">@ {{$nota->usuario->nombreUsuario}}</h3>
-                        <p>{{$nota->subtitulo}}. En: {{$nota->titulo}}, {{$nota->pais}}</p>
-                        <a href="{{url('nota/'.$nota->id)}}"> VER MÁS</a>
+                        <h3 class="uk-card-title">@{{$nota->usuario->nombreUsuario}}</h3>
+                        <p>{{$nota->subtitulo}}. En: {{$nota->titulo}}, {{$nota->pais}}
+                        <br> VER MÁS</p>
                     </div>
                 </div>
+                </a>
             </li>
             @endforeach
         </ul>
