@@ -310,10 +310,10 @@ public function recordNote(Request $r){
         $rules=[
           'titulo' => ['required', 'string', 'max:40'],
           'subtitulo' => ['required', 'string', 'max:40'],
-          'parrafo' => ['required', 'string', 'max:3000'],
+          'parrafo' => ['required', 'max:3000'],
           'parrafo2' => ['max:3000'],
           'parrafo3' => ['max:3000'],
-          'foto' => ['mimes:jpeg,png', 'max:1024'],
+          'foto' => ['mimes:jpeg,png', 'max:1024', 'required'],
           'foto2' => ['mimes:jpeg,png', 'max:1024'],
           'foto3' => ['mimes:jpeg,png', 'max:1024'],
           'fecha' => ['required'],

@@ -40,45 +40,39 @@
     </div>
   </section>
 
-<section id = "culturas" class="culturas">
-  <div class="col-10">
-    <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
 
 
-    <div class="menuculturas uk-margin-medium-top">
+<section>
+  <div uk-slider="center: true">
 
-    <ul class="uk-flex-center" uk-tab uk-switcher>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-      @foreach ($notas as $nota)
-      <li class="uk-active" style="text-transform: uppercase;"><a href="#">{{$nota->pais}}</a></li>
-      @endforeach
-      </ul>
+        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+            @foreach ($notas as $nota)
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="/storage/{{$nota->foto}}" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">@ {{$nota->usuario->nombreUsuario}}</h3>
+                        <p>{{$nota->subtitulo}}. En: {{$nota->titulo}}, {{$nota->pais}}</p>
+                        <a href="{{url('nota/'.$nota->id)}}"> VER MÁS</a>
+                    </div>
+                </div>
+            </li>
+            @endforeach
+        </ul>
 
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
-      <ul class="uk-switcher">
-
-        @foreach ($notas as $nota)
-        <li>
-          <div class="col-lg-6 col-md-3 col-12 foto">
-          <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
-          </div>
-
-          <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase; color: black;">
-            {{$nota->subtitulo}}
-            <br> En: {{$nota->titulo}}, {{$nota->pais}}</a>
-            <br> <strong> @ {{$nota->usuario->nombreUsuario}}</strong>
-            <a href="{{url('nota/'.$nota->id)}}"> VER MÁS</a>
-          </div>
-        </li>
-        @endforeach
-      </ul>
     </div>
 
-  </div>
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
 </section>
-
-
 
 </main>
 
