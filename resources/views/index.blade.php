@@ -43,13 +43,13 @@
 
 
 <section>
-  <div uk-slider="center: true" class="col-lg-4 col-md-6 col-10">
+  <div uk-slider="center: true">
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
         <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
             @foreach ($notas as $nota)
-            <li>
+            <li class="col-lg-4 col-md-6 col-10">
               <a href="{{url('nota/'.$nota->id)}}">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
