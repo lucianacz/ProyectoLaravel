@@ -8,17 +8,20 @@
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="img/indexSlider/1.JPG" alt="" uk-cover>
+            <img src="img/indexSlider/4.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-             <h2 uk-slideshow-parallax="x: 100,-100">BIENVENIDOS!</h2>
-             <p uk-slideshow-parallax="x: 200,-200">¡DJASKL!</p>
-         </div>
+             <h2 style="font-size:30px;" uk-slideshow-parallax="x: 100,-100">BIENVENIDOS!</h2>
+             <p uk-slideshow-parallax="x: 200,-200">¡Gracias por sumarte a nuestra comunidad!</p>
+           </div>
         </li>
         <li>
-            <img src="img/indexSlider/2.JPG" alt="" uk-cover>
+            <img src="img/indexSlider/5.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="img/indexSlider/3.JPG" alt="" uk-cover>
+            <img src="img/indexSlider/6.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+             <h2 style="font-size:30px;" uk-slideshow-parallax="x: 100,-100"> VIAJA A ETIOPÍA</h2>
+           </div>
         </li>
     </ul>
 
