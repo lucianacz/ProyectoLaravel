@@ -341,21 +341,16 @@ public function recordNote(Request $r){
             $imagen = basename($imagen);
         }
 
-
-        if (is_null($request->file('foto2'))) {
-          $imagen2 = null;
-        }
-        else {
-          $imagen2=$request->file('foto2')->store('public');
-          $imagen2=basename($imagen2);
+        if ($request->file('foto2'))
+        {
+            $imagen2 = $request->file('foto2')->store('public');
+            $imagen2 = basename($imagen);
         }
 
-        if (is_null($request->file('foto3'))) {
-          $imagen3 = null;
-        }
-        else {
-          $imagen3=$request->file('foto3')->store('public');
-          $imagen3=basename($imagen3);
+        if ($request->file('foto3'))
+        {
+            $imagen3 = $request->file('foto3')->store('public');
+            $imagen3 = basename($imagen);
         }
 
 
