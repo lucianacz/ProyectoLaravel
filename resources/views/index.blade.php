@@ -36,7 +36,7 @@
   <section class="explora row">
 
     <div class="plantilla col-lg-9 col-md-8 col-12">
-    <a href="newNote"><img src="img/plantilla2.jpg" alt="Camellos"></a>
+    <a href="newNote"><img src="img/plantilla4.jpg" alt="Camellos"></a>
     </div>
   </section>
 
