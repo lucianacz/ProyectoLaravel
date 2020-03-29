@@ -30,10 +30,9 @@
     <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
 
     <div class="col-4 row" style="padding:10px;">
+      <div class="uk-child-width-1-2@m" uk-grid>
         @foreach ($notas as $nota)
         <a href="{{url('nota/'.$nota->id)}}">
-        <div class="uk-child-width-1-2@m" uk-grid>
-          <div>
               <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top">
                       <img style="width:100%;" src="/storage/{{$nota->foto}}" alt="">
@@ -42,11 +41,10 @@
                       <h3 class="uk-card-title">{{$nota->subtitulo}}</h3>
                       <p>En: {{$nota->titulo}}, {{$nota->pais}}</p>
                   </div>
-              </div>
                 </div>
-          </div>
           </a>
         @endforeach
+        </div>
     </div>
 
   </div>
