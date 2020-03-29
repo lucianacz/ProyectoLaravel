@@ -33,6 +33,13 @@
 </section>
 
 
+  <section class="explora row">
+
+    <div class="plantilla col-lg-9 col-md-8 col-12">
+    <a href="newNote"><img src="img/plantilla2.jpg" alt="Camellos"></a>
+    </div>
+  </section>
+  
 <section id = "culturas" class="culturas">
   <div class="col-10">
     <h4 style="color:grey;"> <a href="/gente" style="color:grey; font-weight:500;">GENTE Y CULTURAS</a></h4>
@@ -73,12 +80,6 @@
 
 
 
-  <section class="explora row">
-
-    <div class="plantilla col-lg-9 col-md-8 col-12">
-    <a href="newNote"><img src="img/plantilla2.jpg" alt="Camellos"></a>
-    </div>
-  </section>
 
 
 
