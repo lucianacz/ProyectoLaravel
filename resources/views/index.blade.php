@@ -40,21 +40,25 @@
       </ul>
 
 
-      <ul class="uk-switcher">
+    
 
         @foreach ($notas as $nota)
-        <li>
-          <div class="col-lg-6 col-md-3 col-12 foto">
-          <img src="/storage/{{$nota->foto}}"  alt="FotoPais">
+        <a href="{{url('nota/'.$nota->id)}}">
+        <div class="uk-child-width-1-2@m" uk-grid>
+          <div>
+              <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                      <img src="/storage/{{$nota->foto}}" alt="">
+                  </div>
+                  <div class="uk-card-body">
+                      <h3 class="uk-card-title">{{$nota->subtitulo}}</h3>
+                      <p>En: {{$nota->titulo}}, {{$nota->pais}}</p>
+                  </div>
+              </div>
           </div>
+          </a>
 
-          <div class="cuerpo col-lg-6 col-md-5 col-xs-6">
-          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px; text-transform: uppercase;"> {{$nota->subtitulo}} </a>
-          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> En: {{$nota->titulo}}, {{$nota->pais}}</a>
-          <a href="{{url('nota/'.$nota->id)}}" style="margin:5px;"> Por: <strong>{{$nota->usuario->nombreUsuario}}</strong> </a>
-          <a href="{{url('nota/'.$nota->id)}}" style="font-size:15px;">VER MÁS</a>
-          </div>
-        </li>
+
         @endforeach
       </ul>
     </div>
