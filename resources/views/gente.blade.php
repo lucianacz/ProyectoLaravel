@@ -14,7 +14,7 @@
 <main>
   <section class="culturas" >
     <div class="col-lg-10 col-md-10 col-10">
-      <h4 style="color:grey; margin-top:30px;">GENTE Y CULTURAS</h4>
+      <h4 style="color:grey; ">GENTE Y CULTURAS</h4>
       <?php /* <form class="uk-search uk-search-default">
       <span uk-search-icon></span>
       <input class="uk-search-input" type="search" placeholder="Buscar...">
