@@ -35,13 +35,11 @@
                 <img style="height: 30vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                 <div class="uk-position-center uk-panel">
                   <h2>{{$nota->pais}}</h2>
-
                 </div>
-
-                <div class="cuerpoNota">
-                  <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}}</a>
-                  <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
-                </div>
+            </div>
+            <div class="cuerpoNota" style="text-align: center;">
+              <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}}</a>
+              <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
             </div>
         </li>
         @endforeach
