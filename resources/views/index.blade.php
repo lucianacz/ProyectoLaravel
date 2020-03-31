@@ -24,7 +24,7 @@
 
 
 
-<section style="margin-top: 20px" class="col-10">
+<section style="margin-top: 20px" class="col-10" style="text-align: center;">
 
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
@@ -47,8 +47,8 @@
 
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
 
 </div>
 
