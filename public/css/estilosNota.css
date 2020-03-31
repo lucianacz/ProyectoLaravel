@@ -45,6 +45,8 @@ h6 a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
+
 }
 
 @media (min-width: 770px){
