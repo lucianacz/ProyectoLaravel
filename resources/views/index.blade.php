@@ -37,7 +37,7 @@
                   <h2>{{$nota->pais}}</h2>
                 </div>
             </div>
-            <div class="uk-card" style="text-align: center; height: 25vh;">
+              <div class="uk-card" style="height: 25vh;">
                 <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}}</a>
                 <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
         </div>
