@@ -107,7 +107,7 @@
   <div class="col-12" style="padding-top:5px;">
     <span class="uk-icon-button" uk-icon="camera"></span> <label for="foto2">Imagen 2 (OPCIONAL)</label>
     <input id="files" class="form-control @error('foto2') is-invalid @enderror" name="foto2" type="file">
-    @error('foto')
+    @error('foto2')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
