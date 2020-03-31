@@ -31,8 +31,8 @@
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
       @foreach ($notas as $nota)
         <li>
-            <div class="uk-panel" style="width:100%; height:25vh;">
-                <img style="height: 24vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
+            <div class="uk-panel" style="width:100%; height:30vh;">
+                <img style="height: 29vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                 <div class="uk-position-center uk-panel">
                   <h2>{{$nota->subtitulo}}</h2>
                 </div>
