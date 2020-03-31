@@ -40,6 +40,13 @@ h6 a:hover {
   justify-content: flex-start;
 }
 
+
+#cuerpoNotaPrincipal p{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 @media (min-width: 770px){
 #cuerpoNotaPrincipal p {
     font-size: 16px;
