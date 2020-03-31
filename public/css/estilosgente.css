@@ -93,11 +93,16 @@ font-weight: bold;
 .principal2 img{
 
 }
+.gente {
+  margin-top: 5%;
+}
 
 }
 
 
 @media (min-width: 1140px){
-
+  .gente {
+    margin-top: 3%;
+  }
 
 }

@@ -40,15 +40,17 @@ font-weight: lighter;
   h3 {
   font-size: 1.4em;
   }
-
+  .qSomos {
+    margin-top: 5%;
+  }
 
 
 }
 
 
 @media (min-width: 1140px){
-  .qSomos h4 {
-    margin-top: 0%;
+  .qSomos {
+    margin-top: 3%;
   }
 
   h2{
