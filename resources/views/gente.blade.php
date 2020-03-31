@@ -45,46 +45,7 @@
 <script>
   function somefunction(value){
      if(value == 1){
-      $("body").css("background-color","red");
-
-      var divGeneral = document.querySelector('.row')
-      for(nota of datos){
-
-        //crear el div nuevo
-          var divNuevo = document.createElement('div');
-          //agregar al div que contiene el bootstrap
-          divNuevo.setAttribute('class', 'nota col-lg-3 col-md-4 col-11')
-        //clcocar el texto que seria nombre del genero
-
-        //innerHTML Imprime html
-          divNuevo.innerHTML = `
-
-        <div class="fotoNota" style="width:100%; height:25vh;">
-
-        <a href="http://culturasariri.com.ar/edit/nota/${nota.id}"> <img  style="width:100%; height:24vh; object-fit: cover;" src="/storage/${nota.foto}" alt="${nota.pais}"></a>
-        </div>
-
-        <div class="cuerpoNota">
-        <a href="http://culturasariri.com.ar/edit/nota/${nota.id}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;">
-          ${nota.titulo} - <strong> ${nota.pais} </strong></p></a>
-        <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ ${nota.usuario.NombreUsuario} </p>
-      </div>
-          <a href="http://culturasariri.com.ar/edit/nota/${nota.id}" style="text-transform: uppercase;"><p style="text-align:center;">
-          <br></p></a>
-        </div>  `;
-
-
-          //divNuevo.innerHTML = '<div>' + nota.titulo + '<div>';
-        //meter ese div nuev en el div capturado
-        divGeneral.append(divNuevo);
-
-        //console.log(nota);
-      }
-
-
-
-
-
+   $("body").css("background-color","red");
      }
      if(value == 2){
        $("body").css("background-color","yellow");
@@ -95,7 +56,23 @@
   }
    </script>
 
+    <div class="row" id="demo">
+      @foreach ($notas as $nota)
+      <article class="nota col-lg-3 col-md-4 col-11">
+        <div class="fotoSameSize" style="width:100%; height:25vh;">
+        <a href="{{url('nota/'.$nota->id)}}"> <img style="width:100%; height:24vh; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="{{$nota->pais}}"></a>
+        </div>
 
+
+
+        <div class="cuerpoNota">
+          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></p></a>
+          <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
+        </div>
+      </article>
+      @endforeach
+    </div>
+    </div>
   </section>
   <br>
   <section>
