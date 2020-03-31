@@ -2,7 +2,7 @@
 @import url('header.css');
 
 .gente {
-  margin-top: 5%;
+  margin-top: 10%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -12,9 +12,6 @@
   margin: 0 auto;
 }
 
-h4 {
-  margin-top:40px;
-}
 
 .gente a {
   color: black;
@@ -102,8 +99,5 @@ font-weight: bold;
 
 @media (min-width: 1140px){
 
-  h4 {
-    margin-top:10px;
-  }
 
 }
