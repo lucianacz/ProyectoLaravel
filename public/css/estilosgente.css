@@ -32,9 +32,15 @@
   width: 100%;
 }
 
-.fotoNota img {
+#fotoSameSize {
+  background-image: url("/storage/{{$nota->foto}}");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  position: relative;
   width: 100%;
-  height: 1vh;
+  height: 25vh;
+
 }
 
 .cuerpoNota {
