@@ -54,6 +54,10 @@ a {
 
 }
 
+.card {
+  height: 23vh;
+}
+
 .frasePrincipal {
   background-color: grey;
   padding: 20px;
@@ -257,6 +261,10 @@ a {
 }
 
 @media (min-width: 1140px){
+
+  .card {
+    height: 19vh;
+  }
 
   .pie {
     font-size: 1em;
