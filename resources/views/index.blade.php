@@ -38,8 +38,8 @@
                 </div>
             </div>
               <div class="uk-card uk-card-body card cardPais" style="text-align: center;">
-                <p style="text-transform: uppercase; text-align:center; font-size: 14px; font-weight: bold; color: black;"> {{$nota->subtitulo}} </p>
-                <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; font-size: 14px;color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
+                <p style="text-transform: uppercase; text-align:center; font-size: 14px; font-weight: bold; color: black;"> {{$nota->subtitulo}}
+                <span class="muestraUsuario" style="text-transform: uppercase; text-align:center; font-size: 14px;color: grey;"> @ {{$nota->usuario->nombreUsuario}} </span></p>
               </div>
               </a>
         </li>
