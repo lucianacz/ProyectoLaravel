@@ -29,16 +29,16 @@
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+      @foreach ($notas as $nota)
         <li>
-              @foreach ($notas as $nota)
             <div class="uk-panel">
                 <img style="height: 25vh; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                 <div class="uk-position-center uk-panel">
                   <h2>{{$nota->subtitulo}}</h2>
                 </div>
             </div>
-              @endforeach
         </li>
+        @endforeach
 
 
     </ul>
