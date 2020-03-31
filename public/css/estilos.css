@@ -54,7 +54,7 @@ a {
 
 }
 
-.card {
+.cardPais {
   height: 23vh;
 }
 
@@ -262,7 +262,7 @@ a {
 
 @media (min-width: 1140px){
 
-  .card {
+  .cardPais {
     height: 19vh;
   }
 
