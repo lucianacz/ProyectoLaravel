@@ -54,6 +54,14 @@ a {
 
 }
 
+.frasePrincipal {
+  margin-top: 30px;
+  background-color: grey;
+  padding: 30px;
+  text-align: center;
+  color: white;
+
+}
 
 .scroller i.velocity({
     properties: { opacity: 1 },
