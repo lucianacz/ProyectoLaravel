@@ -9,7 +9,6 @@
 </div>
 
 <div class="col-lg-12 col-md-12 col-12 frasePrincipal">
-      <h2>NUESTRO PROPÓSITO</h2>
       <h3 class="col-lg-8 col-md-12 col-12"> ¡BIENVENIDX A LA COMUNIDAD VIAJERA!</h3>
 </div>
 
