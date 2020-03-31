@@ -60,7 +60,7 @@
 
           <?php if ($nota->parrafo2) :?>
           <div id="cuerpoNotaPrincipal">
-          <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo2}}</p>
+          <p style="white-space: pre-wrap;   justify-content: flex-start;">{{$nota->parrafo2}}</p>
           </div>
           <?php endif; ?>
 
