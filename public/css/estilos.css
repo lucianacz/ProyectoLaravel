@@ -55,7 +55,7 @@ a {
 }
 
 .cardPais {
-  height: 23vh;
+  height: 22vh;
 }
 
 .frasePrincipal {
@@ -263,7 +263,7 @@ a {
 @media (min-width: 1140px){
 
   .cardPais {
-    height: 19vh;
+    height: 16vh;
   }
 
   .pie {
