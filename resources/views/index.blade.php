@@ -22,13 +22,6 @@
 </section>
 
 
-  <section class="explora row">
-
-    <div class="plantilla col-lg-9 col-md-8 col-12">
-    <a href="newNote"><img src="img/plantilla4.jpg" alt="Camellos"></a>
-    </div>
-  </section>
-
 
 
 <section>
@@ -42,7 +35,7 @@
               <a href="{{url('nota/'.$nota->id)}}">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="/storage/{{$nota->foto}}" alt="">
+                        <img style="width:100%; height:24vh; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">@ {{$nota->usuario->nombreUsuario}}</h3>
@@ -61,9 +54,15 @@
 
     </div>
 
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
 </div>
+</section>
+
+
+<section class="explora row">
+
+  <div class="plantilla col-lg-9 col-md-8 col-12">
+  <a href="newNote"><img src="img/plantilla4.jpg" alt="Camellos"></a>
+  </div>
 </section>
 
 </main>
