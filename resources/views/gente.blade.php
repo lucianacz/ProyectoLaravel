@@ -23,6 +23,32 @@
     <h5> SUBI TU NOTA</h5>
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
+    <form method="post" target="" enctype="multipart/form-data">
+    @csrf
+
+    <div class="uk-margin">
+       <label class="uk-form-label" for="form-horizontal-select">Filtrar</label>
+       <div class="uk-form-controls">
+           <select onchange="somefunction($(this).val())" class="uk-select" id="form-horizontal-select">
+               <option value="1">Cultura Sariri</option>
+               <option value="2">Todxs los viajerxs</option>
+           </select>
+       </div>
+   </div>
+ </form>
+
+
+<script>
+  function somefunction(value){
+     if(value == 1){
+      $("body").css("background-color","red");
+     }
+     if(value == 2){
+       $("body").css("background-color","yellow");
+     }
+  }
+   </script>
+
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; min-height: 300; max-height: 400">
       <BR>
 
