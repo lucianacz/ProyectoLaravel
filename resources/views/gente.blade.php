@@ -13,7 +13,7 @@
 
 <main>
   <section class="gente">
-    <div class="col-lg-10 col-md-10 col-10">
+    <div class="col-lg-3 col-md-4 col-11">
       <h4 style="color:grey;">GENTE Y CULTURAS</h4>
       <?php /* <form class="uk-search uk-search-default">
       <span uk-search-icon></span>
@@ -23,7 +23,8 @@
     <h5> SUBI TU NOTA</h5>
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
-    <form method="post" target="" enctype="multipart/form-data">
+<div class="">
+  <form method="post" target="" enctype="multipart/form-data">
     @csrf
 
     <div class="uk-margin">
@@ -32,10 +33,13 @@
            <select onchange="somefunction($(this).val())" class="uk-select" id="form-horizontal-select">
                <option value="1">Cultura Sariri</option>
                <option value="2">Todxs los viajerxs</option>
+               <option value="3">Limpiar filtros</option>
            </select>
        </div>
    </div>
  </form>
+</div>
+
 
 
 <script>
@@ -45,6 +49,9 @@
      }
      if(value == 2){
        $("body").css("background-color","yellow");
+     }
+     if(value == 3){
+       $("body").css("background-color","white");
      }
   }
    </script>
