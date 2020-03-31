@@ -31,13 +31,13 @@
     <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-5@m">
       @foreach ($notas as $nota)
         <li style="margin-right: 1%;">
+          <div class="uk-card" style="text-align: center;">
             <div class="uk-panel" style="width:100%;">
                 <img style="height: 50vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                 <div class="uk-position-center uk-panel">
                   <h2>{{$nota->pais}}</h2>
                 </div>
             </div>
-            <div class="uk-card" style="text-align: center;">
                 <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}}</a>
                 <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
         </div>
