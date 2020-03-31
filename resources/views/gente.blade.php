@@ -12,7 +12,7 @@
 
 
 <main>
-  <section class="gente">
+  <section class="gente" style="  margin-top: 5%;">
     <div class="col-lg-10 col-md-10 col-10">
       <h4 style="color:grey;">GENTE Y CULTURAS</h4>
       <?php /* <form class="uk-search uk-search-default">
@@ -24,7 +24,7 @@
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
 <div style="text-align:center; margin: 0 auto;" class="col-lg-3 col-md-4 col-11">
-  <form style="text-align:center; margin: 0 auto;" method="post" target="" enctype="multipart/form-data">
+  <form style="text-align:center;" method="post" target="" enctype="multipart/form-data">
     @csrf
 
     <div class="uk-margin">
