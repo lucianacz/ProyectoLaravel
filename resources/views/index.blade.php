@@ -25,7 +25,7 @@
 
 
 
-<section style="margin-top: 20px" class="col-12">
+<section style="margin-top: 30px" class="col-12">
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m">
       @foreach ($notas as $nota)
