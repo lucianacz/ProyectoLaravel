@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.gente h4 {
+  margin-top: 5%;
+}
+
 .nota {
   margin: 0 auto;
 }
@@ -100,8 +104,8 @@ font-weight: bold;
 
 @media (min-width: 1140px){
 
-  .principal2 img{
-
+  .gente h4 {
+    margin-top: 0%;
   }
 
 }
