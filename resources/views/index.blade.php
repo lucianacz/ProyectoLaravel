@@ -30,7 +30,7 @@
 
     <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-5@m">
       @foreach ($notas as $nota)
-        <li>
+        <li style="margin-right: 2%;">
             <div class="uk-panel" style="width:100%;">
                 <img style="height: 50vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                 <div class="uk-position-center uk-panel">
