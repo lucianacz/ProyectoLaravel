@@ -30,7 +30,7 @@ a {
 
 
 .principal {
-  background-image: url("../img/cover6.jpg");
+  background-image: url("../img/coverCe.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -290,6 +290,7 @@ a {
 
 
   .principal {
+    background-image: url("../img/coverCo.jpg");
     height: 90vh;
 
   }
