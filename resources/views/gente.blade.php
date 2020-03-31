@@ -23,8 +23,8 @@
     <h5> SUBI TU NOTA</h5>
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
-<div style="text-align:center;" class="col-lg-3 col-md-4 col-11">
-  <form style="text-align:center;" method="post" target="" enctype="multipart/form-data">
+<div style="text-align:center; margin: 0 auto;" class="col-lg-3 col-md-4 col-11">
+  <form style="text-align:center; margin: 0 auto;" method="post" target="" enctype="multipart/form-data">
     @csrf
 
     <div class="uk-margin">
