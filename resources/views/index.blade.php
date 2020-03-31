@@ -24,17 +24,23 @@
 
 
 
-<section>
+<section style="margin-top: 20px">
 
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
       @foreach ($notas as $nota)
         <li>
-            <div class="uk-panel" style="width:100%; height:30vh;">
-                <img style="height: 29vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
+            <div class="uk-panel" style="width:100%;">
+                <img style="height: 30vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                 <div class="uk-position-center uk-panel">
-                  <h2>{{$nota->subtitulo}}</h2>
+                  <h2>{{$nota->pais}}</h2>
+
+                </div>
+
+                <div class="cuerpoNota">
+                  <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}}</a>
+                  <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
                 </div>
             </div>
         </li>
