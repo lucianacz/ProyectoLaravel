@@ -25,7 +25,6 @@
             En 2018 decidimos salir a viajar por el mundo y en los meses de nuestra aventura recorrimos muchos países de Asia, algunos de África y otros de Europa. Ya habíamos tenido la posibilidad de viajar previamente por algunos lugares de América.
           En nuestros viajes vivimos un montón experiencias. Sin dudas las que más nos marcaron fueron las vivencias en las que pudimos generar una interacción real con las diferentes culturas. Cuando viajamos intentamos salirnos del circuito turístico y buscar la autenticidad de los lugares. De esta forma conocimos étnias, tribus y distintas sociedades. Nos entregamos a ser parte de diferentes formas de vida.
           Fue al final de nuestro viaje cuando nos dimos cuenta que el turismo convencional no logra generar esta interacción con las culturas locales y muchas veces termina perjudicandolas.
-
           <span style="font-weight:bold;">Es aquí donde nace Cultura Sariri.</span>
           </p>
         </div>
