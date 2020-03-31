@@ -28,7 +28,6 @@
     @csrf
 
     <div class="uk-margin">
-       <label class="uk-form-label" for="form-horizontal-select">Filtrar</label>
        <div class="uk-form-controls">
            <select onchange="somefunction($(this).val())" class="uk-select" id="form-horizontal-select">
                <option value="3">Sin filtros</option>
@@ -66,8 +65,8 @@
 
 
         <div class="cuerpoNota">
-          <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></p></a>
-          <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
+          <p><a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; font-weight:bold; color: black;"> {{$nota->subtitulo}} - <strong>{{$nota->pais}}</strong></a>
+          <span class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}}</span> </p>
         </div>
       </article>
       @endforeach
