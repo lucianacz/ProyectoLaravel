@@ -47,6 +47,9 @@ font-weight: lighter;
 
 
 @media (min-width: 1140px){
+  .qSomos h4 {
+    margin-top: 0%;
+  }
 
   h2{
     font-size: 2em;
