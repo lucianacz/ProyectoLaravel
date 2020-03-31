@@ -28,7 +28,7 @@
 
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
+    <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-5@m uk-grid">
       @foreach ($notas as $nota)
         <li>
             <div class="uk-panel" style="width:100%;">

@@ -17,7 +17,7 @@ class MainController extends Controller
 {
 
   public function index (){
-    $notas = Nota::orderby('id')->take(4)->get();
+    $notas = Nota::orderby('id')->take(8)->get();
     $cuatroSegundas = Nota::orderby('id')->take(1)->offset(8)->get();
     $usuarios = Usuario::find(1);
       //dd($usuarios->notas);
