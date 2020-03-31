@@ -13,6 +13,7 @@
 }
 
 
+
 .gente a {
   color: black;
 }
@@ -28,6 +29,10 @@
 .nota img {
   margin-top: 10px;
   border-radius: 20px;
+  width: 100%;
+}
+
+.fotoNota img {
   width: 100%;
   height: 80vh;
 }
