@@ -24,7 +24,7 @@
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
 <div style="text-align:center;" class="col-lg-3 col-md-4 col-11">
-  <form method="post" target="" enctype="multipart/form-data">
+  <form style="text-align:center;" method="post" target="" enctype="multipart/form-data">
     @csrf
 
     <div class="uk-margin">
@@ -74,6 +74,7 @@
     </div>
     </div>
   </section>
+
   <br>
   <section>
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
