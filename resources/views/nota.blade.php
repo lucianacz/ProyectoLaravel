@@ -49,7 +49,7 @@
           <img src="/storage/{{$nota->foto}}"  alt="Foto">
           </div>
           <div id="cuerpoNotaPrincipal">
-          <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo}}</p>
+          <p style="justify-content: flex-start; white-space: pre-wrap;">{{$nota->parrafo}}</p>
           </div>
 
           <?php if ($nota->foto2) :?>
@@ -60,7 +60,7 @@
 
           <?php if ($nota->parrafo2) :?>
           <div id="cuerpoNotaPrincipal">
-          <p style="white-space: pre-wrap;   justify-content: flex-start;">{{$nota->parrafo2}}</p>
+          <p style="justify-content: flex-start; white-space: pre-wrap;">{{$nota->parrafo2}}</p>
           </div>
           <?php endif; ?>
 
@@ -73,7 +73,7 @@
 
           <?php if ($nota->parrafo3) :?>
           <div id="cuerpoNotaPrincipal">
-          <p style="white-space: pre-wrap; justify-content: center;">{{$nota->parrafo3}}</p>
+          <p style="justify-content: flex-start; white-space: pre-wrap;">{{$nota->parrafo3}}</p>
           </div>
           <?php endif; ?>
 
