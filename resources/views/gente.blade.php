@@ -12,7 +12,7 @@
 
 
 <main>
-  <section class="gente" >
+  <section class="culturas" >
     <div class="col-lg-10 col-md-10 col-10">
       <h4 style="color:grey; margin-top:30px;">GENTE Y CULTURAS</h4>
       <?php /* <form class="uk-search uk-search-default">
@@ -32,7 +32,7 @@
            <select onchange="somefunction($(this).val())" class="uk-select" id="form-horizontal-select">
                <option value="3">Sin filtros</option>
                <option value="1">Cultura Sariri</option>
-               <option value="2">Todxs los viajerxs</option>
+               <option value="2">Comunidad Viajera</option>
            </select>
        </div>
    </div>
