@@ -24,7 +24,7 @@
 
 
 
-<section style="margin-top: 20px">
+<section style="margin-top: 20px" class="col-10">
 
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
