@@ -29,8 +29,8 @@
     <div class="row">
       @foreach ($notas as $nota)
       <article class="nota col-lg-3 col-md-4 col-11">
-        <div class="fotoSameSize" style="width:100%; height:20vh;">
-        <a href="{{url('nota/'.$nota->id)}}"> <img style="width:100%; height:20vh;" src="/storage/{{$nota->foto}}" alt="{{$nota->pais}}"></a>
+        <div class="fotoSameSize" style="width:100%; height:28vh;">
+        <a href="{{url('nota/'.$nota->id)}}"> <img style="width:100%; height:28vh;" src="/storage/{{$nota->foto}}" alt="{{$nota->pais}}"></a>
         </div>
 
 
