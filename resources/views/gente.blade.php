@@ -13,7 +13,7 @@
 
 <main>
   <section class="gente">
-    <div class="col-lg-3 col-md-4 col-11">
+    <div class="col-lg-10 col-md-10 col-10">
       <h4 style="color:grey;">GENTE Y CULTURAS</h4>
       <?php /* <form class="uk-search uk-search-default">
       <span uk-search-icon></span>
@@ -23,7 +23,7 @@
     <h5> SUBI TU NOTA</h5>
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
-<div class="">
+<div class="col-lg-3 col-md-4 col-11">
   <form method="post" target="" enctype="multipart/form-data">
     @csrf
 
