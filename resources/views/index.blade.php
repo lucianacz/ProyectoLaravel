@@ -33,7 +33,7 @@
             @foreach ($notas as $nota)
             <li class="col-12">
               <a href="{{url('nota/'.$nota->id)}}">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card uk-card-default col-4">
                     <div class="uk-card-media-top">
                         <img style="width:100%; height:24vh; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
                     </div>
