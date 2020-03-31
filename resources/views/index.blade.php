@@ -9,7 +9,7 @@
 </div>
 
 <div class="col-lg-12 col-md-12 col-12 frasePrincipal">
-      <h3 class="col-lg-8 col-md-12 col-12"> ¡BIENVENIDX A LA COMUNIDAD VIAJERA!</h3>
+      <h3 class="col-lg-8 col-md-12 col-12" style="text-align: center;"> ¡BIENVENIDX A LA COMUNIDAD VIAJERA!</h3>
 </div>
 
 <section class="identidad">
