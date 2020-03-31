@@ -27,7 +27,6 @@
 
 <section style="margin-top: 20px" class="col-12">
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-    <h4 style="color:grey;">GENTE Y CULTURAS </h4>
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m">
       @foreach ($notas as $nota)
         <li style="margin-right: 1%;">
@@ -39,6 +38,7 @@
             </div>
               <div class="uk-card uk-card-body card cardPais" style="text-align: center;">
                 <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; color: black;"> {{$nota->subtitulo}}</a>
+                <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; font-size: 14px;color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
               </div>
         </li>
 
