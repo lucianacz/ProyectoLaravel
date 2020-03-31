@@ -8,6 +8,10 @@
   flex-wrap: wrap;
 }
 
+h4 {
+  margin-top:30px;
+}
+
 .text {
   text-align: center;
 }
@@ -55,6 +59,9 @@ font-weight: lighter;
     font-size: 2em;
   }
 
+  h4 {
+    margin-top:20px;
+  }
   h3 {
   font-size: 1.7em;
   }

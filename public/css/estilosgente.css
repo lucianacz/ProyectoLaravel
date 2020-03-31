@@ -12,7 +12,9 @@
   margin: 0 auto;
 }
 
-
+h4 {
+  margin-top:30px;
+}
 
 .gente a {
   color: black;
@@ -100,5 +102,8 @@ font-weight: bold;
 
 @media (min-width: 1140px){
 
+  h4 {
+    margin-top:10px;
+  }
 
 }
