@@ -25,36 +25,57 @@
 
 
 <section>
-  <div uk-slider="center: true">
 
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-            @foreach ($notas as $nota)
-            <li class="col-12">
-              <a href="{{url('nota/'.$nota->id)}}">
-                <div class="uk-card uk-card-default col-4">
-                    <div class="uk-card-media-top">
-                        <img style="width:100%; height:24vh; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">@ {{$nota->usuario->nombreUsuario}}</h3>
-                        <p>{{$nota->subtitulo}}.
-                        <br>En: {{$nota->titulo}}, {{$nota->pais}}
-                        <br>VER MÁS</p>
-                    </div>
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+        <li>
+            <div class="uk-panel">
+                <img src="images/slider1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-panel">
+                <img src="images/slider2.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-panel">
+                <img src="images/slider3.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-panel">
+                <img src="images/slider4.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </div>
+        </li>
+        <li>
+              @foreach ($notas as $nota)
+            <div class="uk-panel">
+                <img style="object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
+                <div class="uk-position-center uk-panel">
+                  <h2>{{$nota->subtitulo}}</h2>
                 </div>
-                </a>
-            </li>
-            @endforeach
-        </ul>
+            </div>
+              @endforeach
+        </li>
 
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </ul>
 
-    </div>
+
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
 </div>
+
+
+
 </section>
 
 
