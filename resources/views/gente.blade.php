@@ -29,7 +29,7 @@
     <div class="row">
       @foreach ($notas as $nota)
       <article class="nota col-lg-3 col-md-4 col-11">
-        <div class="fotoSameSize" style="width:100%; height:24vh; background-size: cover; position: relative; background-image: url("../storage/{{$nota->foto}}");">
+        <div class="fotoSameSize" style="width:100%; height:24vh; object-fit: cover;">
         <a href="{{url('nota/'.$nota->id)}}"></a>
         </div>
 
