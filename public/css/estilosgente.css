@@ -33,7 +33,7 @@
 }
 
 #fotoSameSize {
-  background-image: url("/storage/{{$nota->foto}}");
+  background-image: url("../storage/{{$nota->foto}}");
   background-size: cover;
   background-position: center;
   z-index: 1;
