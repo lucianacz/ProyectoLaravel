@@ -40,9 +40,8 @@
               <div class="uk-card uk-card-default uk-card-body  uk-card-default" style="text-align: center; height: 23vh;">
                 <a href="{{url('nota/'.$nota->id)}}" style="text-transform: uppercase; text-align:center; color: black;"> {{$nota->subtitulo}}</a>
                 <p class="muestraUsuario" style="text-transform: uppercase; text-align:center; color: grey;"> @ {{$nota->usuario->nombreUsuario}} </p>
-        </div>
-
         </li>
+          </div>
         @endforeach
 
 
