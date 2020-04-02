@@ -71,7 +71,7 @@
 
 
     <div class="form-row align-items-center col-lg-8 col-md-8">
-    <a href="/register"> Registrarse </a>
+    <a href="/register">¿No tenes sesion? Registrate </a>
   </div>
 
 
