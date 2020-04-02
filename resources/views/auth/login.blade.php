@@ -57,12 +57,6 @@
         </button>
         </div>
 
-
-        <div class="form-row align-items-center col-lg-8 col-md-8">
-        <a class="loginBtn loginBtn--facebook" style="color:white; font-weight:400;" href='/facebook/login/'>
-        Login con Facebook
-      </a>
-
         <a class="loginBtn loginBtn--google" style="color:white; font-weight:400;" href="google/login">
         Login con Google
       </a>
