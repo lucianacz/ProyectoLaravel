@@ -12,7 +12,6 @@
           <li><a href="/contacto"> Contacto </a></li>
           @guest
           <li><a href="/login"> Login </a></li>
-          <li><a href="/register"> Registrarse </a></li>
           @else
           <li><a href="/perfil"> Mi Perfil </a></li>
           <li><a href="/edit"> Mis notas </a></li>
