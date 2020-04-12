@@ -231,7 +231,7 @@ a {
 
   .imagen img{
     float: left;
-    
+    width:200px;
   }
 
   .identidad {
