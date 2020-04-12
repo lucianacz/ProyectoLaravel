@@ -231,7 +231,7 @@ a {
 
   .imagen img{
     float: left;
-    max-height: 10vh;
+    max-width: 135px;
   }
 
   .identidad {
