@@ -13,7 +13,7 @@
 </div>
 
 <section class="identidad">
-  <div class="col-lg-7 col-md-8 col-11" id="identidad">
+  <div class="col-lg-4 col-md-6 col-11" id="identidad">
     <p>El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. </p>
       <a href="/quienessomos">VER MÁS</a>
 
