@@ -68,7 +68,7 @@
                       </div>
 
                       <div class="uk-card-body">
-                        <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->usuario->apellido}}</p>
+                        <p>  En: {{$foto->region}}, {{$foto->pais}}. De: {{$foto->usuario->nombreUsuario}}</p>
 
                           @guest
 
