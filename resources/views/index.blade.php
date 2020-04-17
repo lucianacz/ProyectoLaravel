@@ -9,12 +9,11 @@
 </div>
 
 <div class="col-lg-12 col-md-12 col-12 frasePrincipal">
-      <p class="col-lg-8 col-md-12 col-12" style="text-align: center;font-size:0.87em; width:100%; margin: 0 auto;"> <strong style="color: white;">¡BIENVENIDX A LA COMUNIDAD VIAJERA!</strong></p>
+      <p class="col-lg-8 col-md-12 col-12" style="text-align: center;font-size:0.87em; width:100%; margin: 0 auto;"> <strong style="color: white;">VIAJAR NOS TRANSFORMA</strong></p>
 </div>
 
 <section class="identidad">
   <div class="col-lg-7 col-md-8 col-11" id="identidad">
-    <h4 style="color:grey;">VIAJAR NOS TRANSFORMA</h4>
     <p>El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. </p>
       <a href="/quienessomos">VER MÁS</a>
 
