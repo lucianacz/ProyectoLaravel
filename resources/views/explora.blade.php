@@ -15,8 +15,8 @@
       <h4 style="color:grey;">GALERIA DE FOTOS</h4>
       <h5> SUBI TU FOTO</h5>
       <a href="/newPhoto" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
-
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; min-height: 300; max-height: 400">
+    </div>
+      <div class="uk-position-relative uk-visible-toggle uk-light col-12" tabindex="-1" uk-slideshow="animation: push; min-height: 300; max-height: 400">
         <BR>
 
         <ul class="uk-slideshow-items">
