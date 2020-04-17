@@ -26,7 +26,7 @@
 
 <section style="margin-top: 50px" class="col-12">
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m uk-child-width-1-5@l">
+    <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-5@l uk-child-width-1-6@xl">
       @foreach ($notas as $nota)
         <li style="margin-right: 1%;">
           <a href="{{url('nota/'.$nota->id)}}">
