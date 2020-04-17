@@ -7,7 +7,7 @@
   </div>
 
   <div class="pie">
-     <p> © 2020 culturasariri.com.ar </br> Todos los derechos reservados </br><strong> Diseño y programación: lucianaczikk@gmail.com</strong></p>
+     <p> © 2020 culturasariri.com.ar </br> Todos los derechos reservados </br>Diseño y programación: <a href="www.behance.net/lucianaczikk"> Luciana Czikk</a></p>
    </div>
 
 </footer>
