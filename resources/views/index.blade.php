@@ -13,9 +13,9 @@
 </div>
 
 <section class="identidad">
-  <div class="col-lg-7 col-md-8 col-10" id="identidad">
+  <div class="col-lg-7 col-md-8 col-11" id="identidad">
     <h4 style="color:grey;">VIAJAR NOS TRANSFORMA</h4>
-    <p>El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. Aqui nuestros sentidos se potencian, cada nuevo estímulo cambiará para siempre nuestra forma de percibir el mundo. Cada nuevo sabor, olor y color nos hacen reinterpretar lo que antes percibimos como delicioso o repugnante, como bello u horrible. Es así cómo nos nutrimos, crecemos y nos expandimos incorporando lo vivido.</p>
+    <p>El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. </p>
       <a href="/quienessomos">VER MÁS</a>
 
   </div>
