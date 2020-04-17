@@ -19,11 +19,21 @@
       <span uk-search-icon></span>
       <input class="uk-search-input" type="search" placeholder="Buscar...">
     </form>*/ ?>
+    <section class="identidad">
+      <div class="col-lg-4 col-md-6 col-10" id="identidad">
+        <h4 style="color:grey;">VIAJAR NOS TRANSFORMA</h4>
+        <p>Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría. En esta era de sobreinformación no hay nada mejor que leer relatos de viajeros reales. ¿te sumas?</p>
+          <a href="/quienessomos">VER MÁS</a>
+
+      </div>
+    </section>
+
 
     <h5> SUBI TU NOTA</h5>
     <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
-<div style="text-align:center; margin: 0 auto;" class="col-lg-3 col-md-4 col-11">
+<?php
+/*<div style="text-align:center; margin: 0 auto;" class="col-lg-3 col-md-4 col-11">
   <form style="text-align:center;" method="post" target="" enctype="multipart/form-data">
     @csrf
 
@@ -37,8 +47,8 @@
        </div>
    </div>
  </form>
-</div>
-
+</div>*/
+ ?>
 
 
 <script>

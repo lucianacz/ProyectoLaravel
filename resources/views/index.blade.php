@@ -14,8 +14,8 @@
 
 <section class="identidad">
   <div class="col-lg-4 col-md-6 col-10" id="identidad">
-    <h4 style="color:grey;">¿QUE ES SARIRI?</h4>
-    <p>Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos. Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de generación en generación.</p>
+    <h4 style="color:grey;">VIAJAR NOS TRANSFORMA</h4>
+    <p>El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. Aqui nuestros sentidos se potencian, cada nuevo estímulo cambiará para siempre nuestra forma de percibir el mundo. Cada nuevo sabor, olor y color nos hacen reinterpretar lo que antes percibimos como delicioso o repugnante, como bello u horrible. Es así cómo nos nutrimos, crecemos y nos expandimos incorporando lo vivido.</p>
       <a href="/quienessomos">VER MÁS</a>
 
   </div>
@@ -60,6 +60,14 @@
 </section>
 
 
+<section class="identidad">
+  <div class="col-lg-4 col-md-6 col-10" id="identidad">
+    <h4 style="color:grey;">¿QUE ES SARIRI?</h4>
+    <p>Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos. Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de generación en generación.</p>
+      <a href="/quienessomos">VER MÁS</a>
+
+  </div>
+</section>
 
 
 </main>
