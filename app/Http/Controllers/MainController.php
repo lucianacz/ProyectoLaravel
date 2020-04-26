@@ -107,6 +107,10 @@ class MainController extends Controller
       return view('quienessomos');
   }
 
+  public function viajar() {
+      return view('viajar');
+  }
+
   public function contacto() {
       return view('contacto');
   }

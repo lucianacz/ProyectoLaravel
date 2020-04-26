@@ -19,6 +19,10 @@ Route::get('/explora','MainController@explora');
 Route::get('/nota/{id}', 'MainController@viewNota');
 
 Route::get('/gente','MainController@gente');
+
+Route::get('/viajar','MainController@viajar');
+
+
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
 Route::get('/contacto', 'MainController@contacto');
