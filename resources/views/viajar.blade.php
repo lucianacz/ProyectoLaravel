@@ -24,7 +24,7 @@
 
          <h5 style="color:grey; margin-top:20px;">“Nunca dudes en irte lejos, más allá de todos los mares, de todas las fronteras, de todos los países, de todas las creencias”. Amin Maalouf</h5>
 
-         <h5> COMPARTÍ TU EXPERIENCIA</h5>
+         <h6> COMPARTÍ TU EXPERIENCIA</h6>
          <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
 
