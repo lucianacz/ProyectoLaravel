@@ -21,7 +21,11 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-     forceScheme('https');
-           }
-       }
-   }
+    public function boot()
+    {
+
+
+
+
+    }
+}
