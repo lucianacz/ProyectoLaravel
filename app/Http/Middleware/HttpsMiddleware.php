@@ -17,10 +17,15 @@ class HttpsMiddleware
      */
      public function handle($request, Closure $next)
      {
-             if (!$request->secure() && App::environment() === 'production') {
-                 return redirect()->secure($request->getRequestUri());
-             }
+       if (!app()->environment('local')) {
+    // for Proxies
+    Request::setTrustedProxies([$request->getClientIp()]);
 
-             return $next($request);
+    if (!$request->isSecure()) {
+        return redirect()->secure($request->getRequestUri());
+    }
+}
+
+return $next($request);
      }
  }
