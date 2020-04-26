@@ -36,7 +36,7 @@
                   <h2>{{$nota->pais}}</h2>
                 </div>
             </div>
-              <div class="uk-card uk-card-body card cardPais" style="text-align: center;">
+              <div class="uk-card uk-card-body cardPais" style="text-align: center;">
                 <p style="text-transform: uppercase; text-align:center; font-size: 14px; font-weight: bold; color: black;"> {{$nota->subtitulo}}
                   <br>
                 <span class="muestraUsuario" style="text-transform: uppercase; text-align:center; font-size: 14px;color: grey; font-weight: lighter; "> @ {{$nota->usuario->nombreUsuario}} </span></p>
