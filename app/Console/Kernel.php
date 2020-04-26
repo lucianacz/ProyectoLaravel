@@ -44,10 +44,20 @@ class Kernel extends ConsoleKernel
 
     // app/Http/Kernel.php
 
+    protected $middleware = [
+            \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+            \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+            \App\Http\Middleware\TrimStrings::class,
+            \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+
+            //custom middleware for https redirect
+            \App\Http\Middleware\HttpsMiddleware::class
+        ],
 
       protected $routeMiddleware = [
         // the image will be replaced with an optimized version which should be smaller
         //app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage),
         'optimizeImages' => \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class,
       ];
+
 }
