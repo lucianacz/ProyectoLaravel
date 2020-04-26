@@ -22,9 +22,9 @@
           Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría. En esta era de sobreinformación no hay nada mejor que leer relatos de viajeros reales.
          </p>
 
-         <h6 style="color:grey; margin-top:20px;">“Nunca dudes en irte lejos, más allá de todos los mares, de todas las fronteras, de todos los países, de todas las creencias”. Amin Maalouf</h6>
+         <h5 style="color:grey; margin-top:20px;">“Nunca dudes en irte lejos, más allá de todos los mares, de todas las fronteras, de todos los países, de todas las creencias”. Amin Maalouf</h5>
 
-         <h6> ¿TE SUMAS?</h6>
+         <h5> ¿TE SUMAS?</h5>
          <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
 
