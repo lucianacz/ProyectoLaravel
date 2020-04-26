@@ -33,7 +33,7 @@ Route::post('/edit/usuario/{id}', 'MainController@updateNombreUsuario')->middlew
 Route::get('/edit/email/{id}', 'MainController@editEmail')->middleware('auth');
 Route::post('/edit/email/{id}', 'MainController@updateEmail')->middleware('auth');
 
-Route::get('/', 'MainController@index');
+Route::get('/', 'MainController@index')->middleware('HttpsMiddleware');
 
 
 Route::get('/edit', 'MainController@list')->middleware('auth');;
