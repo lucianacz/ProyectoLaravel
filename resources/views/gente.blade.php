@@ -22,9 +22,9 @@
       <input class="uk-search-input" type="search" placeholder="Buscar...">
     </form>*/ ?>
     <section class="identidad">
-      <div class="col-lg-7 col-md-8 col-12" id="identidad">
-        <p>Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría. En esta era de sobreinformación no hay nada mejor que leer relatos de viajeros reales.
-          <a href="/viajar">¿Te sumas?</a></p>
+      <div  id="identidad">
+        <p>Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría.</p>
+          <a href="/viajar">¿Te sumas?</a>
 
       </div>
     </section>
