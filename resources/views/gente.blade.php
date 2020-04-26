@@ -23,8 +23,8 @@
     </form>*/ ?>
     <section class="identidad">
       <div  id="identidad">
-        <p>Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría.</p>
-          <a href="/viajar">¿Te sumas?</a>
+        <p><a href="/viajar">Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría.
+          <span style="color:grey;">¿Te sumas?</span></a></p>
 
       </div>
     </section>
