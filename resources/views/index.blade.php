@@ -59,7 +59,7 @@
 </section>
 
 
-<section class="identidad" style="margin-top:0;">
+<section class="identidad">
   <div class="col-lg-4 col-md-6 col-10" id="identidad">
     <h4 style="color:grey;">¿QUE ES SARIRI?</h4>
     <p>Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos. Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de generación en generación.</p>
