@@ -34,9 +34,9 @@
 
 
     <div class="col-lg-12 col-md-12 col-12 frase">
-          <h2>NUESTRO PROPÓSITO</h2>
-          <h3 class="col-lg-8 col-md-12 col-12">Fomentar una interaccion cultural, consciente genuina y
-        enriquecedora para todas las partes implicadas.</h3>
+          <h3>NUESTRO PROPÓSITO</h3>
+          <h4 class="col-lg-8 col-md-12 col-12">Fomentar una interaccion cultural, consciente genuina y
+        enriquecedora para todas las partes implicadas.</h4>
     </div>
 
   </section>
