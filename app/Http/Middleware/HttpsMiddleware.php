@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 
+use Illuminate\Http\Request;
+
 class HttpsMiddleware
 {
     /**
@@ -15,6 +17,15 @@ class HttpsMiddleware
      */
      public function handle($request, Closure $next)
      {
+         if (!app()->environment('local')) {
+             // for Proxies
+             Request::setTrustedProxies([$request->getClientIp()]);
+
+             if (!$request->isSecure()) {
+                 return redirect()->secure($request->getRequestUri());
+             }
+         }
+
          return $next($request);
      }
  }
