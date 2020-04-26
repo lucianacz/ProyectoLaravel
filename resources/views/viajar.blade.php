@@ -14,7 +14,6 @@
     <div class="col-lg-9 col-md-10 col-11">
       <h4 style="color:grey; margin-top:20px;">Viajar nos transforma</h4>
         <p style="white-space: pre-wrap; justify-content:flex-start;">
-          <span style="font-weight:bold;"></span>
           El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. Aquí nuestros sentidos se potencian, cada nuevo estímulo cambiará para siempre nuestra forma de percibir el mundo. Cada nuevo sabor, olor y color nos hacen reinterpretar lo que antes percibimos como delicioso o repugnante, como bello u horrible. Es así cómo nos nutrimos, crecemos y nos expandimos incorporando lo vivido.
 
           Hay tantas formas de viajar como viajeros, pero todos compartimos esas ansias por conocer, por explorar y por trascender.
@@ -23,11 +22,11 @@
           Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría. En esta era de sobreinformación no hay nada mejor que leer relatos de viajeros reales.
          </p>
 
+         <h4 style="color:grey; margin-top:20px;">“Nunca dudes en irte lejos, más allá de todos los mares, de todas las fronteras, de todos los países, de todas las creencias”. Amin Maalouf</h4>
 
          <h6> ¿TE SUMAS?</h6>
          <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
 
-         <h4 style="color:grey; margin-top:20px;">“Nunca dudes en irte lejos, más allá de todos los mares, de todas las fronteras, de todos los países, de todas las creencias”. Amin Maalouf</h4>
 
 
 
