@@ -2,8 +2,8 @@
 
   <div class="iconosPie">
     <a href="#" class="uk-icon-link uk-icon-button  uk-margin-small-right"uk-totop uk-scroll> </a>
-    <a href="http://facebook.com/culturasariri" target="_blank" class="uk-icon-link uk-icon-button  uk-margin-small-right" uk-icon="facebook" u></a>
-    <a href="http://instagram.com/cultura.sariri" target="_blank" class="uk-icon-link uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+    <a href="http://facebook.com/culturasariri" target="_blank" class="uk-icon-link uk-icon-button  uk-margin-small-right" uk-icon="facebook" style="color:black;"></a>
+    <a href="http://instagram.com/cultura.sariri" target="_blank" class="uk-icon-link uk-icon-button uk-margin-small-right" uk-icon="instagram" style="color:black;"></a>
   </div>
 
   <div class="pie">
