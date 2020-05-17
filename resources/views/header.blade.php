@@ -1,6 +1,6 @@
 <header>
 
-        <a class="imagen" href="/"><img src="/img/logoSarir.png" alt="Cultura Sariri"></a>
+        <a class="imagen" href="/"><img src="/img/logoSariri.png" alt="Cultura Sariri"></a>
 
 
       <div id="sideNavigation" class="sidenav">
