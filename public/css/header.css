@@ -67,6 +67,10 @@ a:hover {
     margin-top: 10px;
   }
 
+  header {
+    padding-bottom: 10px;
+  }
+
 }
 
 .sidenav a {
