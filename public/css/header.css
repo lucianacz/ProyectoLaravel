@@ -51,7 +51,7 @@ a:hover {
 .imagen img{
   float: left;
   position: fixed;
-width: 120px;
+  width: 110px;
   display: inline;
 
 }
