@@ -24,40 +24,6 @@
 
 
 
-<section style="margin-top: 50px" class="col-12">
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-5@l uk-child-width-1-4@xl">
-      @foreach ($notas as $nota)
-        <li style="margin-right: 1%;">
-          <a href="{{url('nota/'.$nota->id)}}">
-            <div class="uk-panel" style="width:100%;">
-                <img style="height: 50vh; width: 100%; object-fit: cover;" src="/storage/{{$nota->foto}}" alt="">
-                <div class="uk-position-center uk-panel">
-                  <h2>{{$nota->pais}}</h2>
-                </div>
-            </div>
-              <div class="uk-card uk-card-body cardPais" style="text-align: center; padding:20px;">
-                <p style="text-transform: uppercase; text-align:center; font-size: 14px; font-weight: bold; color: black;"> {{$nota->subtitulo}}
-                  <br>
-                <span class="muestraUsuario" style="text-transform: uppercase; text-align:center; font-size: 14px;color: grey; font-weight: lighter; "> @ {{$nota->usuario->nombreUsuario}} </span></p>
-              </div>
-              </a>
-        </li>
-
-        @endforeach
-
-
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next" style="background-color:white; border-radius:20px; opacity:0.4;"></a>
-
-</div>
-
-
-
-</section>
-
 
 <section class="identidad" style="margin-top:20px;">
   <div class="col-lg-4 col-md-6 col-10" id="identidad">
