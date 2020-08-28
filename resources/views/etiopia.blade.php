@@ -12,10 +12,12 @@
       <p class="col-lg-8 col-md-12 col-12" style="text-align: center;font-size:0.87em; width:100%; margin: 0 auto;"> <strong style="color: white;">BIENVENID@ A LA COMUNIDAD VIAJERA</strong></p>
 </div>
 
-<section class="identidad">
-<div class="uk-animation-toggle" tabindex="0">
-        <img class="uk-animation-stroke uk-animation-reverse" width="400" height="400" src="img/mursi.svg" alt="" uk-svg="stroke-animation: true">
+<section>
+<div class="uk-child-width-1-2@m uk-text-center" uk-grid>
+    <div class="uk-animation-toggle" tabindex="0">
+        <img class="uk-animation-stroke uk-animation-reverse" uk-svg="stroke-animation: true" width="400" height="400" src="img/mursi.svg" alt="" uk-svg="stroke-animation: true">
     </div>
+</div>
 </section>
 
 
