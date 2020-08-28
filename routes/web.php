@@ -22,6 +22,8 @@ Route::get('/gente','MainController@gente');
 
 Route::get('/viajar','MainController@viajar');
 
+Route::get('/etiopia','MainController@etiopia');
+
 
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
