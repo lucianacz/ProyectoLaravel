@@ -13,11 +13,9 @@
 </div>
 
 <section class="identidad">
-  <div class="col-lg-4 col-md-6 col-11" id="identidad">
-    <p>El viaje nos incomoda, nos desafía e interpela sacándonos de nuestra “zona de confort” para llevarnos a un estado tanto físico como mental elevado. </p>
-      <a href="/viajar">VER MÁS</a>
-
-  </div>
+<div class="uk-animation-toggle" tabindex="0">
+        <img class="uk-animation-stroke uk-animation-reverse" width="400" height="400" src="img/mursi.svg" alt="" uk-svg="stroke-animation: true">
+    </div>
 </section>
 
 
