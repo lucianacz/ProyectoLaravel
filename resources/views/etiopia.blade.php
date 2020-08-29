@@ -5,33 +5,17 @@
 
 <main>
 <section>
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
-<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('img/slider1.jpg');">
-
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Headline</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="y: 100,0">Headline</h1>
 
 </div>
-
-<div class="col-lg-12 col-md-12 col-12 frasePrincipal">
-      <p class="col-lg-8 col-md-12 col-12" style="text-align: center;font-size:0.87em; width:100%; margin: 0 auto;"> <strong style="color: white;">BIENVENID@ A LA COMUNIDAD VIAJERA</strong></p>
-</div>
+</section>
 
 <section class="identidad">
 <div class="uk-animation-toggle" tabindex="0">
         <img class="uk-animation-stroke uk-animation-reverse" width="400" height="400" src="img/mursi.svg" alt="" uk-svg="stroke-animation: true">
     </div>
-</section>
-
-
-
-
-<section class="identidad" style="margin-top:20px;">
-  <div class="col-lg-4 col-md-6 col-10" id="identidad">
-    <h4 style="color:grey;">¿QUE ES SARIRI?</h4>
-    <p>Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos. Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de generación en generación.</p>
-      <a href="/quienessomos">VER MÁS</a>
-
-  </div>
 </section>
 
 
