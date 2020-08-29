@@ -1,5 +1,6 @@
-@extends('layout')
+<link rel="stylesheet" href="css/viajes.scss">
 
+@extends('layout')
 @section('main')
 
 <main>
