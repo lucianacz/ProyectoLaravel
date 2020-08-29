@@ -19,7 +19,13 @@
 </section>
 
 
-
+<section class="section 
+                  is-width-standard
+                  
+                    has-background
+                  
+                  " data-section-id="1598567285378"> <div class="prod-sect"> <div class="col-sect"> <div class="features"> <h1>Track your dog</h1> <div class="wrap-feat"> <div class="box-feat"> <i class="fas fa-plane-departure"></i> <span>travel tracking protection</span> <p>Enjoy your vacations knowing where your dog is</p></div> <div class="box-feat"> <i class="fas fa-dog"></i> <span>Dog walker Monitoring</span> <p>Always know where your dog is and who they're</p></div> <div class="box-feat"> <i class="fas fa-paw"></i> <span>travel tracking protection</span> <p>Enjoy your vacations knowing where your dog is</p></div> <div class="box-feat"> <i class="far fa-eye"></i> <span>travel tracking protection</span> <p>Enjoy your vacations knowing where your dog is</p></div></div></div></div> <div class="col-sect"> <div class="wrap-image"> <img src="https://cdn.shopify.com/s/files/1/0443/8907/3055/files/black_785990fe-d0ae-4881-82e0-4cb5da098869_4500x.png?v=1598247164" alt="" srcset="https://cdn.shopify.com/s/files/1/0443/8907/3055/files/black_785990fe-d0ae-4881-82e0-4cb5da098869_4500x.png?v=1598247164"></div></div>
+</div></section>
 
 
 
