@@ -15,17 +15,17 @@
 </section>
 <ul class="uk-iconnav">
     <li>
-    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="destiny">> </a>
+    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="location"> </a>
         <h3>Destino</h3>
         <p>Etiopía, Africa</p>
     </li>
     <li>
-    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="celendar">> </a>
+    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="celendar"> </a>
         <h3>Fecha</h3>
         <p>Julio 2021</p>
     </li>
     <li>
-    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="happy">> </a>
+    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="bolt"> </a>
         <h3>Viajerxs</h3>
         <p>14 maximo</p>
     </li>
