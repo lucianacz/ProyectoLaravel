@@ -10,10 +10,10 @@
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="y: 100,0">VIAJA A ETIOPIA</h1>
 
 </div>
-
-
 </section>
-<ul class="uk-iconnav icon-section">
+
+<section class="icon-section">
+<ul class="uk-iconnav">
     <li>
     <a href="#" class="uk-icon-travel" uk-icon="location"> </a>
         <h3>Destino</h3>
