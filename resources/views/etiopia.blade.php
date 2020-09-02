@@ -14,13 +14,14 @@
 
 </section>
 <ul class="uk-iconnav">
-    <li uk-icon="icon: location"></li>
-</ul>
-<ul class="uk-iconnav">
-    <li uk-icon="icon: calendar"></li>
-</ul>
-<ul class="uk-iconnav">
-    <li uk-icon="icon: check"></li>
+    <li>
+    <a href="#" class="uk-icon-link uk-icon-button  uk-margin-small-right"uk-totop uk-scroll> </a>
+
+        <h3>Destino:</h3>
+        <p>Etiopía, Africa</p>
+</li>
+    <span uk-icon="icon: calendar"></span>
+    <span uk-icon="icon: happy"></span>
 </ul>
 
 </section>
