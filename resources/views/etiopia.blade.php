@@ -1,4 +1,4 @@
-@import url('viajes.scss')
+
 @extends('layout')
 @section('main')
 

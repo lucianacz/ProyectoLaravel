@@ -1,5 +1,6 @@
 @import url('header.css');
 @import url('all.css');
+@import url('viajes.css');
 
 html {
   scroll-behavior: smooth;
