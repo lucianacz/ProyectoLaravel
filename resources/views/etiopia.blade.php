@@ -20,7 +20,7 @@
         <p>Etiopía, Africa</p>
     </li>
     <li>
-    <a href="#" class="uk-icon-travel" uk-icon="celendar"> </a>
+    <a href="#" class="uk-icon-travel" uk-icon="calendar"> </a>
         <h3>Fecha</h3>
         <p>Julio 2021</p>
     </li>
