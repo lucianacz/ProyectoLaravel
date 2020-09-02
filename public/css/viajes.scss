@@ -1,15 +1,15 @@
-.icon-section{
-    .uk-icon-travel{
-        margin:auto;
-        text-align:center;
-        svg{
+.icon-section {
+    .uk-icon-travel {
+        margin: auto;
+        text-align: center;
+
+        svg {
             width: 50px;
         }
-        .uk-iconnav>*>a{
-            margin:auto;
+
+        a {
+            margin: auto;
         }
     }
-    li{width:100%;}
-    @media screen and (min-width:770px){width:33.3%}
 
 }
