@@ -19,13 +19,12 @@
           Hay tantas formas de viajar como viajeros, pero todos compartimos esas ansias por conocer, por explorar y por trascender.
           Muchxs de nosotrxs idealizamos viajes románticos como los de Marco Polo, Charles Darwin o Heinrich Harrer, entre otros. A lo mejor nuestros viajes no vayan a ser tan míticos pero no por eso dejan de ser épicos. ¿O acaso nunca sintieron ese vértigo que nos invade cuando estamos a punto de partir hacia una nueva aventura? O ese sentimiento extraño cuando nos damos cuenta que estamos viviendo algo imposible de transmitir con palabras… viajar es vivir de forma plena, es disfrutar el presente y abrazarlo.
 
-          Queremos darles la bienvenida a este nuevo espacio; Creado con la intención de formar una comunidad de viajerxs, en la cual entre todxs podamos compartir experiencias y sabiduría. En esta era de sobreinformación no hay nada mejor que leer relatos de viajeros reales.
          </p>
 
          <h5 style="color:grey; margin-top:20px;">“Nunca dudes en irte lejos, más allá de todos los mares, de todas las fronteras, de todos los países, de todas las creencias”. Amin Maalouf</h5>
 
          <h6> COMPARTÍ TU EXPERIENCIA</h6>
-         <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
+         <!---<a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a> -->
 
 
 

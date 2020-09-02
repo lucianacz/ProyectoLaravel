@@ -7,7 +7,7 @@
         <ul>
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
           <li><a href="/"> Home </a></li>
-          <li><a href="/gente"> Relatos de viajerxs </a></li>
+          <li><a href="/gente"> Relatos de viaje </a></li>
           <li><a href="/quienessomos"> Quienes somos </a></li>
           <li><a href="/contacto"> Contacto </a></li>
           @guest
