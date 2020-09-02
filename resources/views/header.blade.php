@@ -10,6 +10,7 @@
           <li><a href="/gente"> Relatos de viaje </a></li>
           <li><a href="/quienessomos"> Quienes somos </a></li>
           <li><a href="/contacto"> Contacto </a></li>
+          <!--
           @guest
           <li><a href="/login"> Login </a></li>
           @else
@@ -19,7 +20,7 @@
              onclick="event.preventDefault();
                            document.getElementById('logout-form').submit();">
               {{ __('Logout') }} </a></li>
-          @endguest
+          @endguest-->
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
             <?php header('location:login'); ?>

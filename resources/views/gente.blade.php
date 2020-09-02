@@ -16,8 +16,11 @@
     <div class="col-lg-10 col-md-10 col-10">
       <h4 style="color:grey;">CRONICAS VIAJERAS</h4>
       <h5> SUBI TU NOTA</h5>
+      
+      <?php
+      /* s
       <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
-      <?php /* <form class="uk-search uk-search-default">
+      <form class="uk-search uk-search-default">
       <span uk-search-icon></span>
       <input class="uk-search-input" type="search" placeholder="Buscar...">
     </form>*/ ?>
