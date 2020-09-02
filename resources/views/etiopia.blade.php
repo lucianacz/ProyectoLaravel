@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/viajes.scss">
+<link rel="stylesheet" href="sass/viajes.scss">
 
 @extends('layout')
 @section('main')
@@ -20,7 +20,7 @@
         <p>Etiopía, Africa</p>
     </li>
     <li>
-    <a href="#" class="uk-icon-travel" uk-icon="calendar"> </a>
+    <a href="#" class="uk-icon-travel" uk-icon="clendar"> </a>
         <h3>Fecha</h3>
         <p>Julio 2021</p>
     </li>
