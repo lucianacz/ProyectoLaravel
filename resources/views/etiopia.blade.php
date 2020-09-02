@@ -13,19 +13,19 @@
 
 
 </section>
-<ul class="uk-iconnav">
+<ul class="uk-iconnav icon-section">
     <li>
-    <a href="#" class="uk-icon-button  uk-margin-medium" uk-icon="location"> </a>
+    <a href="#" class="uk-icon-button" uk-icon="location"> </a>
         <h3>Destino</h3>
         <p>Etiopía, Africa</p>
     </li>
     <li>
-    <a href="#" class="uk-icon-button  uk-margin-medium" uk-icon="celendar"> </a>
+    <a href="#" class="uk-icon-button" uk-icon="celendar"> </a>
         <h3>Fecha</h3>
         <p>Julio 2021</p>
     </li>
     <li>
-    <a href="#" class="uk-icon-button  uk-margin-medium" uk-icon="bolt"> </a>
+    <a href="#" class="uk-icon-button" uk-icon="bolt"> </a>
         <h3>Viajerxs</h3>
         <p>14 maximo</p>
     </li>
