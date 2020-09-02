@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/sass/viajes.scss" type="text/css">
+<link rel="stylesheet" href="/css/viajes.scss" type="text/scss">
 
 @extends('layout')
 @section('main')
