@@ -1,5 +1,9 @@
+.icon-section{
+    margin:40px 0;
+}
+
 .uk-icon-travel {
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: center;
     display: flex;
 }
