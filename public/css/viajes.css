@@ -1,6 +1,7 @@
 .uk-icon-travel {
     margin: 20px auto;
     text-align: center;
+    display: flex;
 }
 
 svg {
@@ -16,7 +17,7 @@ li {
     width: 100%;
 }
 
-uk-text{
+.uk-text{
     text-align:center;
 }
 
