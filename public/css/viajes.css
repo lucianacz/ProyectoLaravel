@@ -1,10 +1,11 @@
 .uk-icon-travel {
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
 }
 
 svg {
     width: 50px;
+    padding:5px;
 }
 
 a {
@@ -15,6 +16,9 @@ li {
     width: 100%;
 }
 
+uk-text{
+    text-align:center;
+}
 
 @media screen and (min-width:770px) {
     li{width: 33.3%;}

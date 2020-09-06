@@ -16,18 +16,24 @@
 <ul class="uk-iconnav">
     <li>
     <a href="#" class="uk-icon-travel" uk-icon="location"> </a>
+        <div class="uk-text"> 
         <h3>Destino</h3>
         <p>Etiopía, Africa</p>
+        </div>
     </li>
     <li>
     <a href="#" class="uk-icon-travel" uk-icon="calendar"> </a>
+        <div class="uk-text"> 
         <h3>Fecha</h3>
         <p>Julio 2021</p>
+        </div>
     </li>
     <li>
     <a href="#" class="uk-icon-travel" uk-icon="bolt"> </a>
+        <div class="uk-text"> 
         <h3>Viajerxs</h3>
         <p>14 maximo</p>
+        </div>
     </li>
 </ul>
 
