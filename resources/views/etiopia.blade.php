@@ -118,22 +118,12 @@
             </div>
         </section>
 
-        <!-- CTA -->
-        <section id="cta" class="wrapper style4">
-            <div class="inner">
-                <ul class="actions stacked">
-                    <li><a href="#" class="button fit primary">Activate</a></li>
-                    <li><a href="#" class="button fit">Learn More</a></li>
-                </ul>
-            </div>
-        </section>
 
 
 
 
         <!-- contact -->
-        <section class="culturas">
-            <div class="col-lg-6 col-md-6 col-10">
+        <section>
                 <h4 style="color:grey;">ESCRIBINOS</h4>
                 <h5> culturasariri@gmail.com</h5>
                 <h5> Buenos Aires, Argentina</h5>
@@ -161,15 +151,18 @@
 
                     <button class="btn btn-primary boton col-8" type="submit">Enviar</button>
                 </form>
-
-
-
-
-
-
-            </div>
         </section>
 
+
+        <!-- CTA -->
+        <section id="cta" class="wrapper style4">
+            <div class="inner">
+                <ul class="actions stacked">
+                    <li><a href="#" class="button fit primary">Activate</a></li>
+                    <li><a href="#" class="button fit">Learn More</a></li>
+                </ul>
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer id="footer">
