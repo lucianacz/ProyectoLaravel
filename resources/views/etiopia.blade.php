@@ -61,19 +61,19 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/img1.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="img/img1.jpg" alt="" /></div><div class="content">
 								<h2> Valle del Omo, uno de los paisajes culturales mas diversos del mundo</h2>
 								<p>Compartiremos momentos con las tribus: Dassanech, Mursi, Hammer, Banna, Bodi, entre otras. Asistiremos a ceremonias, rituales, mercados y acamparemos en sus aldeas.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/lalibela.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="img/lalibela.jpg" alt="" /></div><div class="content">
 								<h2>Lalibela, Patrimonio de la humanidad</h2>
 								<p>La ciudad fue construida para reemplazar espiritualmente a Jerusalem, en ese momento ocupada por musulmanes. Las iglesias construidas entre el S XI y XIII fueron talladas directamente desde roca solida. Hoy en día es un importante centro de pregrinacion para los fieles de la iglesia ortodoxa etíope</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/nature.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="img/nature.jpg" alt="" /></div><div class="content">
 								<h2>Maravillas naturales etíopes</h2>
 								<p>Cataratas del Nilo azul, Lago Tana y Ziway. Durante el recorrido visitaremos áreas naturales pristinas, donde podremos apreciar la biodiversidad endémica del cuerno de Africa.</p>
 							</div>
@@ -135,13 +135,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="icons/js/jquery.min.js"></script>
+			<script src="icons/js/jquery.scrollex.min.js"></script>
+			<script src="icons/js/jquery.scrolly.min.js"></script>
+			<script src="icons/js/browser.min.js"></script>
+			<script src="icons/js/breakpoints.min.js"></script>
+			<script src="icons/js/util.js"></script>
+			<script src="icons/js/main.js"></script>
 			<script src="https://interactive-img.com/js/include.js"></script>
 
 	</body>
