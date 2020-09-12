@@ -19,9 +19,6 @@
 <body class="landing is-preload">
 
 
-    @section('main')
-
-
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
@@ -204,15 +201,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-@endsection
