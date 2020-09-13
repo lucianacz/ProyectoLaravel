@@ -15,8 +15,8 @@
   <section class="gente">
     <div class="col-lg-10 col-md-10 col-10">
       <h4 style="color:grey;">CRONICAS VIAJERAS</h4>
-      <h5> SUBI TU NOTA</h5>
-      
+      <!-- <h5> SUBI TU NOTA</h5>
+       -->
       <?php
       /* s
       <a href="/newNote" class="uk-icon-button  uk-margin-small-right" uk-icon="plus"></a>
