@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import "path/to/font-awesome/less/font-awesome.less";
 
 /*
 	Spectral by HTML5 UP
@@ -4091,4 +4092,8 @@ input, select, textarea {
 
 	body.is-preload #banner:after {
 		opacity: 0;
-	}
+    }
+    
+    .contactEtiopia{
+        background-color:white;
+    }

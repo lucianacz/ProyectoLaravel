@@ -13,7 +13,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' />
-    <link rel="stylesheet" href="css/estilosformulario.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="css/viajes.css">
 </head>
@@ -125,7 +124,7 @@
 
 
         <!-- contact -->
-        <section style="background-color:white;">
+        <section class="contactEtiopia">
                 <h4 style="color:grey;">ESCRIBINOS</h4>
                 <h5> culturasariri@gmail.com</h5>
                 <h5> Buenos Aires, Argentina</h5>
