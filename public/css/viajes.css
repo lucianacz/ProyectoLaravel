@@ -4119,4 +4119,11 @@ input, select, textarea {
 
   .logo img{
       max-width:180px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+  }
+
+  .logo .imagen{ 
+    border-bottom: none;
   }
