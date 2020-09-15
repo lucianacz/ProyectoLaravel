@@ -131,24 +131,18 @@
 
 
                 <form action="contact.php" method="post">
-                    <div class="form-row">
 
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" name="name" placeholder="Nombre" required>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <input type="email" class="form-control" name="email" placeholder="Email" required>
-                        </div>
-
-
-                        <div class="col-md-12 mb-3">
-                            <textarea type="text" class="form-control" name="mensaje" placeholder="Mensaje" rows="7"
-                                required></textarea>
-                        </div>
-
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Nombre">
                     </div>
 
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Email">
+                    </div>
+
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                    </div>
 
                     <button class="btn btn-primary boton col-8" type="submit">Enviar</button>
                 </form>
