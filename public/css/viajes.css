@@ -4117,6 +4117,6 @@ input, select, textarea {
     opacity: 1; /* Firefox */
   }
 
-  .logo{
+  .logo img{
       max-width:180px;
   }
