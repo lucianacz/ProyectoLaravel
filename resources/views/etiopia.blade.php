@@ -123,8 +123,8 @@
 
 
 
-
-        <!-- contact -->
+<!-- 
+       
         <section class="contactEtiopia">
                 <h4 style="color:grey;">ESCRIBINOS</h4>
 
@@ -145,15 +145,15 @@
 
                     <button class="btn btn-primary boton col-8" type="submit">Enviar</button>
                 </form>
-        </section>
+        </section> -->
 
 
         <!-- CTA -->
         <section id="cta" class="wrapper style4">
             <div class="inner">
                 <ul class="actions stacked">
-                    <li><a href="#" class="button fit primary">Activate</a></li>
-                    <li><a href="#" class="button fit">Learn More</a></li>
+                    <li><a href="https://wa.me/+5491158053158?text=Hola!" class="button fit primary" style="color:#29343e">ESCRIBINOS</a></li>
+                    <!-- <li><a href="#" class="button fit">Learn More</a></li> -->
                 </ul>
             </div>
         </section>
@@ -161,7 +161,7 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-                <li><a href=" https://wa.me/05491158053158?text=Hola Julian!" class="icon brands fa-whatsapp"
+                <li><a href="https://wa.me/+5491158053158?text=Hola!" class="icon brands fa-whatsapp"
                         target=”_blank”><span class="label">Twitter</span></a></li>
                 <li><a href="https://facebook.com/culturasariri" target=”_blank” class="icon brands fa-facebook-f"><span
                             class="label">Facebook</span></a></li>
