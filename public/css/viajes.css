@@ -4074,7 +4074,7 @@ input, select, textarea {
     }
     
     .pointBoxDesc {
-        font-size: 1em;
+        font-size: 1em !important;
     }
 
 
