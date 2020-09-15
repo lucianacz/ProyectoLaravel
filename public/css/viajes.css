@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+    vertical-align: baseline;
+    font-family: 'Lato', sans-serif;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -4096,4 +4098,9 @@ input, select, textarea {
     
     .contactEtiopia{
         background-color:white;
+        text-align: center;
+    }
+
+    .contact{
+        margin:30px;
     }

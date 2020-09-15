@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/viajes.css">
 </head>
 
@@ -126,21 +127,19 @@
         <!-- contact -->
         <section class="contactEtiopia">
                 <h4 style="color:grey;">ESCRIBINOS</h4>
-                <h5> culturasariri@gmail.com</h5>
-                <h5> Buenos Aires, Argentina</h5>
 
 
                 <form action="contact.php" method="post">
 
-                    <div class="uk-margin">
+                    <div class="uk-margin contact">
                         <input class="uk-input uk-form-width-medium" type="text" placeholder="Nombre">
                     </div>
 
-                    <div class="uk-margin">
+                    <div class="uk-margin contact">
                         <input class="uk-input uk-form-width-medium" type="text" placeholder="Email">
                     </div>
 
-                    <div class="uk-margin">
+                    <div class="uk-margin contact">
                         <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
                     </div>
 
