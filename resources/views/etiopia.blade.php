@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="landing is-preload">
+<body class="landing">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
