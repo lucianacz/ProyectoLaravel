@@ -152,7 +152,7 @@
         <section id="cta" class="wrapper style4">
             <div class="inner">
                 <ul class="actions stacked">
-                    <li><a href="https://wa.me/+5491158053158?text=Hola!" class="button fit primary" style="color:#29343e">ESCRIBINOS</a></li>
+                    <li><a href="https://wa.me/+5491158053158?text=Hola!" target=”_blank” class="button fit primary" style="color:#29343e">ESCRIBINOS</a></li>
                     <!-- <li><a href="#" class="button fit">Learn More</a></li> -->
                 </ul>
             </div>
