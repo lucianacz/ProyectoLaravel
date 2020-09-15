@@ -22,13 +22,16 @@
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
-            <div class="logo">
-                <a class="imagen" href="/"><img src="/img/logoSariri.png" alt="Cultura Sariri"></a>
-            </div>
 
         <!-- Banner -->
         <section id="banner">
 
+        <div class="logo">
+                <a class="imagen" href="/"><img src="/img/logoSariri.png" alt="Cultura Sariri"></a>
+            </div>
+
+
+            
             <div class="inner">
                 <h2>VIAJA A ETIOPIA</h2>
                 <p>Animate a vivir la aventura que siempre soñaste</p>
