@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/viajes.css">
-    <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="css/noscript.css"></noscript>
 
 </head>
 
