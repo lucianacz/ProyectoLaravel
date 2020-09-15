@@ -4073,6 +4073,10 @@ input, select, textarea {
 		color:#2e3842;
     }
     
+    .pointBoxDesc {
+        font-size: 1em;
+    }
+
 
 	body.is-preload #banner h2 {
 		-moz-transform: none;

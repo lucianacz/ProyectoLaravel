@@ -89,7 +89,7 @@
                     <p>La ciudad fue construida para reemplazar espiritualmente a Jerusalem, en ese momento ocupada por
                         musulmanes. Las iglesias construidas entre el S XI y XIII fueron talladas directamente desde
                         roca solida. Hoy en día es un importante centro de pregrinacion para los fieles de la iglesia
-                        ortodoxa etíope</p>
+                        ortodoxa etíope.</p>
                 </div>
             </section>
             <section class="spotlight">
