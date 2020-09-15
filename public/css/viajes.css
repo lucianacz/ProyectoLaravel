@@ -4104,3 +4104,13 @@ input, select, textarea {
     .contact{
         margin:30px;
     }
+
+    .uk-input{
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.uk-input::placeholder { 
+    color: black;
+    opacity: 1; /* Firefox */
+  }
