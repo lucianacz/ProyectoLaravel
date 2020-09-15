@@ -19,7 +19,9 @@
 </head>
 
 <body class="landing is-preload">
-
+    <div class="logo">
+        <a class="imagen" href="/"><img src="/img/logoSariri.png" alt="Cultura Sariri"></a>
+    </div>
 
     <!-- Page Wrapper -->
     <div id="page-wrapper">
