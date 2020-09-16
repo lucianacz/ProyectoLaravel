@@ -36,7 +36,7 @@
 
             <div class="inner">
                 <h2>VIAJA A ETIOPIA</h2>
-                <p>Animate a vivir la aventura que siempre soñaste</p>
+                <p>aventura trasendental</p>
                 <ul class="actions special">
                     <!-- <li><a href="#" class="primary"></a></li> -->
                 </ul>
@@ -48,7 +48,7 @@
         <section id="one" class="wrapper style1 special">
             <div class="inner">
                 <header class="major">
-                    <h2>Se parte de Una experiencia genuina en uno de los paises mas tradicionales y diversos de Africa.
+                    <h2>Se parte de un intercambio cultural genuino en uno de los países mas tradicionales y diversos de África.
                     </h2>
                     <!--<p>¿Sabias que Etiopía es el único pais África nunca colonizado por Europa?</p>-->
                 </header>
@@ -87,7 +87,7 @@
                 <div class="content">
                     <h2>Lalibela, Patrimonio de la humanidad</h2>
                     <p>La ciudad fue construida para reemplazar espiritualmente a Jerusalem, en ese momento ocupada por
-                        musulmanes. Las iglesias construidas entre el S XI y XIII fueron talladas directamente desde
+                        musulmanes. Las iglesias construidas entre el S XII y XIII fueron talladas directamente desde
                         roca solida. Hoy en día es un importante centro de pregrinacion para los fieles de la iglesia
                         ortodoxa etíope.</p>
                 </div>
