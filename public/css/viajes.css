@@ -3990,14 +3990,14 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner{
 		background-image: url("../img/foto.png");
-		background-position: left center;
+		background-position: 25% center;
 		height: 100vh;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: url("../img/IMG_5765.jpg");
+		background-image: url("../img/IMG_5765.JPG");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
