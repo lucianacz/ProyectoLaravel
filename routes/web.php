@@ -22,8 +22,8 @@ Route::get('/gente','MainController@gente');
 
 Route::get('/viajar','MainController@viajar');
 
-Route::get('/etiopia','MainController@etiopia');
 Route::get('/india','MainController@india');
+Route::get('/etiopia','MainController@etiopia');
 
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
@@ -40,7 +40,6 @@ Route::get('/edit/email/{id}', 'MainController@editEmail')->middleware('auth');
 Route::post('/edit/email/{id}', 'MainController@updateEmail')->middleware('auth');
 
 Route::get('/', 'MainController@index')->middleware('HttpsMiddleware');
-
 
 Route::get('/edit', 'MainController@list')->middleware('auth');;
 
