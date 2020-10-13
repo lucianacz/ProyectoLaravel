@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/viajes.css">
     <noscript><link rel="stylesheet" href="css/noscript.css"></noscript>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon2.png" sizes="16x16">
 
 </head>
 

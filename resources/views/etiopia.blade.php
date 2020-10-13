@@ -1,6 +1,11 @@
 
 
 <!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 
 <head>
@@ -176,50 +181,6 @@
             </ul>
         </footer>
 
-<div class="principal">
-</div>
-
-<div class="col-lg-12 col-md-12 col-12 frasePrincipal">
-      <p class="col-lg-8 col-md-12 col-12" style="text-align: center;font-size:0.87em; width:100%; margin: 0 auto;"> <strong style="color: white;">BIENVENID@ A LA COMUNIDAD VIAJERA</strong></p>
-</div>
-
-<section>
-<div class="uk-child-width-1-2@m uk-text-center" uk-grid>
-    <div class="uk-animation-toggle" tabindex="0">
-        <img class="uk-animation-stroke uk-animation-reverse" uk-svg="stroke-animation: true" width="400" height="400" src="img/mursi.svg" alt="" uk-svg="stroke-animation: true">
-    </div>
-</div>
-</section>
-
-
-
-
-
-
-<section class="identidad" style="margin-top:20px;">
-  <div class="col-lg-4 col-md-6 col-10" id="identidad">
-    <h4 style="color:grey;">¿QUE ES SARIRI?</h4>
-    <p>Sariri en lengua Aymara significa viajero, es quien lleva mensajes entre los pueblos andinos. Nosotros vemos al “Sariri” como un transmisor, como la fuerza que mantiene la tradición viva de generación en generación.</p>
-      <a href="/quienessomos">VER MÁS</a>
-
-  </div>
-</section>
-
-
-</main>
-
-
-@endsection
-
-
-
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     </div>
 
     <!-- Scripts -->
