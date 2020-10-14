@@ -15,7 +15,7 @@
     <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/viajes.css">
+    <link rel="stylesheet" href="css/viajes2.css">
     <noscript><link rel="stylesheet" href="css/noscript.css"></noscript>
     <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon2.png" sizes="16x16">
 
@@ -62,7 +62,7 @@
                     <li>
                         <span class="icon fa-calendar icon-features"></span>
                         <h4>Fecha</h4>
-                        <span>1 al 16 de Julio 2021</span>
+                        <span>12 al 28 de Abril 2021</span>
                     </li>
                     <li>
                         <span class="icon fa-user icon-features"></span>
