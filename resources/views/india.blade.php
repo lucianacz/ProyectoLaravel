@@ -76,17 +76,17 @@
         <!-- Two -->
         <section id="two" class="wrapper alt style2">
             <section class="spotlight">
-                <div class="image"><img src="img/img1.jpg" alt="" /></div>
+                <div class="image"><img src="img/orissa.jpg" alt="" /></div>
                 <div class="content">
                     <h2> ORISSA</h2>
                     <p>Al Oeste de la India, lindando con el Golfo de Bengala encontramos al Estado de Orissa. Este estado es uno de los menos conocidos para los visitantes extranjeros, lo que lo mantiene relativamente virgen de la influencia occidental. Aquí viven más de 7 grupos étnicos distintos entre sí, quienes mantienen sus peculiares tradiciones. Compartiremos momentos y aprenderemos de la forma de vida de las tribus: Baiga, Muria, Bison Horn Maria, Bonda y Kutia Kondh, entre otras. </p>
                 </div>
             </section>
             <section class="spotlight">
-                <div class="image"><img src="img/lalibela.jpg" alt="" /></div>
+                <div class="image"><img src="img/tigre.jpg" alt="" /></div>
                 <div class="content">
                     <h2>PARQUE NACIONAL KANHA</h2>
-                    <p>LEste Parque Nacional ofrece uno de los paisajes naturales más bellos y mejor preservados del subcontinente indio. Se dice que en sus bosques y praderas Rudyard Kipling encontró la inspiración para escribir el ganador del premio nobel de literatura “El Libro de la Selva'', luego adaptado al cine. Este Parque alberga una de las mayores poblaciones de tigres de Bengala del mundo. Y su biodiversidad deleitará a los más exigentes amantes de la vida salvaje.</p>
+                    <p>Este Parque Nacional ofrece uno de los paisajes naturales más bellos y mejor preservados del subcontinente indio. Se dice que en sus bosques y praderas Rudyard Kipling encontró la inspiración para escribir el ganador del premio nobel de literatura “El Libro de la Selva'', luego adaptado al cine. Este Parque alberga una de las mayores poblaciones de tigres de Bengala del mundo. Y su biodiversidad deleitará a los más exigentes amantes de la vida salvaje.</p>
                 </div>
             </section>
             <section class="spotlight">
