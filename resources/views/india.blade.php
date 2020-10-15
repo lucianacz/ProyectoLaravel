@@ -83,14 +83,14 @@
                 </div>
             </section>
             <section class="spotlight">
-                <div class="image"><img src="img/tigre.jpg" alt="" /></div>
+                <div class="image"><img src="img/leopard.jpg" alt="" /></div>
                 <div class="content">
                     <h2>PARQUE NACIONAL KANHA</h2>
                     <p>Este Parque Nacional ofrece uno de los paisajes naturales más bellos y mejor preservados del subcontinente indio. Se dice que en sus bosques y praderas Rudyard Kipling encontró la inspiración para escribir el ganador del premio nobel de literatura “El Libro de la Selva'', luego adaptado al cine. Este Parque alberga una de las mayores poblaciones de tigres de Bengala del mundo. Y su biodiversidad deleitará a los más exigentes amantes de la vida salvaje.</p>
                 </div>
             </section>
             <section class="spotlight">
-                <div class="image"><img src="img/nature.JPG" alt="" /></div>
+                <div class="image"><img src="img/mercado.JPG" alt="" /></div>
                 <div class="content">
                     <h2>TEMPLOS Y MERCADOS</h2>
                     <p>En nuestro recorrido podremos apreciar y ser parte del día a día de la colorida y plural sociedad India. Conoceremos distintos templos donde aprenderemos de las diferentes ramas del hinduismo y nos deleitamos por la fina arquitectura distinta en cada sitio sagrado. También iremos a múltiples mercados locales donde diversas etnias se encuentran para comprar y vender sus productos y artesanías.</p>
