@@ -90,7 +90,7 @@
                 </div>
             </section>
             <section class="spotlight">
-                <div class="image"><img src="img/market.jpg" alt="" /></div>
+                <div class="image"><img src="img/2market.jpg" alt="" /></div>
                 <div class="content">
                     <h2>TEMPLOS Y MERCADOS</h2>
                     <p>En nuestro recorrido podremos apreciar y ser parte del día a día de la colorida y plural sociedad India. Conoceremos distintos templos donde aprenderemos de las diferentes ramas del hinduismo y nos deleitamos por la fina arquitectura distinta en cada sitio sagrado. También iremos a múltiples mercados locales donde diversas etnias se encuentran para comprar y vender sus productos y artesanías.</p>
