@@ -25,7 +25,7 @@
         <section id="banner">
 
             <div class="logo">
-                <a class="imagen" href="/"><img src="/img/logoSariri.png" alt="Cultura Sariri"></a>
+                <a class="imagen" href="/"><img src="/img/logo2.png" alt="Cultura Sariri"></a>
             </div>
 
 
