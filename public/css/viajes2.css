@@ -4125,9 +4125,9 @@ input, select, textarea {
   .logo img{
     max-width: 120px;
     position: absolute;
-    top: 40px;
+	top: 10%;
     left: 50%;
-    transform: translate(-50%, 0px);
+    transform: translate(-50%, -50%);
   }
 
   .logo .imagen{ 
