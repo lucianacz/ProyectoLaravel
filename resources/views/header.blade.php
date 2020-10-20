@@ -9,7 +9,8 @@
           <li><a href="/"> Home </a></li>
           <li><a href="/gente"> Relatos de viaje </a></li>
           <li><a href="/quienessomos"> Quienes somos </a></li>
-          <li><a href="/etiopia"> Etiopia 2021 </a></li>
+          <li><a href="/etiopia"> Viaje a Etiopia 2021 </a></li>
+          <li><a href="/india"> Viaje a India 2021 </a></li>
           <li><a href="/contacto"> Contacto </a></li>
           <!--
           @guest
