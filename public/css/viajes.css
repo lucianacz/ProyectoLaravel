@@ -3972,7 +3972,7 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: url("../img/hero.jpg");
+		background-image: url("../img/hero2.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3989,7 +3989,7 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #banner{
-		background-image: url("../img/hero.jpg");
+		background-image: url("../img/hero2.jpg");
 		background-position: 25% center;
 		height: 100vh;
 		background-repeat: no-repeat;
