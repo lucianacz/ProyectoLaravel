@@ -32,7 +32,7 @@
 
             <div class="inner">
                 <h2>VIAJA A ETIOPIA</h2>
-                <p>aventura trasendental</p>
+                <p>aventura trascendental</p>
                 <ul class="actions special">
                     <!-- <li><a href="#" class="primary"></a></li> -->
                 </ul>
