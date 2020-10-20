@@ -3989,7 +3989,7 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #banner{
-		background-image: url("../img/D5A3813.jpg");
+		background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url("../img/D5A3813.jpg");
 		background-position: 25% center;
 		height: 100vh;
 		background-repeat: no-repeat;
@@ -4123,10 +4123,11 @@ input, select, textarea {
   }
 
   .logo img{
-      max-width:180px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
+    max-width: 120px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0px);
   }
 
   .logo .imagen{ 
