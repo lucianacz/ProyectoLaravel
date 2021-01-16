@@ -132,6 +132,9 @@ class MainController extends Controller
     return view('india');
   }
 
+  public function pakistan() {
+    return view('pakistan');
+  }
 
   public function perfil() {
     $notas = Nota::orderby('Pais')->get();

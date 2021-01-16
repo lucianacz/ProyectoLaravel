@@ -24,6 +24,8 @@ Route::get('/viajar','MainController@viajar');
 
 Route::get('/india','MainController@india');
 Route::get('/etiopia','MainController@etiopia');
+Route::get('/pakistan','MainController@pakistan');
+
 
 Route::get('/quienessomos', 'MainController@qs');
 Route::get('/login', 'MainController@login');
