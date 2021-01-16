@@ -77,7 +77,7 @@
         <section id="three" class="wrapper style3 special">
             <div class="inner">
                 <header class="major">
-                    <h2> HIGHLIGTHS</h2>
+                    <h2> ESCRIBINOS PARA EL ITINERARIO </h2>
                     <!--<p>Salimos junto a Last Places.</br> "Expertos en las últimas tribus del mundo y las mejores maneras de acercarnos a ellas. Vemos el turismo responsable como una herramienta práctica para proteger y empoderar a estas últimas tribus.-->
                 </header>
             </div>
